@@ -1,0 +1,30 @@
+.container{
+  position: relative;
+  height: 820px;
+  padding: 20px;
+  text-align: center;
+}
+.subcontainer{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding:50px 5vw;
+  gap: 6vw;
+}
+.flex1{
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: var(--brown);
+}
+.flex2{
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.flex3{
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.img{
+  height: auto;
+}

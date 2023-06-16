@@ -1,0 +1,17 @@
+.border{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 60px;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 45%;
+  top: 110vh;
+  left: 50%;
+}
+.border:hover{
+  cursor: pointer;
+  background: rgb(222, 167, 167);
+  border: none;
+}

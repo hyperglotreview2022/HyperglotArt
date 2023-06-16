@@ -1,0 +1,64 @@
+
+.navbar{
+  width: 100vw;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.logo{
+  width: 25vw;
+}
+.logo h1{
+  font-weight: 100;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+}
+.nav{
+display:flex;
+justify-content: space-evenly;
+gap: 15vw;
+}
+.nav .end{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10vw;
+  color: rgb(28, 28, 28);
+  font-weight: 300;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.nav .end p:hover{  
+  cursor: pointer;
+  color: rgb(126, 126, 126);
+}
+.nav ul li{
+  list-style: none;
+
+}
+.nav ul li a{
+  color: rgb(28, 28, 28);
+  font-weight: 300;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.nav ul li a:hover{
+  color: rgb(126, 126, 126);
+}
+.icon{
+  font-size: 20px;
+  color: rgb(109, 109, 109);
+}
+.icon:hover{
+  color: rgb(170, 170, 170);
+  cursor: pointer;
+}
