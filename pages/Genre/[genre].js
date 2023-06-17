@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
 import Footer from '../../components/footer'
 import styles from '../../styles/genre.module.css'
-import { BsCurrencyRupee } from 'react-icons/Bs'
+import { BsCurrencyRupee } from 'react-icons/bs'
 import Image from "next/image";
 
 export default function Genre({dataExport}){

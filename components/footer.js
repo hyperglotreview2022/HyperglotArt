@@ -1,7 +1,7 @@
 import styles from '../styles/footer.module.css'
 import {BiUpArrow} from 'react-icons/bi'
 import {BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
-import {RiFacebookBoxFill} from 'react-icons/Ri'
+import {RiFacebookBoxFill} from 'react-icons/ri'
 
 const footer = () => {
 

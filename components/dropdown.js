@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {BsChevronDown} from 'react-icons/Bs'
+import {BsChevronDown} from 'react-icons/bs'
 import styles from '../styles/dropdown.module.css'
 
 const dropdown = () => {

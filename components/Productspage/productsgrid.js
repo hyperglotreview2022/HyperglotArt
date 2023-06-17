@@ -1,6 +1,6 @@
 import styles from '../../styles/productsgrid.module.css'
 import Image from 'next/image'
-import {BsCurrencyRupee} from 'react-icons/Bs'
+import {BsCurrencyRupee} from 'react-icons/bs'
 import { useEffect,useState } from 'react'
 
 const productsgrid = () => {
