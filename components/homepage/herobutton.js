@@ -1,4 +1,4 @@
-import {BsChevronDoubleDown} from 'react-icons/Bs'
+import {BsChevronDoubleDown} from 'react-icons/bs'
 import styles from '../../styles/herobtn.module.css'
 
 const herobutton = () => {

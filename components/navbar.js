@@ -1,6 +1,6 @@
 import Styles from '../styles/navbar.module.css'
-import {BsSearch} from 'react-icons/Bs'
-import {BsCart} from 'react-icons/Bs'
+import {BsSearch} from 'react-icons/bs'
+import {BsCart} from 'react-icons/bs'
 import Link from 'next/link'
 import Dropdown from './dropdown'
 
