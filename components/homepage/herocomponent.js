@@ -1,6 +1,5 @@
 import Image from "next/image"
 import styles from '../../styles/hero.module.css'
-import heroimage from '../../public/heroimage/Heroimage.JPG'
 
 
 const herocomponent = () => {
@@ -15,7 +14,7 @@ const herocomponent = () => {
         </div>
       </div>
       
-      <Image className={styles.img} src={heroimage} width={2000} height={2000} alt="hero-image"/>
+      <Image className={styles.img} src={"https://hyperglotart.vercel.app/public/heroimage/Heroimage.JPG"} width={2000} height={2000} alt="hero-image"/>
     </div>
   )
 }
