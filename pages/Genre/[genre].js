@@ -43,7 +43,7 @@ export default function Genre({dataExport}){
 }
 
 export async function getServerSideProps() {
-  const url = "http://localhost:3000/api/artdata";
+  const url = "https://hyperglotart.vercel.app/api/artdata";
   const res = await fetch(url);
   const dataExport = await res.json();
   return { props: { dataExport } };
