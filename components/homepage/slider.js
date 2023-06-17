@@ -4,21 +4,21 @@ import styles from '../../styles/slider.module.css'
 import Image from "next/image";
 
 const images = [ { id:1 ,
-                   url:"/../public/heroimage/Heroimage.JPG"},
+                   url:"/heroimage/Heroimage.JPG"},
                    { id:2 ,
-                    url:"/../public/heroimage/Heroimage.JPG"},
+                    url:"/heroimage/Heroimage.JPG"},
                     { id:3 ,
-                      url:"/../public/heroimage/Heroimage.JPG"},
+                      url:"/heroimage/Heroimage.JPG"},
                       { id:4 ,
-                        url:"/../public/heroimage/Heroimage.JPG"},
+                        url:"/heroimage/Heroimage.JPG"},
                         { id:5 ,
-                          url:"/../public/heroimage/Heroimage.JPG"},
+                          url:"/heroimage/Heroimage.JPG"},
                           { id:6 ,
-                            url:"/../public/heroimage/Heroimage.JPG"},
+                            url:"/heroimage/Heroimage.JPG"},
                             { id:7 ,
-                              url:"/../public/heroimage/Heroimage.JPG"},
+                              url:"/heroimage/Heroimage.JPG"},
                               { id:8 ,
-                                url:"/../public/heroimage/Heroimage.JPG"}]
+                                url:"/heroimage/Heroimage.JPG"}]
 
 export default class slider extends Component {
   

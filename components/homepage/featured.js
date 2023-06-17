@@ -25,7 +25,7 @@ const featured = () => {
         I upon yielding moveth under greater which there years unto meat creature above bearing sixth after air may won't. Male. Light day life waters said likeness dominion us fowl male.<br /><br />
         </div>
         <div className={styles.img}>
-          <Image src={'/../public/featured/thethinker.jpg'} width={270} height={500} alt="image"/>
+          <Image src={'/featured/thethinker.jpg'} width={270} height={500} alt="image"/>
         </div>
 
       </div>

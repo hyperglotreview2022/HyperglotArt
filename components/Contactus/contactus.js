@@ -5,7 +5,7 @@ const contactus = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgcontainer}>
-        <Image className={styles.img} src={"/../public/formimg/formimg.JPG"} width={400} height={600} alt="image"/>
+        <Image className={styles.img} src={"/formimg/formimg.JPG"} width={400} height={600} alt="image"/>
       </div>
       <div className={styles.formcontainer}>
         <form className={styles.form}>

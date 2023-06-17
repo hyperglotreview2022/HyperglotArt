@@ -3,15 +3,15 @@ import Footer from '../../components/footer'
 import styles from '../../styles/Artists.module.css'
 import Image from 'next/image'
 
-const artists = [ "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG",
-                  "/../public/heroimage/Heroimage.JPG", ]
+const artists = [ "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG",
+                  "/heroimage/Heroimage.JPG", ]
 
 const Artists = () => {
   return (

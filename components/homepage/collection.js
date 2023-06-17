@@ -3,13 +3,13 @@ import Image from 'next/image'
 import {FaLongArrowAltRight} from 'react-icons/fa'
 
 const images = [ { id:1 ,
-                    url:"/../public/heroimage/Heroimage.JPG"},
+                    url:"/heroimage/Heroimage.JPG"},
                     { id:2 ,
-                    url:"/../public/heroimage/Heroimage.JPG"},
+                    url:"/heroimage/Heroimage.JPG"},
                     { id:3 ,
-                      url:"/../public/heroimage/Heroimage.JPG"},
+                      url:"/heroimage/Heroimage.JPG"},
                       { id:4 ,
-                        url:"/../public/heroimage/Heroimage.JPG"}]
+                        url:"/heroimage/Heroimage.JPG"}]
 
 const collection = () => {
   return (

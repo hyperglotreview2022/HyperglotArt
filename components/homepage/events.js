@@ -8,7 +8,7 @@ const events = () => {
       <h1 className="heading">Events & Programs</h1>
       <div className={styles.subcontainer}>
         <div>
-          <Image className={styles.img} src={'/../public/heroimage/Heroimage.JPG'} width={450} height={400} alt="image"/>
+          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400} alt="image"/>
         </div>
         <div className={styles.text}>
           <div className={styles.text1}>
@@ -26,7 +26,7 @@ const events = () => {
 
       <div className={styles.subcontainerrev}>
         <div>
-          <Image className={styles.img} src={'/../public/heroimage/Heroimage.JPG'} width={450} height={400}/>
+          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400}/>
         </div>
         <div className={styles.textrev}>
           <div className={styles.text1}>
@@ -44,7 +44,7 @@ const events = () => {
 
       <div className={styles.subcontainer}>
         <div>
-          <Image className={styles.img} src={'/../public/heroimage/Heroimage.JPG'} width={450} height={400}/>
+          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400}/>
         </div>
         <div className={styles.text}>
           <div className={styles.text1}>
