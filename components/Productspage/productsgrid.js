@@ -6,7 +6,7 @@ import { useEffect,useState } from 'react'
 const productsgrid = () => {
   const[cards,setCards] = useState()
 
-  const apiurl = "http://localhost:3000/api/artdata"
+  const apiurl = "https://hyperglotart.vercel.app/api/artdata"
   let displayData;
 
   function pullJson() {
