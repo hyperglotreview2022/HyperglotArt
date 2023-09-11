@@ -6,7 +6,7 @@ const herocomponent = () => {
   return (
     <div className={styles.herosection}>
       <div className={styles.textarea}>
-        <h1 className="heading">Hyperglot, Master Drawings</h1>
+        <h1 className="heading marginleft">Hyperglot, Master Drawings</h1>
         <div className={styles.herotext}>
           <p>FEBRUARY 27 - MARCH 28,2023</p>
           <p>On view at The Met First Avenue in Gallery 209</p>

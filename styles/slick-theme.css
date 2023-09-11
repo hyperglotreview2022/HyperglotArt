@@ -187,3 +187,12 @@
     opacity: 1;
     color: rgb(190, 108, 108);
 }
+@media screen and (max-width: 1200px){
+.slick-prev:before,
+.slick-next:before
+{
+    padding: 15px 0;
+    font-size: 30px;
+}
+
+}

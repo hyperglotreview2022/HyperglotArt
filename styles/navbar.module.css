@@ -1,6 +1,6 @@
 
 .navbar{
-  width: 100vw;
+  width: 100%;
   background: var(--light-blue);
   display: flex;
   align-items: center;
@@ -37,6 +37,12 @@ gap: 15vw;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
+.nav .endend{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
 .nav .end p:hover{  
   cursor: pointer;
   color: rgb(126, 126, 126);
@@ -61,4 +67,96 @@ gap: 15vw;
 .icon:hover{
   color: rgb(170, 170, 170);
   cursor: pointer;
+}
+.navicon{
+  display: none;
+}
+@media screen and (max-width: 1200px){
+  .navbar{
+    width:100%;
+    gap:40vw;
+  }
+.nav ul{
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  line-height: 36px;
+  padding: 50px 50px;
+  transition: 0.3s;
+}
+.up{
+  top: 85px;
+}
+.down{
+  top:-900px;
+}
+.nav .end{
+width: 25vw;
+}
+.navicon{
+  font-size: 22px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(175, 175, 175);
+}
+}
+@media screen and (max-width: 768px){
+  .navbar{
+    width: 95vw;
+    gap: 20vw;
+  }
+  .logo{
+    width: 60vw;
+  }
+  .logo h1{
+    font-size: 26px;
+  }
+  .nav .end{
+    gap: 5vw;
+  }
+  .nav .endend{
+    width: 55vw;
+    gap: 10vw;
+    font-size: 28px;
+    transition: 0.3s;
+  }
+  .icon{
+    font-size: 24px;
+  }
+  .navicon{
+    padding: 10px 18px;
+  }
+  .endend{
+    position: absolute;
+    justify-content: center;
+    padding: 40px 0px;
+    left: 18%;
+  }
+  .nav ul{
+    height: 70vh;
+    width: 75vw;
+    padding-top: 150px;
+    align-items: center;
+    font-size: 24px;
+    gap: 60px;
+  }
+  .nav ul li{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(106, 106, 106);
+  }
+  .up{
+    top: 70px;
+  }
+  .up1{
+    top: 85px;
+  }
+  .down1{
+      top:-900px;
+  }
 }

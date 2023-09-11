@@ -1,6 +1,5 @@
 .container{
   position: relative;
-  height: 820px;
   padding: 20px;
   text-align: center;
 }
@@ -9,6 +8,12 @@
   justify-content: space-between;
   text-align: left;
   padding:50px 5vw;
+  gap: 6vw;
+}
+.subsub{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
   gap: 6vw;
 }
 .flex1{
@@ -27,4 +32,48 @@
 }
 .img{
   height: auto;
+}
+@media screen and (max-width: 1200px){
+  .container{
+    padding: 0;
+  }
+  .subsub{
+    flex-direction: column;
+    width: 65vw;
+  }
+  .img{
+    float: right;
+  }
+  .flex3{
+    width: 85vw;
+  }
+  .subcontainer{
+    padding: 50px 2vw;
+    gap: 1vw;
+    justify-content: center;
+  }
+  .image{
+    height: 400px;
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 768px){
+  .subsub{
+    width: 100%;
+    }
+  .flex1{
+    font-size: 18px;
+    width: 100%;
+  }
+  .subcontainer{
+    flex-direction: column-reverse;
+  }
+  .image{
+    height: 400px;
+    padding-left: 30vw;
+    width: 60vw;
+  }
+  .flex3{
+    width: 100%;
+  }
 }

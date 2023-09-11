@@ -1,44 +1,35 @@
 import styles from '../../styles/productsgrid.module.css'
-import Image from 'next/image'
-import {BsCurrencyRupee} from 'react-icons/bs'
-import { useEffect,useState } from 'react'
+import dynamic from "next/dynamic";
 
-const productsgrid = () => {
-  const[cards,setCards] = useState()
-
-  const apiurl = "https://hyperglotart.vercel.app/api/artdata"
-  let displayData;
-
-  function pullJson() {
-    fetch(apiurl)
-    .then(res => res.json())
-    .then(resdata => {
-      displayData = resdata.map(function(art){
-        return( 
-          <div key={art.id} className={styles.card}>
-            <Image className={styles.img} src={art.url} width={300} height={700}/>
-            <div className={styles.name}>{art.name}</div>
-            <div className={styles.transition}>
-              <div className={styles.price}><BsCurrencyRupee />{art.price}</div>
-              <div className={styles.add}>Add To Cart</div>
-            </div>
-          </div>)
-         
-      }) 
-      setCards(displayData)
-    })
-  }
-
-  useEffect(()=>{
-    pullJson()
-  },[])
+const productsgrid = ({product}) => {
 
   return (
-    
-    <div className={styles.container}>
-    {cards}
+
+    <div>
+      {product.map = (data) =>{
+        return (
+          <h1 className={styles.name}>{data.attributes.title}</h1>
+        )
+        
+      }}
     </div>
+    
+    // <div className={styles.container}>
+    // {product.map = (art) => {
+    //  return( 
+      // <div key={art.id} className={styles.card}>
+      //    {/* <Image className={styles.img} src={art.attributes.url} width={300} height={700} alt="image"/> */}
+      //  <div className={styles.name}>{art.attributes.title}</div>
+      //   <div className={styles.transition}>
+      //     <div className={styles.price}><BsCurrencyRupee />{art.attributes.price}</div>
+      //   <div className={styles.add}>Add To Cart</div>
+      //    </div>
+      // </div>
+    //   )   
+    // }}
+    // {/* {cards} */}
+    // </div>
   );
 }
 
-export default productsgrid
+export default dynamic (() => Promise.resolve(productsgrid), {ssr: false})

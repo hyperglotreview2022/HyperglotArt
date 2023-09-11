@@ -8,20 +8,27 @@ import Featured from '../components/homepage/featured'
 import Events from '../components/homepage/events'
 import Collection from '../components/homepage/collection'
 import Footer from '../components/footer'
-import LoadingScreen from '../components/loader/loader';
 import React from 'react';
-import { useState, useEffect } from 'react';
+import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
 
-  const [loading, setLoading] = useState(true);
+export const getStaticProps = async () => {
+  const resulting = await fetch(`${process.env.NEXT_PUBLIC_URL}/products?populate=*`, {
+    headers: {
+     Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
+   } 
+   });
+  const result = await resulting.json();
+  return {
+    props: {
+      product: result.data,
+    },
+  };
+};
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 500);
-  }, []);
-
+const Home = ({product}) => {
   
   return (
     <>
@@ -31,21 +38,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      {!loading ? (
       <main>
         <Navbar />
         <Hero />
         <Herobutton />
-        <Slider />
+        <Slider product={product}/>
         <Featured />
         <Events />
-        <Collection />
+        <Collection product={product}/>
         <Footer />
       </main>        
-      ) : (
-      <LoadingScreen />
-    )}
       
     </>
   )
 }
+
+export default dynamic (() => Promise.resolve(Home), {ssr: false})

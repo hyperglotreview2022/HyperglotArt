@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import styles from '../../styles/slider.module.css'
+import styles from '../../styles/bottomslider.module.css'
 import Image from "next/image";
 import Link from "next/link";
 
-const slider = ({product}) => {
+const bottomslider = ({product}) => {
 
   console.log(product)
 
@@ -19,8 +19,8 @@ const slider = ({product}) => {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             infinite: true,
             dots: true
           }
@@ -45,14 +45,12 @@ const slider = ({product}) => {
 
     return (
       <div className={styles.container}>
-        <h2 className="heading"> Exhibitions </h2>
           <Slider {...settings} className={styles.slider}>        
-            {product.slice(0,8).map(image =>       
+            {product.map(image =>       
               <div key={image.id} className={styles.slidecontainer}>
               <Link className={styles.link} href={`/SingleProduct/${image.id}`}>
                 <div className={styles.imgcontainer}>
                 <Image className={styles.img} loader={() => image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/>
-                {/* <Image className={styles.img} loader={() => process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/> */}
                 </div>
                 <div>
                   <h1 className={styles.sliderheading}>{image.attributes.title}</h1>
@@ -67,4 +65,4 @@ const slider = ({product}) => {
     );
   }
 
-export default slider;
+export default bottomslider;

@@ -1,6 +1,7 @@
 import styles from '../../styles/events.module.css'
 import Image from 'next/image'
 import {FaLongArrowAltRight} from 'react-icons/fa'
+import Link from 'next/link'
 
 const events = () => {
   return (
@@ -26,7 +27,7 @@ const events = () => {
 
       <div className={styles.subcontainerrev}>
         <div>
-          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400}/>
+          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400} alt="image"/>
         </div>
         <div className={styles.textrev}>
           <div className={styles.text1}>
@@ -44,7 +45,7 @@ const events = () => {
 
       <div className={styles.subcontainer}>
         <div>
-          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400}/>
+          <Image className={styles.img} src={'/heroimage/Heroimage.JPG'} width={450} height={400} alt="image"/>
         </div>
         <div className={styles.text}>
           <div className={styles.text1}>
@@ -60,8 +61,10 @@ const events = () => {
 
       </div>
 
-
+    <Link href="/Shop">
       <button className={styles.btn}><span>VIEW ALL EXHIBITIONS</span><FaLongArrowAltRight className={styles.icon}/></button>
+    </Link>
+     
     </div>
     
   )

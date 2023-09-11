@@ -1,8 +1,9 @@
 .container{
-  height: 820px;
   text-align: center;
+  padding-bottom: 50px;
 }
 .images{
+  margin-top: 50px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -11,12 +12,12 @@
   margin-bottom: 100px;
 }
 .imagecontainer{
-  width: 350px;
+  width: 20vw;
   height: 380px;
   overflow: hidden;
 }
 .imgcontainer{
-  width: 320px;
+  width: 20vw;
   height: 380px;
 }
 .imagecontainer:hover{
@@ -31,7 +32,7 @@
   position: absolute;
   top: 0;
   font-size: 22px;
-  width: 312px;
+  width: 14vw;
   color: white;
   opacity: 0;
 }
@@ -40,22 +41,29 @@
 }
 .border{
   margin: 10px 10px;
-  width: 280px;
+  width: 18vw;
   height: 350px;
   border: 6px solid white;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .img{
   width: 100%;
   height: 100%;
   transition: 0.5s;
+  object-fit: cover;
+  object-position: 0% 0%;
 }
 .btncontainer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.link{
+  color: var(--brown);
+  text-decoration: none;
 }
 .btn{
   display: flex;
@@ -74,7 +82,47 @@
 .btn:hover{
   cursor: pointer;
   color: white;
-  border: none;
   background: var(--brown);
+}
+@media screen and (max-width: 1200px){
+  .images{
+    width: 85vw;
+  }
+  .imagecontainer{
+    transition: 0.3s;
+  }
+  .imagecontainer:hover{
+    width: 40vw;
+  }
+  .imagecontainer:hover .imgcontainer{
+    width: 40vw;
+  }
+  .imagecontainer:hover .border{
+    width: 26vw;
+  }
+}
+@media screen and (max-width: 768px){
+  .images{
+    justify-content: center;
+    width: 95vw;
+    gap: 5px;
+    padding:0 2vw;
+    margin-bottom: 50px;
+  }
+  .imagecontainer{
+    width: 15vw;
+  }
+  .imgcontainer{
+    width: 15vw;
+  }
+  .imagecontainer:hover{
+    width: 40vw;
+  }
+  .imagecontainer:hover .imgcontainer{
+    width: 40vw;
+  }
+  .imagecontainer:hover .border{
+    width: 32vw;
+  }
 }
 

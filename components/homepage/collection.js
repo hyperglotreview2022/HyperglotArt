@@ -1,17 +1,9 @@
 import styles from '../../styles/collection.module.css'
 import Image from 'next/image'
 import {FaLongArrowAltRight} from 'react-icons/fa'
+import Link from 'next/link'
 
-const images = [ { id:1 ,
-                    url:"/heroimage/Heroimage.JPG"},
-                    { id:2 ,
-                    url:"/heroimage/Heroimage.JPG"},
-                    { id:3 ,
-                      url:"/heroimage/Heroimage.JPG"},
-                      { id:4 ,
-                        url:"/heroimage/Heroimage.JPG"}]
-
-const collection = () => {
+const collection = ({product}) => {
   return (
     <div className={styles.container}>
       <h1 className="heading">
@@ -19,22 +11,27 @@ const collection = () => {
       </h1>
     
       <div className={styles.images}>      
-      {images.map(image =>  
-        <div className={styles.imagecontainer}>
+      {product.slice(0,4).map(image =>  
+        <div key={image.id} className={styles.imagecontainer}>
+        <Link className={styles.link} href={`/SingleProduct/${image.id}`}>
           <div className={styles.imgcontainer}>
-            <Image key={image.id} className={styles.img} src={image.url} width={1000} height={1000} alt="image"/>
+          <Image className={styles.img} loader={() => image.attributes.img1.data.attributes.url} unoptimized={true} src={image.attributes.img1.data.attributes.url} width={1000} height={1000} alt="image"/>
           </div>
           <div className={styles.imgtext}>
             <div className={styles.border}>
-              <p>Lady With The Blue Eyes And White Hair</p>
+              <p>{image.attributes.title}</p>
             </div>
           </div>
+          </Link>
         </div>
         )}
 
       </div>
         <div className={styles.btncontainer}>
+        <Link className={styles.link} href="/Shop">
           <button className={styles.btn}><span>VIEW ALL EXHIBITIONS</span><FaLongArrowAltRight className={styles.icon}/></button>
+        </Link>
+          
         </div>
 
     </div>

@@ -71,3 +71,43 @@
   font-weight: 300;
   line-height: 26px;
 }
+@media screen and (max-width: 1200px){
+  .lower{
+    gap: 3vw;
+  }
+}
+@media screen and (max-width: 768px){
+  .container{
+    padding: 10px 1vw 30px;
+  }
+  .upper{
+    flex-direction: column;
+    height: auto;
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+  .list ul{
+    width: 80%;
+    gap: 3vw;
+    flex-wrap: wrap;
+  }
+  .lower{
+    height: auto;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .left{
+    padding: 20px 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left1{
+    width: 100%;
+  }
+  .right{
+    flex-direction: column;
+    width: 100%;
+  }
+}

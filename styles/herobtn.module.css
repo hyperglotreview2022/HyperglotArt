@@ -15,3 +15,8 @@
   background: rgb(222, 167, 167);
   border: none;
 }
+@media screen and (max-width: 1200px){
+  .border{
+    display: none;
+  }
+}

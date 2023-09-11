@@ -6,17 +6,17 @@
 }
 .img{
   position: absolute;
-  width: 871px;
+  width: 60vw;
   height: auto;
   top: 150px;
-  right: 100px;
+  right: 120px;
   box-shadow: rgba(0, 0, 0, 0.25) 20px 34px 75px, rgba(0, 0, 0, 0.12) 20px -22px 50px, rgba(0, 0, 0, 0.12) 20px 14px 26px, rgba(0, 0, 0, 0.17) 20px 32px 33px, rgba(0, 0, 0, 0.09) 20px -23px 25px;
 }
 .textarea{
   z-index: 5;
   position: absolute;
   top: 200px;
-  left: 100px;
+  left: 120px;
   width: 40vw;
 }
 .herotext{
@@ -28,4 +28,60 @@
   font-size: 18px;
   font-weight: 300;
   font-family: 'Maven Pro', sans-serif;
+}
+@media screen and (max-width: 1200px){
+  .herosection{
+    height: 750px;
+  }
+  .img{
+    width: 85vw;
+    right: 50px;
+  }
+  .textarea{
+    top: 120px;
+    left: 50px;
+    width: 50vw;
+    background-color: rgba(255, 253, 253,0.7);
+    padding: 20px 0 10px 30px;
+  }
+  .herotext{
+    padding: 2vw;
+    width: 40vw;
+  }
+  .herotext{
+    color: rgb(45, 45, 45);
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .textarea h1{
+    font-size: 60px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .herosection{
+    width: 100vw;
+    height: 650px;
+  }
+  .textarea{
+    top: 120px;
+    left: 20px;
+    width: 70vw;
+    padding: 20px 0 10px 10px;
+  }
+  .textarea h1{
+    font-size: 44px;
+    width: 65vw;
+  }
+  .herotext{
+    padding: 1vw;
+    width: 65vw;
+  }
+  .img{
+    width: 85vw;
+    right: 20px;
+    height: 360px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
 }

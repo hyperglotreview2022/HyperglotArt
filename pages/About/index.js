@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 import styles from '../../styles/about.module.css'
 import Image from 'next/image'
+import dynamic from "next/dynamic";
 
 const index = () => {
   return (
@@ -25,4 +26,4 @@ const index = () => {
   )
 }
 
-export default index
+export default dynamic (() => Promise.resolve(index), {ssr: false})

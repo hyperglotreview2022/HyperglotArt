@@ -4,7 +4,7 @@
 }
 .subcontainer{
   display: flex;
-  padding: 0 12vw;
+  padding: 50px 12vw 0;
   gap: 5vw;
   text-align: start;
 }
@@ -12,4 +12,14 @@
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 30px;
+}
+@media screen and (max-width: 1200px){
+  .subcontainer{
+    flex-direction: column-reverse;
+    padding: 0 5vw;
+  }
+  .img{
+    width: 100%;
+    height: auto;
+  }
 }

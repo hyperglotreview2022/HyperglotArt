@@ -1,5 +1,5 @@
 .container{
-  padding: 30px 15vw;
+  padding: 80px 15vw 30px;
   display: flex;
   gap: 5vw;
 }
@@ -56,4 +56,38 @@
 }
 .button:hover{
   background-color: var(--brown);
+}
+@media screen and (max-width: 1200px){
+  .container{
+    padding: 80px 5vw 30px;
+  }
+  .form input{
+    width: 45vw;
+  }
+  .form textarea{
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 768px){
+  .container{
+    padding: 80px 10px 30px;
+  }
+  .form input{
+    width: 80vw;
+    padding-left: 0;
+  }
+  .form textarea{
+    width: 80vw;
+    padding-left: 0;
+  }
+  .imgcontainer{
+    width: 0vw;
+  }
+  .formcontainer{
+    padding: 0;
+    padding-right: 7vw;
+  }
+  .img{
+    display: none;
+  }
 }

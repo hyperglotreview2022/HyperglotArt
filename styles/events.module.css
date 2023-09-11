@@ -1,19 +1,19 @@
 .container{
-  height: 1940px;
   padding-top: 10px;
+  padding-bottom: 50px;
   background-color: var(--light-blue);
   text-align: center;
 }
 .subcontainer{
   height: 450px;
-  padding: 0 12vw;
+  padding: 50px 12vw 0;
   display: flex;
   align-items: center;
   gap: 100px;
   text-align: left;
 }
 .subcontainerrev{
-  height: 80vh;
+  height: 450px;
   padding: 0 12vw;
   display: flex;
   flex-direction: row-reverse;
@@ -78,6 +78,49 @@
 .btn:hover{
   cursor: pointer;
   color: white;
-  border: none;
   background: var(--brown);
+}
+@media screen and (max-width: 1200px){
+  .subcontainer{
+    padding: 0 5vw;
+    width: 90%;
+    height: 450px;
+  }
+  .subcontainerrev{
+    padding: 0 5vw;
+    height: 450px;
+  }
+  .img{
+    height: 250px;
+    width: 40vw;
+  }
+  .btn{
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 768px){
+  .subcontainer{
+    padding-top: 50px;
+    flex-direction: column;
+    height: auto;
+  }
+  .subcontainerrev{
+    flex-direction: column;
+    height: auto;
+  }
+  .img{
+    height: 250px;
+    width: 100%;
+  }
+  .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .textrev{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .btn{
+    margin-top: 0px;
+  }
 }

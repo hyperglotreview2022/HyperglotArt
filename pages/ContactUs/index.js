@@ -3,6 +3,7 @@ import Footer from '@/components/footer'
 import styles from '../../styles/contactus.module.css'
 import Contactform from '../../components/Contactus/contactus'
 import Map from '../../components/Contactus/map'
+import dynamic from "next/dynamic";
 
 const ContactUs = () => {
   return (
@@ -18,4 +19,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default dynamic (() => Promise.resolve(ContactUs), {ssr: false})

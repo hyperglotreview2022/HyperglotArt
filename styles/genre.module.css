@@ -37,6 +37,7 @@
 .img{
   width: 22vw;
   height: 350px;
+  object-fit: contain;
 }
 .name{
   font-family: 'Playfair Display', serif;
@@ -72,4 +73,39 @@
 .card:hover .price{
   top: 20px;
   opacity: 0;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+@media screen and (max-width: 1200px){
+  .subcontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card{
+    width: 28vw;
+  }
+  .img{
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 1200px){
+  .subcontainer{
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    padding: 20px 10px 10px;
+  }
+  .card{
+    width: 100%;
+  }
+  .img{
+    width: 100%;
+  }
+  .bannerheading{
+    font-size: 46px;
+  }
+  .banner{
+    height: 300px;
+    gap: 15px;
+  }
 }

@@ -4,11 +4,34 @@ import Footer from '../../components/footer'
 import styles from '../../styles/genre.module.css'
 import { BsCurrencyRupee } from 'react-icons/bs'
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useState,useEffect } from "react";
+import axios from "axios";
+import Link from "next/link";
 
-export default function Genre({dataExport}){
+const Genre = () => {
 
+  const[product,setProduct] = useState([]);
   const router = useRouter();
   const { genre } = router.query;
+
+  useEffect(() => {
+      const fetchData = async() => {
+    try{
+      const res = await axios.get(process.env.NEXT_PUBLIC_URL+"/products?populate=*", {
+       headers: {
+        Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
+      } 
+      });
+      console.log(res.data.data);
+      setProduct(res.data.data);
+      console.log(product.attributes.categories.data[0].attributes.title)
+    } catch(err) {
+      console.log(err);
+    }
+  };
+  fetchData();
+  }, []);
 
   return(
     <>
@@ -20,16 +43,20 @@ export default function Genre({dataExport}){
           <p className={styles.bannertext}>Cut from light and fluid mushroom.</p>
         </div>
         <div className={styles.subcontainer}>
-        {dataExport.map(function (item) {
-        if (item.genre === genre) {
+        {product.map(function (item) {
+        if (item.attributes.categories.data[0].attributes.title === genre) {
           return (
+            <div>
         <div key={item.id} className={styles.card}>
-      <Image className={styles.img} src={item.url} width={300} height={700}/>
-      <div className={styles.name}>{item.name}</div>
+        <Link className={styles.link} href={`/SingleProduct/${item.id}`}>
+        <Image className={styles.img} loader={() => item.attributes.img1.data.attributes.url} src={item.attributes.img1.data.attributes.url} width={300} height={700} alt="image"/>
+      <div className={styles.name}>{item.attributes.title}</div>
       <div className={styles.transition}>
-        <div className={styles.price}><BsCurrencyRupee />{item.price}</div>
+        <div className={styles.price}><BsCurrencyRupee />{item.attributes.price}</div>
         <div className={styles.add}>Add To Cart</div>
       </div>
+      </Link>
+    </div>
     </div>
           );
         }
@@ -42,9 +69,4 @@ export default function Genre({dataExport}){
   )
 }
 
-export async function getServerSideProps() {
-  const url = "https://hyperglotart.vercel.app/api/artdata";
-  const res = await fetch(url);
-  const dataExport = await res.json();
-  return { props: { dataExport } };
-}
+export default dynamic (() => Promise.resolve(Genre), {ssr: false})

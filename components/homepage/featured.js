@@ -6,6 +6,7 @@ const featured = () => {
     <div className={styles.container}>
       <h1 className="heading">The Art Gallery of <br /> San Francisco</h1>
       <div className={styles.subcontainer}>
+      <div className={styles.subsub}>
         <div className={styles.flex1}>
         Seas waters us gathered cattle let herb whose whales given replenish creepeth, grass herb forth appear appear. Midst face female unto to don't days. Dominion made unto dominion blessed above years Earth whose. 
         </div>
@@ -24,8 +25,10 @@ const featured = () => {
 
         I upon yielding moveth under greater which there years unto meat creature above bearing sixth after air may won't. Male. Light day life waters said likeness dominion us fowl male.<br /><br />
         </div>
+      </div>
+
         <div className={styles.img}>
-          <Image src={'/featured/thethinker.jpg'} width={270} height={500} alt="image"/>
+          <Image className={styles.image} src={'/featured/thethinker.jpg'} width={270} height={500} alt="image"/>
         </div>
 
       </div>
