@@ -41,10 +41,10 @@ const Products = ({product}) => {
     <div>
       <Navbar />
       <div className={styles.container}>
-        <div className={styles.banner}>
-          <h2 className={styles.bannertext}>Modern Art</h2>
-          <h1 className={styles.bannerheading}>Art Gallery Shop</h1>
-          <p className={styles.bannertext}>Cut from light and fluid mushroom.</p>
+      <div className={styles.banner}>
+          {/* <p className={styles.bannertext}>Modern Art</p> */}
+          <h1 className={styles.bannerheading}>Shop</h1>
+          {/* <p className={styles.bannertext}>Cut from light and fluid mushroom.</p> */}
         </div>
         <div className={styles.container2}>
       {product.slice(count1,count2).map(data =>{

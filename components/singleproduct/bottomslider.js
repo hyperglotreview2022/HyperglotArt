@@ -46,7 +46,7 @@ const bottomslider = ({product}) => {
     return (
       <div className={styles.container}>
           <Slider {...settings} className={styles.slider}>        
-            {product.map(image =>       
+            {product.slice(0,8).map(image =>       
               <div key={image.id} className={styles.slidecontainer}>
               <Link className={styles.link} href={`/SingleProduct/${image.id}`}>
                 <div className={styles.imgcontainer}>

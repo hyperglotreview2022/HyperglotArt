@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['localhost'],
   },
+  // experimental: {
+  //     largePageDataBytes: 128 * 100000,
+  //   },
 }
 
 module.exports = nextConfig

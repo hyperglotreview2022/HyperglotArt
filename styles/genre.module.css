@@ -6,10 +6,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
-  color: white;
-  background-color: rgb(33, 18, 18);
-  height: 450px;
+  text-align: center;
+  padding-left: 5vw;
+  padding-top: 50px;
+  /* gap: 30px; */
+  /* color: white; */
+  /* background-color: rgb(33, 18, 18); */
+  /* height: 450px; */
 }
 .bannerheading{
   font-family: 'Playfair Display', serif;
@@ -17,6 +20,9 @@
   letter-spacing: -3px;
   font-weight: 300;
   margin: 0;
+  border-bottom: 2px solid black;
+  width: 90vw;
+  padding-bottom: 10px;
 }
 .bannertext{
   color: var(--brown);
@@ -105,7 +111,7 @@
     font-size: 46px;
   }
   .banner{
-    height: 300px;
+    padding-top: 20px;
     gap: 15px;
   }
 }
