@@ -14,7 +14,7 @@ const herocomponent = () => {
         </div>
       </div>
       
-      <Image className={styles.img} src={"/heroimage/heroimg.PNG"} width={2000} height={2000} alt="hero-image"/>
+      <Image className={styles.img} src={"/hero/heroimg.png"} width={2000} height={2000} alt="hero-image"/>
     </div>
   )
 }

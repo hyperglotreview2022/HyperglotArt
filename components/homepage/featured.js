@@ -28,7 +28,7 @@ const featured = () => {
       </div>
 
         <div className={styles.img}>
-          <Image className={styles.image} src={'/featured/sculpture.PNG'} width={270} height={500} alt="image"/>
+          <Image className={styles.image} src={'/featured/sculpture.png'} width={270} height={500} alt="image"/>
         </div>
 
       </div>
