@@ -6,6 +6,8 @@ const sidecontent = ({data1}) => {
   const [isactive, setIsactive] = useState(true);
   const [isactive2, setIsactive2] = useState(false)
 
+  console.log(data1)
+
   function change(){
     setIsactive(!isactive);
     setIsactive2(!isactive2);
@@ -15,7 +17,7 @@ const sidecontent = ({data1}) => {
     <div className={styles.sidecontainer}>
     <div className={styles.topcontainer}>
       <div className={styles.title}>"{data1.title}"</div>
-      <div className={styles.artist}>Art by <span>{data1.Artist}</span></div>
+      <div className={styles.artist}>Art by <span>{data1.artist}</span></div>
       <div className={styles.price}><span>Price - </span>Rs. {data1.price}</div>
     </div>
     <div className={styles.btncontainer}>
@@ -28,11 +30,11 @@ const sidecontent = ({data1}) => {
       </div>
       <div className={styles.btmbtm}>
       {isactive ? <div>
-        <p><b>Size</b>: 36in x 36in</p>
-        <p><b>Medium</b>: Oil Color</p>
-        <p><b>Surface</b>: Canvas</p>
-        <p><b>Artwork</b>: Original</p>
-        <p><b>Created in</b>: 2023</p>
+        <p><b>Size</b>: {data1.size}</p>
+        <p><b>Medium</b>: {data1.medium}</p>
+        <p><b>Surface</b>: {data1.surface}</p>
+        <p><b>Artwork</b>: {data1.artwork}</p>
+        <p><b>Created in</b>: {data1.createdin}</p>
       </div> : <p>{data1.desc}</p>}
       </div>
     </div>

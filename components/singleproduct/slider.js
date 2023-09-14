@@ -5,7 +5,6 @@ import { useState } from "react";
 const slider = ({data1}) => {
 
   const [selectedImg, setSelectedImg] = useState("img1");
-  console.log(process.env.NEXT_PUBLIC_UPLOAD_URL+data1?.img1?.data?.attributes?.url)
    
     return (
       <div>

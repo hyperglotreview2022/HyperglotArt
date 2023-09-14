@@ -46,8 +46,6 @@ export const getStaticProps = async (context) => {
     res1.json(),
     res2.json(),
   ])
-  console.log(data1.data.attributes)
-
     return {
     props: {
       data1:data1.data.attributes,

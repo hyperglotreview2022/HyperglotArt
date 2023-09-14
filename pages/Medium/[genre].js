@@ -23,9 +23,7 @@ const Genre = () => {
         Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
       } 
       });
-      console.log(res.data.data);
       setProduct(res.data.data);
-      console.log(product.attributes.categories.data[0].attributes.title)
     } catch(err) {
       console.log(err);
     }

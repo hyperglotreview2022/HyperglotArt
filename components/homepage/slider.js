@@ -6,8 +6,6 @@ import Link from "next/link";
 
 const slider = ({product}) => {
 
-  console.log(product)
-
     var settings = {
       dots: true,
       infinite: true,
