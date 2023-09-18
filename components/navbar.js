@@ -4,6 +4,7 @@ import {BsCart} from 'react-icons/bs'
 import {BsList} from 'react-icons/bs'
 import Link from 'next/link'
 import Dropdown from './dropdown'
+import Dropdown2 from './dropdown2'
 import { useState } from 'react'
 
 
@@ -30,7 +31,8 @@ const navbar = () => {
 
         <li><Link href="/">Home</Link></li>
         <li><Link href="#"><Dropdown /></Link></li>
-        <li><Link href="/Shop">Shop</Link></li>
+        <li><Link href="#"><Dropdown2 /></Link></li>
+        <li><Link href="/Artists">Artists</Link></li>
         <li><Link href="/About">About</Link></li>
         <li><Link href="/ContactUs">Contact Us</Link></li>
 

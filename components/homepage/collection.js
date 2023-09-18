@@ -29,7 +29,7 @@ const collection = ({product}) => {
       </div>
         <div className={styles.btncontainer}>
         <Link className={styles.link} href="/Shop">
-          <button className={styles.btn}><span>VIEW ALL EXHIBITIONS</span><FaLongArrowAltRight className={styles.icon}/></button>
+          <button className={styles.btn}><span>VIEW ALL COLLECTIONS</span><FaLongArrowAltRight className={styles.icon}/></button>
         </Link>
           
         </div>

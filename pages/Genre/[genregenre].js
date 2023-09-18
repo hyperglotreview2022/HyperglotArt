@@ -9,7 +9,7 @@ import { useState,useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
 
-const Genre = () => {
+const GenreGenre = () => {
 
   const[product,setProduct] = useState([]);
   const [count1,setCount1] = useState(0);
@@ -98,7 +98,7 @@ product.forEach((data) => {
     setCount2((count2)=>count2-8)
   }
   const router = useRouter();
-  const { genre } = router.query;
+  const { genregenre } = router.query;
 
   useEffect(() => {
       const fetchData = async() => {
@@ -122,7 +122,7 @@ product.forEach((data) => {
       <div className={styles.container}>
         <div className={styles.banner}>
           {/* <p className={styles.bannertext}>Modern Art</p> */}
-          <h1 className={styles.bannerheading}>{genre}</h1>
+          <h1 className={styles.bannerheading}>{genregenre}</h1>
           {/* <p className={styles.bannertext}>Cut from light and fluid mushroom.</p> */}
         </div>
         <div className={styles.sp}>
@@ -146,7 +146,7 @@ product.forEach((data) => {
         </div>
         <div className={styles.subcontainer}>
         {(filteredarray.length === 0 ? newProduct : filteredarray).slice(count1,count2).map(function (item) {
-        if (item.attributes.categories.data[0].attributes.title === genre) {
+        if (item.attributes.genres.data[0].attributes.title === genregenre) {
           return (
             <div>
         <div key={item.id} className={styles.card}>
@@ -175,4 +175,4 @@ product.forEach((data) => {
   )
 }
 
-export default dynamic (() => Promise.resolve(Genre), {ssr: false})
+export default dynamic (() => Promise.resolve(GenreGenre), {ssr: false})

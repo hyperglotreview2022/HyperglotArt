@@ -43,7 +43,7 @@ const slider = ({product}) => {
 
     return (
       <div className={styles.container}>
-        <h2 className="heading"> Exhibitions </h2>
+        <h2 className="heading"> Artworks</h2>
           <Slider {...settings} className={styles.slider}>        
             {product.slice(0,8).map(image =>       
               <div key={image.id} className={styles.slidecontainer}>
@@ -52,7 +52,7 @@ const slider = ({product}) => {
                 <Image className={styles.img} loader={() => image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/>
                 {/* <Image className={styles.img} loader={() => process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/> */}
                 </div>
-                <div>
+                <div className={styles.info}>
                   <h1 className={styles.sliderheading}>{image.attributes.title}</h1>
                   <h3 className={styles.subheading}>{image.attributes.desc}</h3>
                 </div>
