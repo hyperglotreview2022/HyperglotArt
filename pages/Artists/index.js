@@ -7,8 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import data from '../api/artdata'
 import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
-import { FaArrowLeft } from "react-icons/fa6";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const Products = () => {
 
