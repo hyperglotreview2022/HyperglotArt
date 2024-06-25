@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import styles from '../../styles/slider.module.css'
 import Image from "next/image";
 import Link from "next/link";
+import artworks from "@/pages/api/artworks";
 
-const slider = ({product}) => {
+const slider = () => {
 
     var settings = {
       dots: true,
@@ -43,21 +44,20 @@ const slider = ({product}) => {
 
     return (
       <div className={styles.container}>
-        <h2 className="heading"> Artworks</h2>
+        <h2 className="heading">Artworks</h2>
           <Slider {...settings} className={styles.slider}>        
-            {product.slice(0,8).map(image =>       
+            {artworks.slice(0,8).map(image =>       
               <div key={image.id} className={styles.slidecontainer}>
               <Link className={styles.link} href={`/SingleProduct/${image.id}`}>
                 <div className={styles.imgcontainer}>
-                <Image className={styles.img} loader={() => image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/>
+                <Image className={styles.img} loader={() => image.url} unoptimized={true} src={image.url} width={300} height={700} alt="image"/>
                 {/* <Image className={styles.img} loader={() => process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={process.env.NEXT_PUBLIC_UPLOAD_URL+image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/> */}
                 </div>
                 <div className={styles.info}>
-                  <h1 className={styles.sliderheading}>{image.attributes.title}</h1>
-                  <h3 className={styles.subheading}>{image.attributes.desc}</h3>
+                  <h1 className={styles.sliderheading}>{image.title}</h1>
+                  <h3 className={styles.subheading}>{image.artistname}</h3>
                 </div>
               </Link>
-
               </div>
             )}
           </Slider>

@@ -5,16 +5,26 @@
   --light-blue:rgb(249, 249, 249);
   --brown:#b89e4f;
 }
-
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+}
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: min-content;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .heading{
   font-family: 'Playfair Display', serif;
-  font-size: 55px;
+  font-size: 48px;
   letter-spacing: -3px;
   font-weight: 300;
   margin-bottom: 0;
@@ -22,8 +32,47 @@ body{
 .marginleft{
   margin-left: 1vw;
 }
+.button-swiper{
+  width: 87.5vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper-button-next,.swiper-button-prev{
+  top: unset !important;
+  left: unset !important;
+  bottom: unset !important;
+  right: unset !important;
+  height: 10px !important;
+  width: 10px !important;
+  position: unset !important;
+  color: black !important;
+  background-color: white;
+  padding: 10px 0.75vw;
+  border-radius: 50%;
+  border: 1.5px solid black;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+.swiper-controller{
+  position: relative;
+}
+.button-Arrangement{
+  position: absolute;
+  left: 1vw;
+  top: 50%;
+}
 @media screen and (max-width: 768px){
   .heading{
   font-size: 44px;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    padding: 20px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 30px !important;
   }
 }

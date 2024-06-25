@@ -1,22 +1,25 @@
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
-import styles from '../../styles/contactus.module.css'
-import Contactform from '../../components/Contactus/contactus'
-import Map from '../../components/Contactus/map'
+import Navbar from "@/components/navbarforpages";
+import Footer from "@/components/footer";
+import styles from "../../styles/contactus.module.css";
+import Contactform from "../../components/Contactus/contactus";
+import Map from "../../components/Contactus/map";
 import dynamic from "next/dynamic";
+import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
 
 const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <div className={styles.container}>
-        <h1 className="heading">Contact Us</h1>
-        <Contactform />
-        <Map />
-      </div>
-      <Footer />
+      <SmoothScroll>
+        <div className={styles.container}>
+          <h1 className="heading">Contact Us</h1>
+          <Contactform />
+          <Map />
+        </div>
+        <Footer />
+      </SmoothScroll>
     </>
-  )
-}
+  );
+};
 
-export default dynamic (() => Promise.resolve(ContactUs), {ssr: false})
+export default dynamic(() => Promise.resolve(ContactUs), { ssr: false });

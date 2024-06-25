@@ -9,10 +9,6 @@
   text-align: center;
   padding-left: 5vw;
   padding-top: 50px;
-  /* gap: 30px; */
-  /* color: white; */
-  /* background-color: rgb(33, 18, 18); */
-  /* height: 450px; */
 }
 .bannerheading{
   font-family: 'Playfair Display', serif;
@@ -28,7 +24,6 @@
   color: var(--brown);
 }
 .subcontainer{
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
@@ -87,6 +82,8 @@
 .sp{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1vw;
   padding: 20px 5vw 0;
 }
@@ -123,6 +120,54 @@ background: var(--brown);
   justify-content: center;
   gap: 2vw;
   margin-bottom: 50px;
+}
+.errorcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.errormessage{
+  font-size: 32px;
+}
+.loading{
+  position: absolute;
+  top: 42%;
+  left: 40%;
+  height: 200px;
+  width: 20vw;
+}
+.filtertopics{
+  font-size: 28px;
+}
+.options2,.options1{
+outline: none;
+border: none;
+}
+.options{
+  padding: 10px 0.5vw;
+  border-radius: 10px;
+  border: 1px solid rgb(222, 222, 222);
+}
+.filterbtn{
+  background-color: white;
+  border: 1px solid rgb(164, 116, 116);
+  color: rgb(164, 116, 116);
+  font-size: 16px;
+  padding: 5px 1vw;
+  margin-top: 30px;
+}
+.afilterbtn{
+  background-color: white;
+  border: 1px solid rgb(208, 208, 208);
+  color: rgb(208, 208, 208);
+  font-size: 16px;
+  padding: 5px 1vw;
+  margin-top: 30px;
+}
+.buttons{
+  display: flex;
+  gap: 2%;
+  justify-content: center;
 }
 @media screen and (max-width: 1200px){
   .subcontainer{

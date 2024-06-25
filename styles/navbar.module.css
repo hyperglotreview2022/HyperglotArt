@@ -1,37 +1,66 @@
-
+.none{
+  width: 100vw;
+  color: white;
+  position: fixed;
+  top: -500px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+.mobileuser{
+  display: none;
+}
 .navbar{
-  width: 100%;
-  background: var(--light-blue);
-  display: flex;
-  align-items: center;
-  padding: 0 5%;
-  border-bottom: 1px solid rgb(185, 185, 185);
-  height: 100px;
+  width: 100vw;
+  color: white;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
+  transition: 0.3s;
 }
-.logo{
-  width: 20vw;
+.clear{
+  padding: 10px 5vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  transition: 0.3s;
+}
+.dark{
+  padding: 10px 5vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+}
+.exit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
 }
 .logo h1{
   font-weight: 100;
+  margin: 0;
 }
 .nav ul{
   display: flex;
   justify-content: space-between;
-  width: 45vw;
+  align-items: center;
+  gap: 2vw;
 }
 .nav{
 display:flex;
-justify-content: space-evenly;
+justify-content: space-between;
 gap: 10vw;
 }
 .nav .end{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10vw;
   color: rgb(28, 28, 28);
   font-weight: 300;
   text-decoration: none;
@@ -42,6 +71,79 @@ gap: 10vw;
   justify-content: space-between;
   align-items: center;
   gap: 2vw;
+  position: relative;
+}
+.searchmodal{
+  color: white;
+  position: absolute;
+  top: 55px;
+  left: -15vw;
+  padding: 10px 1vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgb(185, 185, 185);
+  z-index: 5;
+}
+.searchmodald{
+  color: white;
+  position: absolute;
+  top: 55px;
+  left: -15vw;
+  padding: 10px 1vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.inputcont input{
+  width: 15vw;
+  background: none;
+  border: none;
+  margin-left: 5px;
+  font-size: 17px;
+  color: white;
+  padding-bottom: 10px;
+}
+.inputcont input::placeholder{
+  color: white;
+}
+.inputcont input:focus{
+  outline: none;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.searchedcont{
+  border-bottom: 1px solid black;
+  color: white;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+}
+.lists{
+  overflow: scroll;
+  max-height: 250px;
+}
+.lists::-webkit-scrollbar {
+  width: 2px;
+}
+.lists::-webkit-scrollbar-thumb {
+  background: white;
+}
+.no{
+  padding: 10px 0;
+}
+.searchedtitle{
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.searchedname{
+  font-size: 12px;
+  font-weight: 400;
+}
+.searchicon1{
+  font-size: 12px;
+  color: white;
 }
 .nav .end p:hover{  
   cursor: pointer;
@@ -49,29 +151,71 @@ gap: 10vw;
 }
 .nav ul li{
   list-style: none;
-
 }
 .nav ul li a{
-  color: rgb(28, 28, 28);
-  font-weight: 300;
+  color: white;
+  font-weight: 500;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-.nav ul li a:hover{
-  color: rgb(126, 126, 126);
-}
 .icon{
   font-size: 20px;
-  color: rgb(109, 109, 109);
+  color: white;
 }
 .icon:hover{
-  color: rgb(170, 170, 170);
   cursor: pointer;
 }
 .navicon{
   display: none;
 }
+.login{
+  border: 1px solid white;
+  padding: 5px 1vw;
+  color: white;
+  text-decoration: none;
+}
+.login:hover{
+  background-color: white;
+  color: black;
+}
+.logup{
+  border: 1px solid white;
+  padding: 5px 1vw;
+  color: white;
+  text-decoration: none;
+}
+.logup:hover{
+  background-color: white;
+  color: black;
+}
+.logout{
+  border: 1px solid white;
+  padding: 5px 1vw;
+  color: white;
+  text-decoration: none;
+}
+.logout:hover{
+  background-color: white;
+  color: black;
+}
+.logincont{
+  display: flex;
+  gap: 2vw;
+}
+.userimage{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.usercont{
+  display: flex;
+  align-items: center;
+}
+.username{
+  margin: 0 1vw 0 0.5vw;
+}
 @media screen and (max-width: 1200px){
+
   .navbar{
     width:100%;
     gap:40vw;
@@ -104,59 +248,94 @@ width: 25vw;
 }
 }
 @media screen and (max-width: 768px){
+  .nav ul li a:hover{
+    color: black;
+  }
   .navbar{
-    width: 95vw;
-    gap: 20vw;
+    width: 90vw;
+    gap: 0;
+    height: auto;
+    padding: 0;
   }
   .logo{
-    width: 60vw;
+    width: fit-content;
   }
   .logo h1{
-    font-size: 26px;
+    font-size: 22px;
+    width: fit-content;
   }
   .nav .end{
     gap: 5vw;
+    width: auto;
   }
   .nav .endend{
-    width: 55vw;
-    gap: 10vw;
-    font-size: 28px;
+    /* width: 55vw; */
+    gap: 5vw;
+    font-size: 18px;
     transition: 0.3s;
   }
   .icon{
     font-size: 24px;
   }
   .navicon{
-    padding: 10px 18px;
+    padding: 5px 1vw;
   }
   .endend{
     position: absolute;
     justify-content: center;
-    padding: 40px 0px;
     left: 18%;
   }
+  .login{
+    margin: 0;
+    display: none;
+  }
+  .logup{
+    display: none;
+  }
+  .mobileuser{
+    display: block;
+    color: white;
+   height: 30px;
+   width: 30px;   
+   font-weight: 300;
+  }
   .nav ul{
-    height: 70vh;
-    width: 75vw;
-    padding-top: 150px;
-    align-items: center;
-    font-size: 24px;
-    gap: 60px;
+    padding: 10px 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 16px;
+    width: 105%;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .nav ul li{
     display: flex;
-    justify-content: center;
-    width: 80vw;
-    padding-bottom: 10px;
+    justify-content: flex-start;
+    width: 90vw;
+    padding: 10px 0;
     border-bottom: 1px solid rgb(106, 106, 106);
   }
   .up{
-    top: 70px;
+    top: 47.5px;
   }
-  .up1{
-    top: 85px;
+  .clear{
+    padding: 15px 6%;
+    align-items: center;
   }
-  .down1{
-      top:-900px;
+  .dark{
+    align-items: center;
+    padding: 15px 6%;
+  }
+  .searchmodal,.searchmodald{
+    top: 46.5px;
+    left: -56vw;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .inputcont input{
+    width: 90%;
+  }
+  .searchicon1{
+    font-size: 16px;
   }
 }

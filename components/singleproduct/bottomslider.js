@@ -48,11 +48,11 @@ const bottomslider = ({product}) => {
               <div key={image.id} className={styles.slidecontainer}>
               <Link className={styles.link} href={`/SingleProduct/${image.id}`}>
                 <div className={styles.imgcontainer}>
-                <Image className={styles.img} loader={() => image?.attributes?.img1?.data?.attributes?.url} unoptimized={true} src={image?.attributes?.img1?.data?.attributes?.url} width={300} height={700} alt="image"/>
+                <Image className={styles.img} loader={() => image.url} unoptimized={true} src={image.url} width={300} height={700} alt="image"/>
                 </div>
                 <div className={styles.info}>
-                  <h1 className={styles.sliderheading}>{image.attributes.title}</h1>
-                  <h3 className={styles.subheading}>{image.attributes.desc}</h3>
+                  <h1 className={styles.sliderheading}>{image.title}</h1>
+                  <h3 className={styles.subheading}>{image.desc}</h3>
                 </div>
               </Link>
 

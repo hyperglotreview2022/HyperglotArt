@@ -6,67 +6,30 @@ import Slider from '../../components/singleproduct/slider'
 import dynamic from "next/dynamic";
 import Sidecontent from "@/components/singleproduct/sidecontent";
 import Bottomcontent from "@/components/singleproduct/bottomcontent";
+import { useRouter } from "next/router";
+import artworks from '../api/artworks'
 
-export const getStaticPaths = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/products`, {
-    headers: {
-     Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
-   } 
-   });
-  const items = await res.json();
-  const paths = items.data.map(item =>{
-    return{
-      params:{
-        id : item.id.toString(),
-      } 
-    };
-  });
+const singleProduct = () => {
+  let product = []
+  const router = useRouter();
+  const { id } = router.query;
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps = async (context) => {
-  const id = context.params.id;
-  const [res1,res2] = await Promise.all([
-    fetch(`${process.env.NEXT_PUBLIC_URL}/products/${id}?populate=*`, {
-          headers: {
-           Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
-         } 
-         }),
-    fetch(`${process.env.NEXT_PUBLIC_URL}/products?populate=*`, {
-          headers: {
-           Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
-         } 
-         }),
-        ]);
-  const [data1,data2] = await Promise.all([
-    res1.json(),
-    res2.json(),
-  ])
-    return {
-    props: {
-      data1:data1.data.attributes,
-      data2:data2.data,
-    },
-  };
-};
-
-const singleProduct = ({data1,data2}) => {
-
+  artworks.map((data) => {
+    if(data.id == id){
+      product.push(data);
+    }
+  })
 
   return (
     <div>
     <Navbar />
       <div className={styles.container}>
         <div className={styles.flex}>
-        <Slider data1={data1}/>
-        <Sidecontent data1={data1}/>
+        <Slider data1={product}/>
+        <Sidecontent data1={product}/>
         </div>
         <div>
-          <Bottomcontent data2={data2}/>
+          <Bottomcontent data2={artworks}/>
         </div>
       </div>
 

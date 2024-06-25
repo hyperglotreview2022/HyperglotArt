@@ -5,16 +5,14 @@ import styles from '../../styles/hero.module.css'
 const herocomponent = () => {
   return (
     <div className={styles.herosection}>
-      <div className={styles.textarea}>
-        <h1 className="heading marginleft">Hyperglot, Master Drawings</h1>
-        <div className={styles.herotext}>
-          <p>FEBRUARY 27 - MARCH 28,2023</p>
-          <p>On view at The Met First Avenue in Gallery 209</p>
-          <p>Accompanied by Catalogue and an Audio Guide</p>
-        </div>
+    <div className={styles.cover}>
+      <div className={styles.flex}>
+        <div className={styles.top}>Art investing for all</div>
+        <div className={styles.btm}>What if you allocated 5% of your portfolio to Art?</div>
       </div>
-      
-      <Image className={styles.img} src={"/heroimage/heroimg.png"} width={2000} height={2000} alt="hero-image"/>
+    </div>
+      <video className={styles.video} src="/herovideo/herovideonew.mp4" autoPlay loop muted>
+      </video>
     </div>
   )
 }

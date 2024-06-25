@@ -2,33 +2,23 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/navbar'
 import Hero from '../components/homepage/herocomponent'
-import Herobutton from '../components/homepage/herobutton'
-import Slider from '../components/homepage/slider'
-import Featured from '../components/homepage/featured'
 import Events from '../components/homepage/events'
-import Collection from '../components/homepage/collection'
 import Footer from '../components/footer'
 import React from 'react';
 import dynamic from "next/dynamic";
+import data from './api/artdata'
+import OurServices from '@/components/homepage/OurServices'
+import ArtworksSlider from '@/components/homepage/ArtworksSlider'
+import artworks from './api/artworks'
+import StandOut from '@/components/homepage/StandOut'
+import Subscriptions from '@/components/homepage/Subscriptions'
+import Artists from '@/components/homepage/Artists'
+import SmoothScroll from '@/components/SmoothScroll/SmoothScroll.js'
+import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-export const getStaticProps = async () => {
-  const resulting = await fetch(`${process.env.NEXT_PUBLIC_URL}/products?populate=*`, {
-    headers: {
-     Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
-   } 
-   });
-  const result = await resulting.json();
-  return {
-    props: {
-      product: result.data,
-    },
-  };
-};
-
-const Home = ({product}) => {
+const Home = () => {
   
   return (
     <>
@@ -38,15 +28,19 @@ const Home = ({product}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      <main>
-        <Navbar />
-        <Hero />
-        <Herobutton />
-        <Slider product={product}/>
-        <Featured />
-        <Events />
-        <Collection product={product}/>
-        <Footer />
+      <main className={styles.mainpage}>
+          <Navbar />
+          <SmoothScroll>
+          <Hero />
+          <OurServices />
+          <ArtworksSlider artworks={artworks}/>
+          <StandOut />
+          <Subscriptions />
+          <Artists data={data}/>
+          <Events />
+
+          <Footer />
+          </SmoothScroll>
       </main>        
       
     </>

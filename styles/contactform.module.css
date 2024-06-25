@@ -8,6 +8,7 @@
 }
 .img{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  object-fit: cover;
 }
 .formcontainer{
   padding: 0 5vw;
@@ -48,14 +49,24 @@
 }
 .button{
   color: white;
-  background-color: var(--brown);
-  width: 80px;
-  height: 40px;
+  background-color: black;
+  padding: 10px 1vw;
+  width: fit-content;
   border: none;
   transition: 0.3s;
 }
-.button:hover{
-  background-color: var(--brown);
+.buttonlink{
+  color: white;
+  background-color: black;
+  padding: 10px 3vw;
+  border: 1px solid black;
+  width: fit-content;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.buttonlink:hover{
+  background-color: white;
+  color: black;
 }
 @media screen and (max-width: 1200px){
   .container{

@@ -1,36 +1,22 @@
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/navbarforpages'
 import Footer from '@/components/footer'
 import styles from '../../styles/Artists.module.css'
 import dynamic from "next/dynamic";
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import data from '../api/artdata'
+import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 
-export const getStaticProps = async () => {
-  const resulting = await fetch(`${process.env.NEXT_PUBLIC_URL}/artists?populate=*`, {
-    headers: {
-     Authorization: "bearer "+process.env.NEXT_PUBLIC_TOKEN,
-   } 
-   });
-  const result = await resulting.json();
-  return {
-    props: {
-      product: result.data,
-    },
-  };
-};
-
-const Products = ({product}) => {
+const Products = () => {
 
   const [count1,setCount1] = useState(0)
   const [count2,setCount2] = useState(8)
-
-  product = product.sort((a, b) => {
-    if (a.attributes.title < b.attributes.title) {
-      return -1;
-    }
-  });
-
+  const [artdata,setArtdata] = useState(data) 
+  const [alphabet,setAlphabet] = useState('')
+  const alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
   function next(){
     setCount1((count1)=>count1+8)
@@ -42,35 +28,55 @@ const Products = ({product}) => {
     setCount2((count2)=>count2-8)
   }
 
+  function filter(){
+    let result = data.filter(f=>f.name.toLowerCase().startsWith(alphabet))
+    setArtdata(result)
+  }
+
+  function removefilter(){
+    setArtdata(data)
+    setAlphabet('')
+  }
+
+
   return (
     <div>
       <Navbar />
+      <SmoothScroll>
       <div className={styles.container}>
+      <div className={styles.backg}></div>
       <div className={styles.banner}>
-          {/* <p className={styles.bannertext}>Modern Art</p> */}
           <h1 className={styles.bannerheading}>Artists</h1>
-          {/* <p className={styles.bannertext}>Cut from light and fluid mushroom.</p> */}
         </div>
 
+        <div className={styles.alphacontainer}>
+          {alpha.map((data) => <div onClick={()=>{setAlphabet(data)}} id={data} className={alphabet === data ? `${styles.selected}`: `${styles.alpha}`}>{data}</div>)}
+        </div>
+
+        <div className={styles.buttons}>
+        <button onClick={removefilter} className={alphabet ? `${styles.filterbtn}` : `${styles.afilterbtn}`}>Remove Filter</button>
+        <button onClick={filter} className={alphabet ? `${styles.filterbtn}` : `${styles.afilterbtn}`}>Apply Filter</button>
+        </div>
+        
+
         <div className={styles.container2}>
-      {product.slice(count1,count2).map(data =>{
-        return(
-          <div key={data.id} >
+      {artdata.slice(count1,count2).map(data=> <div key={data.id} >
           <Link className={styles.link} href={`/Artistsartworks/${data.id}`}>
-          <Image className={styles.img} loader={() => data.attributes.img1.data.attributes.url} src={data.attributes.img1.data.attributes.url} width={300} height={700} alt="image"/>
-           <div className={styles.artistname}>{data.attributes.title}</div>
+          <Image className={styles.img} loader={() => data.url} src={data.url} width={300} height={700} alt="image"/>
+           <div className={styles.artistname}>{data.name}</div>
+           <div className={styles.profession}>Artist</div>
            </Link>
-         </div>
-         )}
-      )}
+      </div>)}
+      
       </div>
       <div className={styles.btncontainer}>
-      <button className={!count1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={back} disabled={count1 ? false : true }>previous</button>
-      <button className={count2 > product.length ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={next}  disabled={count2 > product.length ? true : false }>next</button>
+      <button className={!count1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={back} disabled={count1 ? false : true }><FaArrowLeft /></button>
+      <button className={count2 > artdata.length-1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={next}  disabled={count2 > artdata.length-1 ? true : false }><FaArrowRight /></button>
       </div>
 
       </div>
       <Footer />
+      </SmoothScroll>
     </div>
   )
 }

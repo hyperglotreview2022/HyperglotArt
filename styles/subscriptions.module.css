@@ -1,0 +1,78 @@
+.container{
+  padding: 80px 5%;
+  background-color: black;
+  color: white;
+} 
+.topic{
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.card2{
+  padding: 30px 3vw;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+.card1{
+  padding: 30px 3vw;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  color: black;
+  background-color: rgb(247, 247, 247);
+}
+.card{
+  padding: 30px 3vw;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  color: black;
+  background-color: rgb(234, 234, 234);
+}
+.one{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+.two{
+  font-size: 32px;
+  margin-top: 40px;
+}
+.two span{
+  font-size: 24px;
+}
+.three{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  margin-top: 70px;
+}
+.four{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  margin-top: 40px;
+}
+.btn{
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(143, 143, 143);
+  padding: 15px 2vw;
+  font-size: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 768px){
+  .flex{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card{
+    width: 92.5%;
+  }
+}
