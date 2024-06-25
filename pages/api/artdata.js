@@ -18,7 +18,7 @@ const data = [
   url:"/Artists-Artworks/ShayaniBoral/thegardenofgalleria.jpg",},
   { id:'6',
   name: 'Prithuj Mondal',
-  url:"/Artists-Artworks/PrithujMondal/1000miles.jpg",},
+  url:"/Artists-Artworks/PrithujMondal/conversation.jpg",},
   { id:'7',
   name: 'Preeti Sethi',
   url:"/Artists-Artworks/PreetiSethi/16.jpg",},
