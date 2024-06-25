@@ -1,6 +1,6 @@
 "use client";
 import { KindeProvider } from "@kinde-oss/kinde-auth-nextjs";
-import Auth from "./api/auth/[...kindeAuth]";
+import Auth from "./auth";
 
 export default function RootLayout({ children }) {
   return (
