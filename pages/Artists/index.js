@@ -44,7 +44,6 @@ const Products = () => {
       <Navbar />
       <SmoothScroll>
       <div className={styles.container}>
-      <div className={styles.backg}></div>
       <div className={styles.banner}>
           <h1 className={styles.bannerheading}>Artists</h1>
         </div>
@@ -59,7 +58,7 @@ const Products = () => {
         </div>
         
 
-        <div className={styles.container2}>
+        <div className={styles.container3}>
       {artdata.slice(count1,count2).map(data=> <div key={data.id} >
           <Link className={styles.link} href={`/Artistsartworks/${data.id}`}>
           <Image className={styles.img} loader={() => data.url} src={data.url} width={300} height={700} alt="image"/>

@@ -54,14 +54,14 @@ const sidecontent = ({data1}) => {
   return (
   <div className={styles.sidecontainer}>
     <div className={styles.topcontainer}>
-      <div className={styles.title}>"{data1[0]?.title}"</div>
+      <div className={styles.title}>{data1[0]?.title}</div>
       <div className={styles.artist}>Art by <span>{data1[0]?.artistname}</span></div>
-      <div className={styles.price}><span>Price - </span>
+      <div className={styles.price}>Price - <span>On Request</span>
       {/* Rs. {data1[0]?.price} */}
       </div>
     </div>
     <div className={styles.btncontainer}>
-    {isAuthenticated ? <button onClick={handleSubmit} className={styles.btn}><span>{loading ? "Sending..." : "Buy"}</span></button> : <LoginLink postLoginRedirectURL={`/SingleProduct/${id}`} className={styles.btnlink}><span>Buy</span></LoginLink>}
+    {isAuthenticated ? <button onClick={handleSubmit} className={styles.btn}><span>{loading ? "Sending..." : "Buy"}</span></button> : <LoginLink postLoginRedirectURL={`/SingleProduct/${id}`} className={styles.btnlink}><span>Request Purchase</span></LoginLink>}
     </div>
     <div className={styles.bottomcontainer}>
       <div className={styles.btmcont}>

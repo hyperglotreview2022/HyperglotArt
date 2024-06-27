@@ -72,7 +72,8 @@
     flex-direction: column;
     gap: 20px;
   }
-  .card{
+  .card,.card1,.card2{
     width: 92.5%;
   }
+  
 }

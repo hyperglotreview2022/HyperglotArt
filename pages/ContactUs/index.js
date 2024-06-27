@@ -5,6 +5,7 @@ import Contactform from "../../components/Contactus/contactus";
 import Map from "../../components/Contactus/map";
 import dynamic from "next/dynamic";
 import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
+import ContactDetails from "@/components/Contactus/ContactDetails";
 
 const ContactUs = () => {
   return (
@@ -14,6 +15,7 @@ const ContactUs = () => {
         <div className={styles.container}>
           <h1 className="heading">Contact Us</h1>
           <Contactform />
+          <ContactDetails />
           <Map />
         </div>
         <Footer />

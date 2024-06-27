@@ -24,8 +24,6 @@ const navbar = () => {
   const router = useRouter();
   const { query } = router;
 
-  console.log(query)
-
   let result = [];
 
   function change(){

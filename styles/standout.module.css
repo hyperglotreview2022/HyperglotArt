@@ -95,13 +95,23 @@
   margin: 20px 0 30px;
 }
 @media screen and (max-width: 768px){
+  .desc1{
+    padding: 0 5%;
+  }
   .flex,.antiflex{
     flex-direction: column-reverse;
     gap: 20px;
   }
+  .cover1, .imgcont1, .img1{
+    height: 300px;
+  }
+  .border1{
+    height: 200px;
+  }
   .img{
-    width: 100%;
-    height: auto;
+    width: 90vw;
+    height: 250px;
+    object-fit: cover;
   }
   .info, .heading{
     width: 100%;

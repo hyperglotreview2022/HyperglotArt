@@ -24,7 +24,7 @@ const data = [
   url:"/Artists-Artworks/PreetiSethi/16.jpg",},
   { id:'8',
   name: 'Debangsu Biswas',
-  url:"/Artists-Artworks/DebangsuBiswas/shelter-1 (2).jpg",},
+  url:"/Artists-Artworks/DebangsuBiswas/1.jpg",},
 ]
 
 export default data;

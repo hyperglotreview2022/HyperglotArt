@@ -1,6 +1,6 @@
 .container{
   text-align: center;
-  margin-top: 100px;
+  padding-top: 60px;
 }
 .banner{
   display: flex;
@@ -12,13 +12,14 @@
 }
 .bannerheading{
   font-family: 'Playfair Display', serif;
-  font-size: 70px;
+  font-size: 48px;
   letter-spacing: -3px;
   font-weight: 300;
   margin: 0;
   border-bottom: 2px solid black;
   width: 90vw;
   padding-bottom: 10px;
+  text-transform: capitalize;
 }
 .bannertext{
   color: var(--brown);
@@ -28,6 +29,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
   gap: 20px;
+  height: 1000px;
 }
 .card{
   text-align: left;
@@ -36,9 +38,9 @@
   object-fit: cover;
 }
 .img{
-  width: 22vw;
-  height: 350px;
-  object-fit: contain;
+  width: 20vw;
+  height: 400px;
+  object-fit: cover;
 }
 .name{
   font-family: 'Playfair Display', serif;
@@ -48,18 +50,21 @@
   position: relative;
 }
 .price{
+  font-family: 'Poppins', sans-serif;
   position: absolute;
   display: flex;
   align-items: center;
-  font-size: 16px;
-  color: var(--brown);
+  font-size: 14px;
+  color: black;
   top: 0;
   opacity: 1;
   transition: 0.3s;
 }
 .add{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
   position: absolute;
-  color: var(--brown);
+  color: black;
   top: -20px;
   opacity: 0;
   transition: 0.3s;
@@ -88,32 +93,30 @@
   padding: 20px 5vw 0;
 }
 .button{
-  width: 10vw;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--brown);
-  border: 1px solid var(--brown);
+  color: black;
+  border: 1px solid black;
   background: none;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 20px;
   font-weight: 300;
   position: relative;
   transition: 0.5s;
-  border-radius: 25px;
+  border-radius: 40px;
 }
 .active{
   cursor: pointer;
   color: white;
   border: none;
-  background: rgb(164, 116, 116);
+  background: rgb(120, 120, 120);
 }
 .button:hover{
 cursor: pointer;
 color: white;
-border: 1px solid var(--brown);
-background: var(--brown);
+background: black;
 }
 .btncontainer{
   display: flex;
@@ -137,32 +140,33 @@ background: var(--brown);
   width: 20vw;
 }
 .filtertopics{
-  font-size: 28px;
+  font-size: 24px;
 }
 .options2,.options1{
 outline: none;
 border: none;
 }
 .options{
-  padding: 10px 0.5vw;
-  border-radius: 10px;
+  padding: 8px 0.5vw;
   border: 1px solid rgb(222, 222, 222);
 }
 .filterbtn{
   background-color: white;
-  border: 1px solid rgb(164, 116, 116);
-  color: rgb(164, 116, 116);
-  font-size: 16px;
+  border: 1px solid black;
+  color: black;
+  font-size: 14px;
   padding: 5px 1vw;
   margin-top: 30px;
+  width: 10vw;
 }
 .afilterbtn{
   background-color: white;
   border: 1px solid rgb(208, 208, 208);
   color: rgb(208, 208, 208);
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 1vw;
   margin-top: 30px;
+  width: 10vw;
 }
 .buttons{
   display: flex;

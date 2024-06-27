@@ -1,5 +1,6 @@
 .container{
   text-align: center;
+  padding-top: 80px;
 }
 .backg{
   width: 100%;
@@ -22,11 +23,27 @@
   width: 90vw;
   padding-bottom: 10px;
 }
+.bannerheading1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  letter-spacing: -3px;
+  font-weight: 300;
+  margin-top: 60px;
+  padding-bottom: 10px;
+}
 .container2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
   gap: 20px;
+  height: 900px;
+}
+.container3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+  gap: 20px;
+  height: 950px;
 }
 .img{
   width: 20vw;
@@ -130,6 +147,13 @@ background: black;
   display: flex;
   gap: 2%;
   justify-content: center;
+}
+.artistsdescont{
+  display: flex;
+  gap: 5%;
+  padding: 30px 10%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
 }
 @media screen and (max-width: 1200px){
   .container2{

@@ -1,3 +1,8 @@
 .mainpage{
   height: 7990px;
 }
+@media screen and (max-width: 768px){
+  .mainpage{
+    height: 13200px !important;
+  }
+}

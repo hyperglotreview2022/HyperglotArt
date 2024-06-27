@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbarforpages";
 import Footer from '../../components/footer'
 import styles from '../../styles/genre.module.css'
 import { BsCurrencyRupee } from 'react-icons/bs'
@@ -8,6 +8,9 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import Link from "next/link";
 import artworks from '../api/artworks'
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
 
 const Genre = () => {
 
@@ -20,8 +23,6 @@ const Genre = () => {
   const router = useRouter();
   const { genre } = router.query;
   let newdata;
-
-  console.log(sortorder,pricerange)
 
   function filter(){
     if(sortorder === 'low'){
@@ -161,6 +162,7 @@ artworks.map((data) => {
   return(
     <>
     <Navbar/>
+    <SmoothScroll> 
       <div className={styles.container}>
         <div className={styles.banner}>
           <h1 className={styles.bannerheading}>{genre}</h1>
@@ -197,7 +199,7 @@ artworks.map((data) => {
         <button onClick={filter} className={styles.filterbtn}>Apply Filter</button>
         </div>
         <div className={styles.subcontainer}>
-{filteredarray ? filteredarray.map(item=><div key={item.id}>
+{filteredarray ? filteredarray.slice(count1,count2).map(item=><div key={item.id}>
         <div className={styles.card}>
         <Link className={styles.link} href={`/SingleProduct/${item.id}`}>
         <Image className={styles.img} loader={() => item.url} src={item.url} width={300} height={700} alt="image"/>
@@ -208,7 +210,7 @@ artworks.map((data) => {
       </div>
       </Link>
     </div>
-    </div>) : product.map(item=><div key={item.id}>
+    </div>) : product.slice(count1,count2).map(item=><div key={item.id}>
         <div className={styles.card}>
         <Link className={styles.link} href={`/SingleProduct/${item.id}`}>
         <Image className={styles.img} loader={() => item.url} src={item.url} width={300} height={700} alt="image"/>
@@ -224,11 +226,12 @@ artworks.map((data) => {
 
         </div>
         <div className={styles.btncontainer}>
-      <button className={!count1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={back} disabled={count1 ? false : true }>previous</button>
-      <button className={count2 > product.length ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={next}  disabled={count2 > product.length ? true : false }>next</button>
+      <button className={!count1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={back} disabled={count1 ? false : true }><FaArrowLeft /></button>
+      <button className={filteredarray ? count2 > filteredarray.length-1 ? `${styles.button} ${styles.active}` : `${styles.button}`: count2 > product.length-1 ? `${styles.button} ${styles.active}` : `${styles.button}`} onClick={next}  disabled={filteredarray ? count2 > filteredarray.length-1 ? true : false : count2 > product.length-1 ? true : false}><FaArrowRight /></button>
       </div>
       </div>
       <Footer />
+      </SmoothScroll>
     </>
   )
 }
