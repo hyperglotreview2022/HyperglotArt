@@ -1,7 +1,7 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaHourglassStart } from "react-icons/fa6";
+import { FaHourglassStart } from "react-icons/fa";
 import styles from '../../styles/about.module.css'
 
 export default function Timeline() {
