@@ -25,6 +25,12 @@ const data = [
   { id:'8',
   name: 'Debangsu Biswas',
   url:"/Artists-Artworks/DebangsuBiswas/1.jpg",},
+  { id:'9',
+  name: 'Meenu Garg',
+  url:"/Artists-Artworks/Meenugarg/1 (1).png",},
+  { id:'10',
+  name: 'Balwinder Tanwar',
+  url:"/Artists-Artworks/BalwinderTanwar/1 (3).jpg",},
 ]
 
 export default data;
