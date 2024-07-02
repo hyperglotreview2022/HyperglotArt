@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination, A11y } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import EventsSlider from "./EventsSlider";
 import styles from "../../styles/artworksslider.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import SmoothScrollimg from "../SmoothScroll/SmoothScrollimg";
 
 export default function ArtworksSlider({ artworks }) {
   const [offsetY, setOffsetY] = useState(1000);
@@ -28,10 +21,11 @@ export default function ArtworksSlider({ artworks }) {
         <div className={styles.item}>Marketplace Spaces</div>
         <div className={styles.item}>Custom</div>
       </div>
-      <div className={styles.imgcontain} >
+      <EventsSlider artworks={artworks}/>
+      {/* <div className={styles.imgcontain} >
       <SmoothScrollimg>
             <div className={`${styles.one}`} id={artworks[0].url}>
-
+            <Image className={`${styles.frame} ${styles.fone}`} src={'/artimages/frame.png'} width={400} height={400} alt="frame" />
               <Image
                 src={artworks[0].url}
                 className={`${styles.fimg}`}
@@ -45,6 +39,7 @@ export default function ArtworksSlider({ artworks }) {
 
             <div id={artworks[1].url}>
             <Link href={`/Artistsartworks/${artworks[1].id}`}>
+              <Image className={`${styles.frame} ${styles.ftwo}`} src={'/artimages/frame.png'} width={400} height={400} alt="frame" />
               <Image
                 src={artworks[1].url}
                 className={`${styles.fimg} ${styles.two}`}
@@ -109,7 +104,7 @@ export default function ArtworksSlider({ artworks }) {
               />
             </div>
             </SmoothScrollimg>
-      </div>
+      </div> */}
     </div>
   );
 }

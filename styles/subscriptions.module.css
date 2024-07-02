@@ -18,24 +18,36 @@
   border: 1px solid rgb(235, 235, 235);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #005e74;
+  /* -webkit-mask-image: linear-gradient(45deg,rgb(255, 255, 255) 25%,rgba(255, 255, 255, 0.4) 50%,rgb(255, 255, 255) 75%);
+  mask-image: linear-gradient(45deg,rgb(255, 255, 255) 25%,rgba(247, 247, 247, 0.4) 50%,rgb(244, 244, 244) 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0; */
 }
+/* .card2:hover {
+  transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+} */
 .card1{
   padding: 30px 3vw;
   border: 1px solid rgb(235, 235, 235);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
-  color: black;
-  background-color: rgb(247, 247, 247);
+  color: white;
+  background-color: #397b7c;
 }
 .card{
   padding: 30px 3vw;
   border: 1px solid rgb(235, 235, 235);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
-  color: black;
-  background-color: rgb(234, 234, 234);
+  color: white;
+  background-color: #748a8f;
 }
 .one{
   font-size: 14px;
