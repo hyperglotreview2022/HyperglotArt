@@ -1,0 +1,271 @@
+.container{
+  text-align: center;
+  padding-top: 60px;
+}
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-top: 40px;
+}
+.bannerheading{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: -3px;
+    font-weight: 300;
+    margin: 0;
+    border-bottom: 2px solid black;
+    width: 90vw;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.flexcont{
+  padding: 80px 5% 50px;
+  display: flex;
+  gap: 5%;
+}
+.imgc{
+  width: 40vw;
+  height: 400px;
+}
+.img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.right{
+  width: 40vw;
+  text-align: left;
+}
+.heading{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.lheading{
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.ltext{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.lcont{
+  margin:110px 5% 30px;
+  padding:60px 5% 80px;
+  background-color: rgb(245, 245, 245);
+}
+.banner1{
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  margin: 15px 0 30px 0vw;
+}
+.bimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.over{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.btext{
+  font-size: 32px;
+}
+.btext2{
+  font-size: 54px;
+}
+.button5{
+  margin-top: 50px;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 2%;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  z-index: 5;
+}
+.button6{
+  color: black;
+  border: 1px solid black;
+  padding: 15px 5%;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+.button6:hover{
+  color: white;
+  background-color: black;
+}
+.border{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  border: 2px solid white;
+  z-index: 2;
+}
+.bottomcont{
+  margin: 50px 0;
+}
+.btmheading{
+  font-size: 48px;
+}
+.btmflex{
+  display: flex;
+  background-color: rgb(24, 24, 24);
+  border: 1px solid black;
+  align-items: center;
+  margin: 40px 5% 20px;
+  color: white;
+  height: 320px;
+}
+.img10{
+  width: 15vw;
+  height: 250px;
+  object-fit: cover;
+}
+.right11{
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 0 5vw;
+  text-align: left;
+}
+.left11{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 35vw;
+  height: 200px;
+  border-right: 1px solid white;
+  text-align: left;
+  padding: 0 5vw;
+}
+.lefth{
+  font-size: 32px;
+}
+.linput{
+  width: 27vw;
+  padding: 20px 2.5%;
+  border: none;
+}
+.linput:focus{
+  outline: none;
+}
+.lbtn{
+  font-size: 16px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: 1px solid white;
+  padding: 18px 7%;
+}
+.formflex{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 50px;
+}
+.rh{
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.rbtn{
+  font-size: 14px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: 1px solid white;
+  padding: 12px 15%;
+}
+@media screen and (max-width: 768px){
+  .btext2{
+    font-size: 32px;
+  }
+  .button5{
+    font-size: 16px;
+    padding: 10px 10%;
+  }
+  .banner1{
+    height: 300px;
+    margin-top: 0;
+  }
+  .bimg{
+    height: 300px;
+  }
+  .lcont{
+    margin-top: 30px;
+    padding: 50px 5%;
+  }
+  .lheading{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .ltext{
+    font-size: 16px;
+  }
+  .flexcont{
+    padding: 20px 5%;
+    flex-direction: column;
+  }
+  .right,.imgc{
+    width: 100%;
+  }
+  .imgc{
+    margin-bottom: 30px;
+  }
+  .btmheading{
+    font-size: 32px;
+    padding: 0 5%;
+  }
+  .btmflex{
+    flex-direction: column;
+    padding: 50px 5%;
+    height: auto;
+  }
+  .left11{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 0;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  .right11{
+    width: 100%;
+    flex-direction: column;
+  }
+  .img10{
+    width: 100%;
+  }
+  .linput{
+    width: 75vw;
+  }
+  .formflex{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

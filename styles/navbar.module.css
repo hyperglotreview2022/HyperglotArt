@@ -208,6 +208,21 @@ gap: 10vw;
   border-radius: 50%;
   color: white;
 }
+.muserimage{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  display: none;
+}
+.mlogout{
+  border: 1px solid white;
+  padding: 5px 1vw;
+  color: white;
+  text-decoration: none;
+  display: none;
+  font-size: 12px;
+}
 .usercont{
   display: flex;
   align-items: center;
@@ -217,7 +232,6 @@ gap: 10vw;
   color: white;
 }
 @media screen and (max-width: 1200px){
-
   .navbar{
     width:100%;
     gap:40vw;
@@ -251,7 +265,7 @@ width: 25vw;
 }
 @media screen and (max-width: 768px){
   .nav ul li a:hover{
-    color: black;
+    color: white;
   }
   .navbar{
     width: 90vw;
@@ -339,5 +353,19 @@ width: 25vw;
   }
   .searchicon1{
     font-size: 16px;
+  }
+  .username{
+    display: none;
+  }
+  .logout,.userimage{
+    display: none;
+  }
+  .muserimage,.mlogout{
+    display: block;
+  }
+  .mlogout{
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }

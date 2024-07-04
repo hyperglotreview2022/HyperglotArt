@@ -1,11 +1,23 @@
 .container{
   text-align: center;
-  padding: 80px 0 100px;
+  padding: 110px 0 100px;
 }
 .backg{
   width: 100%;
   height: 75px;
   background-color: black;
+}
+.heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: -3px;
+    font-weight: 300;
+    margin: 0;
+    border-bottom: 2px solid black;
+    width: 90vw;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin-left: 5vw;
 }
 .subcontainer{
   display: flex;
@@ -43,6 +55,7 @@
 }
 .img{
   width: 25vw;
+  height: auto;
   object-fit: cover;
 }
 .img1{
@@ -51,6 +64,13 @@
   object-fit: cover;
 }
 .smcontainer{
+  display: flex;
+  gap: 8%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+}
+.smcontainer2{
   display: flex;
   gap: 8%;
   text-align: left;
@@ -87,16 +107,43 @@
   background-color: black;
   width: 34px;
   border-radius: 50%;
-  height: 17px;
+  height: 20px;
   color: white;
 }
 @media screen and (max-width: 1200px){
   .subcontainer{
     flex-direction: column-reverse;
-    padding: 0 5vw;
+    padding: 30px 5vw;
   }
   .img{
     width: 100%;
     height: auto;
+  }
+  .mcontainer{
+    padding: 30px 5%;
+  }
+  .smcontainer{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .smcontainer1{
+    flex-direction: column;
+  }
+  .smcontainer2{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .img1{
+    width: 100%;
+  }
+  .check{
+    width: 40px;
+    height: 15px;
+  }
+  .tick{
+    margin-bottom: 20px;
+  }
+  .container{
+    padding-bottom: 20px;
   }
 }

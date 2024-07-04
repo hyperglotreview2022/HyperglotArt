@@ -47,6 +47,7 @@
   color: white;
   padding: 15px 5%;
   border: 1px solid rgba(0, 0, 0, 0.95);
+  text-decoration: none;
 }
 .btn:hover{
   cursor: pointer;

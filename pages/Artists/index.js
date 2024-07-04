@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import data from '../api/artdata'
-import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
+// import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -42,7 +42,7 @@ const Products = () => {
   return (
     <div>
       <Navbar />
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
       <div className={styles.container}>
       <div className={styles.banner}>
           <h1 className={styles.bannerheading}>Artists</h1>
@@ -59,7 +59,7 @@ const Products = () => {
         
 
         <div className={styles.container3}>
-      {artdata.slice(count1,count2).map(data=> <div key={data.id} >
+      {artdata.slice(count1,count2).map(data=> <div className={styles.card} key={data.id} >
           <Link className={styles.link} href={`/Artistsartworks/${data.id}`}>
           <Image className={styles.img} loader={() => data.url} src={data.url} width={300} height={700} alt="image"/>
            <div className={styles.artistname}>{data.name}</div>
@@ -75,7 +75,7 @@ const Products = () => {
 
       </div>
       <Footer />
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </div>
   )
 }

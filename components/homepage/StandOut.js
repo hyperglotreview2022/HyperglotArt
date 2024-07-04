@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import styles from '../../styles/standout.module.css'
 
@@ -7,7 +8,7 @@ export default function StandOut() {
     <div className={styles.container}>
       <div className={styles.topic}>Stand out with 3D space</div>
       <div className={styles.imgcont1}>
-        <Image src={'/servicesimages/services (1).jpg'} className={styles.img1} width={1200} height={1200} alt='image' />
+        <Image src={'/servicesimages/services (5).jpg'} className={styles.img1} width={1200} height={1200} alt='image' />
         <div className={styles.cover1}>
         <div className={styles.border1}>
           <div className={styles.heading1}>Stand out with 3D spaces</div>
@@ -23,14 +24,14 @@ export default function StandOut() {
             <div>Add artworks, sculptures, audio, and video, and place them in your 3D space.</div>
             <div>Share or embed your 3D exhibition on your own website for a seamless integration.</div>
           </div>
-          <button className={styles.btn}>Get in Touch</button>
+          <Link href={'/ContactUs'} className={styles.btn}>Get in Touch</Link>
         </div>
         <div>
-          <Image src={'/servicesimages/services (1).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/services (6).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
       </div>
 
-      <div className={styles.antiflex}>
+      {/* <div className={styles.antiflex}>
         <div>
           <div className={styles.heading}>Create <span>3D exhibitions</span> within minutes.</div>
           <div className={styles.info}>
@@ -43,7 +44,7 @@ export default function StandOut() {
         <div>
           <Image src={'/servicesimages/services (2).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

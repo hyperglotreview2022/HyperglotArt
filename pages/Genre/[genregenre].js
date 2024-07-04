@@ -10,7 +10,7 @@ import Link from "next/link";
 import artworks from '../api/artworks'
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
+// import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
 
 const GenreGenre = () => {
 
@@ -162,13 +162,13 @@ artworks.map((data) => {
   return(
     <>
     <Navbar/>
-    <SmoothScroll>
+    {/* <SmoothScroll> */}
       <div className={styles.container}>
         <div className={styles.banner}>
           <h1 className={styles.bannerheading}>{genregenre}</h1>
         </div>
         <div className={styles.sp}>
-
+        <div className={styles.sp1}>
         <div className={styles.filtertopics}>Filter by Price:</div>
         <div className={styles.options}>
         <select className={styles.options2} defaultValue={pricerange} value={pricerange} onChange={(e) => {setPricerange(e.target.value)}}>
@@ -182,7 +182,8 @@ artworks.map((data) => {
           <option value="7">90,000-1,00,000</option>
         </select>
         </div>
-
+        </div>
+        <div className={styles.sp1}>
         <div className={styles.filtertopics}>Sort by Price:</div>
         <div className={styles.options}>
         <select className={styles.options1} defaultValue={sortorder} value={sortorder} onChange={event => {setSortorder(event.target.value)}}>
@@ -191,7 +192,7 @@ artworks.map((data) => {
           <option value="high">higher to lower</option>
         </select>
         </div>
-
+        </div>
         </div>
 
         <div className={styles.buttons}>
@@ -205,8 +206,8 @@ artworks.map((data) => {
         <Image className={styles.img} loader={() => item.url} src={item.url} width={300} height={700} alt="image"/>
       <div className={styles.name}>{item.title}</div>
       <div className={styles.transition}>
-        <div className={styles.price}><BsCurrencyRupee />{item.price}</div>
-        <div className={styles.add}>Add To Cart</div>
+        <div className={styles.price}><BsCurrencyRupee />Price on Request</div>
+        <div className={styles.add}>Request Purchase</div>
       </div>
       </Link>
     </div>
@@ -216,8 +217,8 @@ artworks.map((data) => {
         <Image className={styles.img} loader={() => item.url} src={item.url} width={300} height={700} alt="image"/>
       <div className={styles.name}>{item.title}</div>
       <div className={styles.transition}>
-        <div className={styles.price}><BsCurrencyRupee />{item.price}</div>
-        <div className={styles.add}>Add To Cart</div>
+        <div className={styles.price}><BsCurrencyRupee />Price on Request</div>
+        <div className={styles.add}>Request Purchase</div>
       </div>
       </Link>
     </div>
@@ -231,7 +232,7 @@ artworks.map((data) => {
       </div>
       </div>
       <Footer />
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </>
   )
 }

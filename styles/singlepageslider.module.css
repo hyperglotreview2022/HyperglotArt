@@ -12,9 +12,7 @@
   width: 100%;
 }
 .slidecontainer{
-  border: 1px solid rgb(225, 225, 225);
-  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
-  height: 300px;
+  height: 320px;
   background-color: white;
 }
 .info{
@@ -22,13 +20,19 @@
   color: black;
   background-color: white;
   height: 100px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
 }
 .swiper{
-  height: 310px;
+  height: 330px;
 }
 .link{
   text-decoration: none;
-  
+}
+.card{
+  border: 1px solid rgb(225, 225, 225);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
+  height: 290px;
 }
 .sliderheading{
   font-size: 24px;

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import styles from '../../styles/ourservices.module.css'
 
@@ -8,47 +9,55 @@ export default function OurServices() {
       <div className={styles.topic}>Our Services</div>
       <div className={styles.flex}>
         <div className={styles.card}>
+        <Link href={'/OurServices/Artists'} className={styles.link}>
         <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (1).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/services (5).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color1}`}>
-            <h4>ART.SPACES</h4>
-            <h6>3D EXHIBITIONS</h6>
+            <h4>Artists</h4>
+            <h6></h6>
             <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
           </div>
+          </Link>
         </div>
 
         <div className={styles.card}>
+        <Link href={'/OurServices/Galleries'} className={styles.link}>
         <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (2).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/services (6).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color2}`}>
-            <h4>ART.SPACES</h4>
-            <h6>3D EXHIBITIONS</h6>
+            <h4>Galleries</h4>
+            <h6></h6>
             <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
           </div>
+          </Link>
         </div>
 
         <div className={styles.card}>
+        <Link href={'/OurServices/InteriorDesign'} className={styles.link}>
         <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (3).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/services (7).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color3}`}>
-            <h4>ART.SPACES</h4>
-            <h6>3D EXHIBITIONS</h6>
+            <h4>Interior design</h4>
+            <h6></h6>
             <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
           </div>
+          </Link>
         </div>
 
         <div className={styles.card}>
+        <Link href={'/OurServices/Architects'} className={styles.link}>
         <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (4).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/services (8).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color4}`}>
-            <h4>ART.SPACES</h4>
-            <h6>3D EXHIBITIONS</h6>
+            <h4>Architects</h4>
+            <h6></h6>
             <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
           </div>
+          </Link>
         </div>
         
       </div>

@@ -42,6 +42,7 @@ export default function EventsSlider({artworks}) {
     },
   }}
     >    {artworks.slice(0,8).map((data)=><SwiperSlide className={styles.slidecontainer}>
+            <div className={styles.card}>
             <Link className={styles.link} href={`/SingleProduct/${data.id}`}>
             <Image src={data.url} className={styles.img} width={1200} height={1200} alt='image' />
               <div className={styles.info}>
@@ -49,6 +50,7 @@ export default function EventsSlider({artworks}) {
                 <h3 className={styles.subheading}>{data.artistname}</h3>
               </div>
             </Link>
+            </div>
             </SwiperSlide>)}
             {/* <SwiperSlide className={styles.slidecontainer}>
             <div>

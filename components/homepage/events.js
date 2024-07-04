@@ -12,28 +12,28 @@ const events = () => {
       <div className={styles.up}>Upcoming Events</div>
       <div className={styles.flexflex}>
           <div className={styles.card}>
-            <Image src={'/servicesimages/services (1).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (5).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (2).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (6).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (3).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (7).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (4).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (8).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
@@ -43,28 +43,28 @@ const events = () => {
       <div className={styles.up}>Past Events</div>
       <div className={styles.flexflex}>
           <div className={styles.card}>
-            <Image src={'/servicesimages/services (1).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (5).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (2).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (6).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (3).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (7).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
             </div>
             <div className={styles.card}>
-            <Image src={'/servicesimages/services (4).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
+            <Image src={'/servicesimages/services (8).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>

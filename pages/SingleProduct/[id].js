@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import Sidecontent from "@/components/singleproduct/sidecontent";
 import { useRouter } from "next/router";
 import artworks from '../api/artworks'
-import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
+// import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
 import SinglePageSlider from '../../components/homepage/SinglePageSlider'
 
 const singleProduct = () => {
@@ -24,7 +24,7 @@ const singleProduct = () => {
   return (
     <div>
     <Navbar />
-    <SmoothScroll>
+    {/* <SmoothScroll> */}
       <div className={styles.container}>
         <div className={styles.flex}>
         <Slider data1={product}/>
@@ -36,7 +36,7 @@ const singleProduct = () => {
         </div>
       </div>
       <Footer />
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </div>
   )
 }

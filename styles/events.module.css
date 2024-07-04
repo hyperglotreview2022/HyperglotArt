@@ -84,4 +84,11 @@
   .desc{
     padding: 0 3%;
   }
+  .flexflex{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .img5{
+    width: 100%;
+  }
 }

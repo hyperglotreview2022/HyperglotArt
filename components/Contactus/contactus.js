@@ -70,7 +70,7 @@ const contactus = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgcontainer}>
-        <Image className={styles.img} src={"/artimages/desired.png"} width={400} height={600} alt="image"/>
+        <Image className={styles.img} src={"/Artists-Artworks/TitasDas/submergediv.jpg"} width={400} height={600} alt="image"/>
       </div>
       <div className={styles.formcontainer}>
         <form  ref={formRef}

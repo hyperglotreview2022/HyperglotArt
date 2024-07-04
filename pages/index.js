@@ -13,7 +13,7 @@ import artworks from './api/artworks'
 import StandOut from '@/components/homepage/StandOut'
 import Subscriptions from '@/components/homepage/Subscriptions'
 import Artists from '@/components/homepage/Artists'
-import SmoothScroll from '@/components/SmoothScroll/SmoothScroll.js'
+// import SmoothScroll from '@/components/SmoothScroll/SmoothScroll.js'
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,7 +30,7 @@ const Home = () => {
       </Head>      
       <main className={styles.mainpage}>
           <Navbar />
-          <SmoothScroll>
+          {/* <SmoothScroll> */}
           <Hero />
           <OurServices />
           <ArtworksSlider artworks={artworks}/>
@@ -40,7 +40,7 @@ const Home = () => {
           <Events />
 
           <Footer />
-          </SmoothScroll>
+          {/* </SmoothScroll> */}
       </main>        
       
     </>

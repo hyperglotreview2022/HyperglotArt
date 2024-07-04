@@ -28,7 +28,7 @@ export default function Mission() {
           <div className={styles.tick}> <GiCheckMark className={styles.check}/><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
       </div>
     </div>
-    <div className={styles.smcontainer}>
+    <div className={styles.smcontainer2}>
       <div className={styles.imgcont}>
         <Image src={'/about/3.jpg'} className={styles.img1} width={500} height={500} alt="image"/>
       </div>

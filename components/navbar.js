@@ -105,7 +105,8 @@ const navbar = () => {
           </div>} */}
 
           {isAuthenticated ? <div className={Styles.usercont}>
-            {user.picture ? <Image className={Styles.userimage} src={user.picture} width={50} height={50} alt="image"/> : <FaUserCircle className={Styles.userimage}/>}
+          <LogoutLink postLoginRedirectURL="/" className={Styles.mlogout}><FaUserCircle className={Styles.muserimage}/><div>Log Out</div></LogoutLink>
+            <FaUserCircle className={Styles.userimage}/>
             <div className={Styles.username}>Hi, {user.given_name}</div>
             <LogoutLink postLoginRedirectURL="/" className={Styles.logout}>Log Out</LogoutLink>
           </div> :<div className={Styles.logincont}>

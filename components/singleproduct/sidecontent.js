@@ -61,7 +61,7 @@ const sidecontent = ({data1}) => {
       </div>
     </div>
     <div className={styles.btncontainer}>
-    {isAuthenticated ? <button onClick={handleSubmit} className={styles.btn}><span>{loading ? "Sending..." : "Buy"}</span></button> : <LoginLink postLoginRedirectURL={`/SingleProduct/${id}`} className={styles.btnlink}><span>Request Purchase</span></LoginLink>}
+    {isAuthenticated ? <button onClick={handleSubmit} className={styles.btn}><span>{loading ? "Sending..." : "Request Purchase"}</span></button> : <LoginLink postLoginRedirectURL={`/SingleProduct/${id}`} className={styles.btnlink}><span>Request Purchase</span></LoginLink>}
     </div>
     <div className={styles.bottomcontainer}>
       <div className={styles.btmcont}>

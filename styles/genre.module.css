@@ -27,15 +27,18 @@
 .subcontainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   padding: 50px;
   gap: 20px;
-  height: 1000px;
 }
 .card{
   text-align: left;
-  width: 16vw;
+  width: 20vw;
   margin-bottom: 50px;
   object-fit: cover;
+  border: 1px solid rgb(225, 225, 225);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
+  padding-bottom: 40px;
 }
 .img{
   width: 20vw;
@@ -45,9 +48,12 @@
 .name{
   font-family: 'Playfair Display', serif;
   font-size: 20px;
+  padding-left: 5%;
+  padding-top: 10px;
 }
 .transition{
   position: relative;
+  padding-left: 5%;
 }
 .price{
   font-family: 'Poppins', sans-serif;
@@ -91,6 +97,11 @@
   align-items: center;
   gap: 1vw;
   padding: 20px 5vw 0;
+}
+.sp1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .button{
   display: flex;
@@ -184,14 +195,17 @@ border: none;
     width: 28vw;
   }
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
   .subcontainer{
     grid-template-columns: 1fr;
     margin-top: 0px;
     padding: 20px 10px 10px;
+    height: auto;
+    margin-bottom: 50px;
   }
   .card{
     width: 100%;
+    margin-bottom: 0;
   }
   .img{
     width: 100%;
@@ -202,5 +216,21 @@ border: none;
   .banner{
     padding-top: 20px;
     gap: 15px;
+  }
+  .sp{
+    gap: 10%;
+  }
+  .sp1{
+    flex-direction: column;
+  }
+  .filterbtn,.afilterbtn{
+    padding: 10px 0;
+    width: 35vw;
+  }
+  .buttons{
+    gap: 10%;
+  }
+  .btncontainer{
+    gap: 10vw;
   }
 }

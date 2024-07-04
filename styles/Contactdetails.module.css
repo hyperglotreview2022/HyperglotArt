@@ -39,3 +39,15 @@ font-family: 'Poppins', sans-serif;
 .content span{
   font-size: 16px;
 }
+@media screen and (max-width: 768px){
+  .container{
+    flex-direction: column;
+    padding: 50px 5%;
+    gap: 50px;
+  }
+  .scontainer1,.scontainer,.scontainer2{
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+}
