@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../../styles/events.module.css'
 // import EventsSlider from './EventsSlider'
 // import EventsSlider2 from './EventsSlider2'
@@ -12,11 +13,13 @@ const events = () => {
       <div className={styles.up}>Upcoming Events</div>
       <div className={styles.flexflex}>
           <div className={styles.card}>
+          <Link className={styles.link} href={'/EventsPage'}>
             <Image src={'/servicesimages/services (5).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>
                 <h1 className={styles.sliderheading5}>Event 1</h1>
                 <h3 className={styles.subheading5}>by Artist</h3>
               </div>
+              </Link>
             </div>
             <div className={styles.card}>
             <Image src={'/servicesimages/services (6).jpg'} className={styles.img5} width={1200} height={1200} alt='image' />

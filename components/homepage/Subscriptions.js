@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import styles from '../../styles/subscriptions.module.css'
 
@@ -11,7 +12,7 @@ export default function Subscriptions() {
           <div className={styles.two}>FREE<span> TRIAL</span></div>
           <div className={styles.three}>Limited Features</div>
           <div className={styles.four}>no Public 3D Exhibition</div>
-          <button className={styles.btn}>Register</button>
+          <Link href={'/Subscriptions#one'} className={styles.btn}>Register</Link>
         </div>
 
         <div className={styles.card1}>
@@ -19,7 +20,7 @@ export default function Subscriptions() {
           <div className={styles.two}>FREE<span> TRIAL</span></div>
           <div className={styles.three}>Limited Features</div>
           <div className={styles.four}>no Public 3D Exhibition</div>
-          <button className={styles.btn}>Register</button>
+          <Link href={'/Subscriptions#two'} className={styles.btn}>Register</Link>
         </div>
 
         <div className={styles.card2}>
@@ -27,7 +28,7 @@ export default function Subscriptions() {
           <div className={styles.two}>FREE<span> TRIAL</span></div>
           <div className={styles.three}>Limited Features</div>
           <div className={styles.four}>no Public 3D Exhibition</div>
-          <button className={styles.btn}>Register</button>
+          <Link href={'/Subscriptions#three'} className={styles.btn}>Register</Link>
         </div>
       </div>
     </div>
