@@ -1,5 +1,5 @@
 .container{
-  padding: 110px 0 120px;
+  padding: 110px 0 30px;
   text-align: center;
 }
 .backg{
@@ -21,11 +21,79 @@ margin-left: 5vw;
 }
 .firstflex{
   display: flex;
+  gap: 5%;
   margin: 30px 5%;
 }
 .img5{
-  width: 20vw;
-  border-radius: 30px;
+  width: 40vw;
   object-fit: cover;
   height: 400px;
+}
+.text1{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 18px;
+}
+.middleflex{
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 5vw 30px;
+  padding: 50px 2vw;
+  gap: 5vw;
+  color: white;
+}
+.img6{
+  width: 40vw;
+  object-fit: cover;
+  height: 380px;
+}
+.righttext{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+}
+.topic{
+  font-size: 42px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+.topic1{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.details{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.detailscont{
+  padding: 10px 2%;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+  .firstflex{
+    flex-direction: column-reverse;
+  }
+  .img5{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .img6{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .middleflex{
+    flex-direction: column;
+    padding: 30px 5% 50px;
+  }
+  .righttext{
+    width: 100%;
+  }
 }
