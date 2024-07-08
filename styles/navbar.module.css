@@ -25,21 +25,19 @@
   cursor: pointer;
 }
 .clear{
-  padding: 10px 5vw;
-  width: 90vw;
+  padding: 10px 3vw;
+  width: 94vw;
   display: flex;
-  justify-content: center;
-  gap: 5vw;
+  justify-content: space-between;
   align-items: center;
   transition: 0.3s;
 }
 .dark{
-  padding: 10px 5vw;
-  width: 90vw;
+  padding: 10px 3vw;
+  width: 94vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5vw;
   background-color: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
 }
@@ -65,7 +63,7 @@
 .nav{
 display:flex;
 justify-content: space-between;
-gap: 5vw;
+width: 80vw;
 }
 .nav .end{
   display: flex;
