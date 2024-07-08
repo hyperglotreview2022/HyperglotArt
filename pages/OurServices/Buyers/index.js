@@ -22,7 +22,7 @@ const index = () => {
                 <div className={styles.border}/>
                 <div className={styles.over}>
                   {/* <div className={styles.btext}></div> */}
-                  <div className={styles.btext2}>Our Services - Interior Design</div>
+                  <div className={styles.btext2}>Our Services - Buyers</div>
                   <Link className={styles.button5} href={'/ContactUs'}>Contact Us</Link>
                 </div>
             </div>

@@ -35,25 +35,12 @@ export default function OurServices() {
         </div>
 
         <div className={styles.card}>
-        <Link href={'/OurServices/InteriorDesign'} className={styles.link}>
+        <Link href={'/OurServices/Buyers'} className={styles.link}>
         <div className={styles.imgc}>
           <Image src={'/servicesimages/services (7).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color3}`}>
-            <h4>Interior design</h4>
-            <h6></h6>
-            <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
-          </div>
-          </Link>
-        </div>
-
-        <div className={styles.card}>
-        <Link href={'/OurServices/Architects'} className={styles.link}>
-        <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (8).jpg'} className={styles.img} width={400} height={400} alt='image' />
-        </div>
-          <div className={`${styles.info} ${styles.color4}`}>
-            <h4>Architects</h4>
+            <h4>Buyers</h4>
             <h6></h6>
             <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
           </div>
