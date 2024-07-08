@@ -8,8 +8,8 @@ const events = () => {
   return (
     <div className={styles.container}>
       <div className={styles.topic}>Events</div>
-      <div className={styles.heading}>Stand out with 3D spaces</div>
-      <div className={styles.desc}>Extend the Kunstmatrix experience by adding more spaces and props to your tool kit. From buying spaces to full customizations, we got you covered. No matter the size.</div>
+      {/* <div className={styles.heading}>Stand out with 3D spaces</div>
+      <div className={styles.desc}>Extend the Kunstmatrix experience by adding more spaces and props to your tool kit. From buying spaces to full customizations, we got you covered. No matter the size.</div> */}
       <div className={styles.up}>Upcoming Events</div>
       <div className={styles.flexflex}>
           <div className={styles.card}>

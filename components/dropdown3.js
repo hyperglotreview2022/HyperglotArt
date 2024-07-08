@@ -8,12 +8,11 @@ const dropdown = ({colorChange}) => {
 
   return (
     <div className={styles.container}>
-      <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Our Services<BsChevronDown /></div>
+      <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Artists<BsChevronDown /></div>
       <div className={dropd ? `${colorChange ? styles.content : styles.contentd}` : `${colorChange ? styles.content1 : styles.content1d}`}>
-        <Link className={styles.link} href="/OurServices/Artists">Artists</Link>
-        <Link className={styles.link} href='/OurServices/Galleries'>Galleries</Link>
-        <Link className={styles.link} href='/OurServices/InteriorDesign'>Interior Designers</Link>
-        <Link className={styles.link} href='/OurServices/Architects'>Architects</Link>
+        <Link className={styles.link} href='/Genre/figurative'>Featured</Link>
+        <Link className={styles.link} href='/Genre/abstract'>Spotlight</Link>
+        <Link className={styles.link} href='/Genre/landscape'>Search (a - z)</Link>
       </div>
     </div>
   )

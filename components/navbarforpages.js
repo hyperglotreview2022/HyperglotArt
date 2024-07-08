@@ -5,6 +5,7 @@ import {BsList} from 'react-icons/bs'
 import Link from 'next/link'
 import Dropdown from './dropdownforpages'
 import Dropdown2 from './dropdown2forpages'
+import Dropdown3 from './dropdown3forpages'
 import { useEffect, useState } from 'react'
 import artworks from '@/pages/api/artworks'
 import Image from 'next/image'
@@ -90,9 +91,12 @@ const navbar = () => {
       <ul className={active ? `${Styles.up}` : `${Styles.down}`}>
 
         <li><Link href="/">Home</Link></li>
-        <li><Link href="#"><Dropdown colorChange={colorChange}/></Link></li>
-        <li><Link href="#"><Dropdown2 colorChange={colorChange}/></Link></li>
-        <li><Link href="/Artists">Artists</Link></li>
+        <li><div className={Styles.hover}><Dropdown2 colorChange={colorChange}/></div></li>
+        <li><div className={Styles.hover}><Dropdown3 colorChange={colorChange}/></div></li>
+        <li><div className={Styles.hover}><Dropdown colorChange={colorChange}/></div></li>
+        <li><Link href="/Subscriptions">Subscription</Link></li>
+        <li><Link href="#">Virtual Gallery</Link></li>
+        <li><Link href="/Artists">Events</Link></li>
         <li><Link href="/About">About</Link></li>
         <li><Link href="/ContactUs">Contact Us</Link></li>
 
@@ -112,8 +116,7 @@ const navbar = () => {
             <LogoutLink postLoginRedirectURL="/" className={Styles.logout}>Log Out</LogoutLink>
           </div> :<div className={Styles.logincont}>
           <LoginLink postLoginRedirectURL="/"><FaUserCircle className={Styles.mobileuser}/></LoginLink>
-            <LoginLink postLoginRedirectURL="/" className={Styles.login}>Sign In</LoginLink>
-            <RegisterLink postLoginRedirectURL="/" className={Styles.logup}>Sign Up</RegisterLink>
+            <LoginLink postLoginRedirectURL="/" className={Styles.login}>Log In</LoginLink>
           </div>}
           
 

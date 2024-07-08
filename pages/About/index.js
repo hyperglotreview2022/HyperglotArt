@@ -23,7 +23,7 @@ const index = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
           <div>
-            <Image className={styles.img} src={'/Artists-Artworks/ShayaniBoral/turmoilinseabed.jpg'} width={400} height={600} alt="image"/>
+            <Image className={styles.img} src={'/formimg/1.jpg'} width={400} height={600} alt="image"/>
           </div>
         </div>
         {/* <div className={styles.btmcontainer}>

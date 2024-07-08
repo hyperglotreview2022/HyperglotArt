@@ -17,20 +17,29 @@
   z-index: 1000;
   transition: 0.3s;
 }
+.hover{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+.hover:hover{
+  cursor: pointer;
+}
 .clear{
   padding: 10px 5vw;
   width: 90vw;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
   transition: 0.3s;
 }
 .dark{
   padding: 10px 5vw;
   width: 90vw;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
   background-color: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
 }
@@ -45,17 +54,18 @@
 .logo h1{
   font-weight: 100;
   margin: 0;
+  font-size: 24px;
 }
 .nav ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2vw;
+  gap: 1.5vw;
 }
 .nav{
 display:flex;
 justify-content: space-between;
-gap: 10vw;
+gap: 5vw;
 }
 .nav .end{
   display: flex;
@@ -157,6 +167,7 @@ gap: 10vw;
   font-weight: 500;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  font-size: 15px;
 }
 .icon{
   font-size: 20px;
@@ -200,7 +211,6 @@ gap: 10vw;
 }
 .logincont{
   display: flex;
-  gap: 2vw;
 }
 .userimage{
   width: 35px;
@@ -335,10 +345,12 @@ width: 25vw;
   }
   .clear{
     padding: 15px 6%;
+    justify-content: space-between;
     align-items: center;
   }
   .dark{
     align-items: center;
+    justify-content: space-between;
     padding: 15px 6%;
   }
   .searchmodal,.searchmodald{

@@ -8,11 +8,12 @@ const dropdown = () => {
 
   return (
     <div className={styles.container}>
-      <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Medium<BsChevronDown /></div>
+      <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Our Services<BsChevronDown /></div>
       <div className={dropd ? `${styles.contentd}` : `${styles.content1d}`}>
-        <Link className={styles.link} href="/Medium/paintings">Paintings</Link>
-        <Link className={styles.link} href='/Medium/prints'>Prints</Link>
-        <Link className={styles.link} href='/Medium/sculptures'>Sculptures</Link>
+      <Link className={styles.link} href="/OurServices/Artists">Artists</Link>
+        <Link className={styles.link} href='/OurServices/Galleries'>Galleries</Link>
+        <Link className={styles.link} href='/OurServices/InteriorDesign'>Interior Designers</Link>
+        <Link className={styles.link} href='/OurServices/Architects'>Architects</Link>
       </div>
     </div>
   )

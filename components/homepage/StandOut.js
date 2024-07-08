@@ -6,12 +6,12 @@ import styles from '../../styles/standout.module.css'
 export default function StandOut() {
   return (
     <div className={styles.container}>
-      <div className={styles.topic}>Stand out with 3D space</div>
+      <div className={styles.topic}>Virtual Gallery</div>
       <div className={styles.imgcont1}>
         <Image src={'/servicesimages/services (5).jpg'} className={styles.img1} width={1200} height={1200} alt='image' />
         <div className={styles.cover1}>
         <div className={styles.border1}>
-          <div className={styles.heading1}>Stand out with 3D spaces</div>
+          <div className={styles.heading1}>Browse our Virtual Gallery</div>
           <div className={styles.desc1}>Extend the Kunstmatrix experience by adding more spaces and props to your tool kit. From buying spaces to full customizations, we got you covered. No matter the size.</div>
         </div>
         </div>
