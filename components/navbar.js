@@ -93,8 +93,8 @@ const navbar = () => {
         <li><div className={Styles.hover}><Dropdown3 colorChange={colorChange}/></div></li>
         <li><div className={Styles.hover}><Dropdown colorChange={colorChange}/></div></li>
         <li><Link href="/Subscriptions">Subscription</Link></li>
-        <li><Link href="#">Virtual Gallery</Link></li>
-        <li><Link href="/Artists">Events</Link></li>
+        <li><Link href="/VirtualGallery">Virtual Gallery</Link></li>
+        <li><Link href="/Events">Events</Link></li>
         <li><Link href="/About">About</Link></li>
         <li><Link href="/ContactUs">Contact Us</Link></li>
 

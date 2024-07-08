@@ -10,9 +10,9 @@ const dropdown = () => {
     <div className={styles.container}>
       <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Artists<BsChevronDown /></div>
       <div className={dropd ? `${styles.contentd}` : `${styles.content1d}`}>
-        <Link className={styles.link} href='/Genre/figurative'>Featured</Link>
-        <Link className={styles.link} href='/Genre/abstract'>Spotlight</Link>
-        <Link className={styles.link} href='/Genre/landscape'>Search (a - z)</Link>
+        <Link className={styles.link} href='/Artists/Featured'>Featured</Link>
+        <Link className={styles.link} href='/Artists/Spotlight'>Spotlight</Link>
+        <Link className={styles.link} href='/Artists'>Search (a - z)</Link>
       </div>
     </div>
   )

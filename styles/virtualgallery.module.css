@@ -1,0 +1,16 @@
+.container{
+  text-align: center;
+  padding: 110px 0 100px;
+}
+.heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: -3px;
+    font-weight: 300;
+    margin: 0;
+    border-bottom: 2px solid black;
+    width: 90vw;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin-left: 5vw;
+}
