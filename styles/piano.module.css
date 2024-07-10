@@ -1,0 +1,45 @@
+.cont{
+    margin: 50px 5%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.smsont{
+    color: white;
+}
+.ques{
+    background-color: rgb(24, 24, 24);
+    padding: 20px 3%;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.ques1{
+    color: black;
+    border: 1px solid black;
+    padding: 20px 3%;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.ans{
+    background-color: rgb(54, 54, 54);
+    padding: 20px 3%;
+    font-size: 22px;
+    transition: 0.3s;
+    height: 160px;
+}
+.answ{
+    background-color: rgb(54, 54, 54);
+    padding: 0px 3%;
+    font-size: 0px;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+@media screen and (max-width: 768px){
+    .ans{
+        height: 400px;
+        padding-right: 10%;
+    }
+}

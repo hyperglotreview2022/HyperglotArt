@@ -13,19 +13,18 @@ const index = () => {
       <Navbar />
       {/* <SmoothScroll> */}
           <div className={styles.container}>
-            {/* <div className={styles.banner}>
-              <h1 className={styles.bannerheading}>Our Services</h1>
-            </div> */}
+            <div className={styles.banner}>
+              <h1 className={styles.bannerheading}>Our Services - Galleries</h1>
+            </div>
 
-            <div className={styles.banner1}>
+            {/* <div className={styles.banner1}>
                 <Image src={'/servicesimages/services (6).jpg'} className={styles.bimg} width={400} height={400} alt='image' />
                 <div className={styles.border}/>
                 <div className={styles.over}>
-                  {/* <div className={styles.btext}></div> */}
                   <div className={styles.btext2}>Our Services - Galleries</div>
                   <Link className={styles.button5} href={'/ContactUs'}>Contact Us</Link>
                 </div>
-            </div>
+            </div> */}
 
             <div className={styles.lcont}>
               <div className={styles.lheading}>Why Hyperglot Art?</div>

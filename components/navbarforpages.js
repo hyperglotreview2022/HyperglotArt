@@ -81,8 +81,8 @@ const navbar = () => {
     {open && <div onClick={()=>{[setOpen(false)],setSearchinput("")}} className={Styles.exit}/>}
 
       <div className={Styles.logo}>
-
-        <h1>Hyperglot Art</h1>
+      <Image src={'/logo/newdark.png'} className={Styles.logoimg} width={400} height={400} alt='logo'/>
+        {/* <h1>Hyperglot Art</h1> */}
      
       </div>
 

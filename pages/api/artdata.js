@@ -41,6 +41,10 @@ const data = [
   name: 'Balwinder Tanwar',
   url:"/Artists-Artworks/BalwinderTanwar/1 (3).jpg",
   artistcategory:"Featured"},
+  { id:'11',
+    name: 'Ravindra Kumar Tanwar',
+    url:"/Artists-Artworks/RavindraKumarTanwar/2.jpg",
+    artistcategory:"Featured"},
 ]
 
 export default data;

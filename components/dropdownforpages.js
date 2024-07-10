@@ -11,8 +11,8 @@ const dropdown = () => {
       <div onClick={()=>{setDropd(!dropd)}} className={styles.navlink}>Our Services<BsChevronDown /></div>
       <div className={dropd ? `${styles.contentd}` : `${styles.content1d}`}>
       <Link className={styles.link} href="/OurServices/Artists">Artists</Link>
-        <Link className={styles.link} href='/OurServices/Galleries'>Galleries</Link>
         <Link className={styles.link} href='/OurServices/Buyers'>Buyers</Link>
+        <Link className={styles.link} href='/OurServices/Galleries'>Galleries</Link>
       </div>
     </div>
   )

@@ -12,7 +12,7 @@ padding: 120px 5% 50px;
   gap: 2%;
 }
 .card{
-  width: auto;
+  width: 50vw;
   height: 320px;
   position: relative;
   overflow: hidden;
