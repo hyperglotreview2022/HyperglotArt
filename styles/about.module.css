@@ -10,7 +10,6 @@
 .heading{
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    letter-spacing: -3px;
     font-weight: 300;
     margin: 0;
     border-bottom: 2px solid black;
@@ -168,5 +167,8 @@
   }
   .container{
     padding-bottom: 20px;
+  }
+  .heading{
+    font-size: 36px;
   }
 }

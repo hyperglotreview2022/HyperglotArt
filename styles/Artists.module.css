@@ -17,7 +17,6 @@
 .bannerheading{
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    letter-spacing: -3px;
     font-weight: 300;
     margin: 0;
     border-bottom: 2px solid black;
@@ -242,5 +241,11 @@ background: black;
   .artistsdescont{
     flex-direction: column;
     padding: 30px 5%;
+  }
+  .bannerheading{
+    font-size: 36px;
+  }
+  .container{
+    padding-top: 80px;
   }
 }

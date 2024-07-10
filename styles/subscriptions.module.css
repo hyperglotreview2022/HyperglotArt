@@ -87,5 +87,7 @@
   .card,.card1,.card2{
     width: 92.5%;
   }
-  
+  .topic{
+    font-size: 36px;
+  }
 }

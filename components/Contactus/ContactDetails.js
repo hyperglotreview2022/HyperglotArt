@@ -22,7 +22,7 @@ export default function ContactDetails() {
         <div className={styles.topic}>Phone Info:</div>
           <div className={styles.content}><span>Landline:</span> 011 3569 1637<br/>
           <span>Operations:</span> +91 97171 89650/ 659<br/>
-          <span>Sales:</span> +91 97170 41338 <br/> 
+          <span>Sales:</span> +91 97170 41038/ 338 <br/> 
           <span>Editorial:</span> +91 97171 89138</div>
         </div>
       </div>

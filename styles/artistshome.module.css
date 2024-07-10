@@ -42,4 +42,7 @@ object-fit: cover;
     width: 100%;
     height: auto;
   }
+  .topic{
+    font-size: 36px;
+  }
 }

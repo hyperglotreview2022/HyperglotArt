@@ -10,7 +10,6 @@
 .heading{
 font-family: 'Playfair Display', serif;
 font-size: 48px;
-letter-spacing: -3px;
 font-weight: 300;
 margin: 0;
 border-bottom: 2px solid black;
@@ -18,4 +17,9 @@ width: 90vw;
 padding-bottom: 10px;
 text-transform: capitalize;
 margin-left: 5vw;
+}
+@media screen and (max-width: 768px){
+  .heading{
+    font-size: 36px;
+  }
 }

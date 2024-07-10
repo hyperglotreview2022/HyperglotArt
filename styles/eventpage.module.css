@@ -5,7 +5,6 @@
 .heading{
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    letter-spacing: -3px;
     font-weight: 300;
     margin: 0;
     border-bottom: 2px solid black;
@@ -178,5 +177,8 @@
   }
   .card1,.img1,.readbtn1{
     width: 100%;
+  }
+  .heading{
+    font-size: 36px;
   }
 }

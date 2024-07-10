@@ -18,7 +18,6 @@
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    letter-spacing: -3px;
     font-weight: 300;
     margin: 0;
     border-bottom: 2px solid white;
@@ -108,5 +107,8 @@
   }
   .icon{
     display: none;
+  }
+  .bannerheading{
+    font-size: 36px;
   }
 }
