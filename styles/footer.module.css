@@ -14,6 +14,10 @@
   gap: 10vw;
   margin-bottom: 50px;
 }
+.logoimg{
+  height: 80px;
+  width: auto;
+}
 .logo{
   font-size: 32px;
   margin-bottom: 30px;
@@ -72,5 +76,9 @@
   }
   .icons{
     justify-content: space-between;
+  }
+  .logoimg{
+    height: 50px;
+    width: auto;
   }
 }

@@ -3,6 +3,7 @@ import {BiUpArrow} from 'react-icons/bi'
 import {BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
 import {RiFacebookBoxFill} from 'react-icons/ri'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footer = () => {
 
@@ -18,7 +19,7 @@ const footer = () => {
     <div className={styles.container}>
             {/* <div onClick={scrollToTop} className={styles.totop}><BiUpArrow className={styles.icon} />BACK TO TOP OF THE PAGE</div> */}
       <div className={styles.left}>
-        <div className={styles.logo}>Hyperglot Art</div>
+        <div className={styles.logo}><Image src={'/logo/newdark.png'} className={styles.logoimg} width={400} height={400} alt='logo'/></div>
         <div className={styles.desc}>Browse 3D Exhibitions</div>
         <div className={styles.desc2}>Marketplace</div>
         <div className={styles.one}>All rights reserved 2024 hyperglot Art</div>
