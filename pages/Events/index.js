@@ -79,7 +79,7 @@ export default function index() {
         <div className={styles.heading1}>Past Events</div>
         <div className={styles.gridcont}>
         {data.slice(0,3).map((data)=><div className={styles.card1}>
-          <div className={styles.imgcont}><Image src={data.url} className={styles.img1} width={1200} height={1200} alt='image' /></div>
+          <div className={styles.imgcont}><img src={data.url} className={styles.img1} width={1200} height={1200} alt='image' /></div>
           <div className={styles.info}>
             <div className={styles.topic1}>{data.name}</div>
             <div className={styles.desc1}>{data.text[0].slice(0,100)}...</div>

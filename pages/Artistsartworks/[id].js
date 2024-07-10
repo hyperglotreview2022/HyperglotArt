@@ -36,8 +36,6 @@ const Products = () => {
     }
   })
 
-  console.log(product)
-
   return (
     <div>
       <Navbar />

@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
+    unoptimized: true,
     domains: ['lh3.googleusercontent.com','gravatar.com'],
-    unoptimized: true
   },
   webpack: (config, { isServer }) => {
     // If client-side, don't polyfill `fs`
