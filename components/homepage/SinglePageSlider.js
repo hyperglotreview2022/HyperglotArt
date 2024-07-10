@@ -52,60 +52,6 @@ export default function EventsSlider({artworks}) {
             </Link>
             </div>
             </SwiperSlide>)}
-            {/* <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={artworks.} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 1</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={'/servicesimages/services (2).jpg'} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 2</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={'/servicesimages/services (3).jpg'} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 3</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={'/servicesimages/services (4).jpg'} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 4</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={'/servicesimages/services (1).jpg'} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 5</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles.slidecontainer}>
-            <div>
-            <Image src={'/servicesimages/services (2).jpg'} className={styles.img} width={1200} height={1200} alt='image' />
-              <div className={styles.info}>
-                <h1 className={styles.sliderheading}>Event 6</h1>
-                <h3 className={styles.subheading}>by Artist</h3>
-              </div>
-            </div>
-            </SwiperSlide> */}
     </Swiper>
     {/* <div className='button-Arrangement'>
           <div className="button-swiper">

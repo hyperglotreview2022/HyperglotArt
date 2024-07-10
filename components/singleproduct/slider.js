@@ -5,8 +5,6 @@ import { useState } from "react";
 const slider = ({data1}) => {
 
   const [selectedImg, setSelectedImg] = useState(0);
-
-  console.log(data1)
    
     return (
       <div>
