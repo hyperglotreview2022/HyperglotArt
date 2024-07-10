@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: false,
   images: {
     unoptimized: true,
-    domains: ['lh3.googleusercontent.com','gravatar.com'],
+    domains: ['lh3.googleusercontent.com','gravatar.com','hyperglotart.com'],
   },
   webpack: (config, { isServer }) => {
     // If client-side, don't polyfill `fs`
