@@ -1,7 +1,7 @@
 const events = [
     { id:'1',
     name: 'REDRAWING ARTSCAPES',
-    url:"/events/redrawingartscapes1.jpg",
+    url:"/events/redrawingartscapes11.jpg",
     url2:"/events/redrawingartscapes12.jpg",
     text:[`Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.The visual arts, like poetry and music, have an inherent propensity to defy definitions and demarcations.`,`It is a 'line of flight' which "covers not only the act of fleeing or eluding but also flowing, leaking, and disappearing into the distance".`,`We hope that you experience at least one or more of these 'events' during our show.`],
     info:{Date:"26th August, 2023", Venue:"CSOI Art Gallery, Chanakyaapuri, New Delhi", time:"10 am - 7 pm"},},
