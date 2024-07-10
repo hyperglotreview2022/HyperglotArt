@@ -8,9 +8,9 @@ export default function ContactDetails() {
       <div className={styles.container}>
         <div className={styles.scontainer1}>
           <div className={styles.topic}>Address Info:</div>
-          <div className={styles.content}>303 A,<br/>
-            Hemkunt Chambers,<br/>
-            Nehru Place 110019</div>
+          <div className={styles.content}>#20, Okhla Phase III,<br/>
+          Okhla Industrial Estate,<br/>
+          New Delhi - 110020</div>
         </div>
         <div className={styles.scontainer}>
         <div className={styles.topic}>Email Info:</div>
