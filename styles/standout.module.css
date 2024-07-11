@@ -123,4 +123,8 @@
   .topic{
     font-size: 36px;
   }
+  .heading1{
+    font-size: 24px;
+    padding: 30px 5% 0px;
+  }
 }
