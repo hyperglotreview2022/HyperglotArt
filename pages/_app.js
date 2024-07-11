@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(true), 6000);
+    setTimeout(() => setLoading(true), 3000);
   }, []);
 
   return (

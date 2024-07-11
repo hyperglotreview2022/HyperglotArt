@@ -11,7 +11,7 @@ const herocomponent = () => {
         <div className={styles.btm}>What if you allocated 5% of your portfolio to Art?</div>
       </div>
     </div>
-      <video className={styles.video} src="/herovideo/herovideo.mp4" autoPlay loop muted>
+      <video className={styles.video} src="/herovideo/herovideo.mp4" autoPlay loop muted preload="auto">
       </video>
     </div>
   )
