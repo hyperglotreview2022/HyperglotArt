@@ -22,7 +22,7 @@ export default function OurServices() {
         </div>
 
         <div className={styles.card}>
-        <Link href={'/OurServices/Galleries'} className={styles.link}>
+        <Link href={'#'} className={styles.link}>
         <div className={styles.imgc}>
           <Image src={'/servicesimages/services (6).jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
