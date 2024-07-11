@@ -122,7 +122,7 @@ const navbar = () => {
           {open && <div className={colorChange ? `${Styles.searchmodal}` : `${Styles.searchmodald}`}>
             <div className={Styles.inputcont}><BsSearch className={Styles.searchicon1}/><input
             value={searchinput}
-            onChange={(e) => setSearchinput(e.target.value)}
+            onChange={(e) => setSearchinput(e.target.value.toLowerCase())}
             placeholder='Search'/></div>
             <div className={Styles.lists}>
             {result.length === artworks.length ? <div className={Styles.no}>No matching results</div> : result.map(data=><div className={Styles.no} key={data.id}>
