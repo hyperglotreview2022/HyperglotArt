@@ -12,17 +12,17 @@ export default function StandOut() {
         <div className={styles.cover1}>
         <div className={styles.border1}>
           <div className={styles.heading1}>Browse our Virtual Gallery</div>
-          <div className={styles.desc1}>Extend the Kunstmatrix experience by adding more spaces and props to your tool kit. From buying spaces to full customizations, we got you covered. No matter the size.</div>
+          <div className={styles.desc1}>Experience Art in 3D from the comfort of your home</div>
         </div>
         </div>
       </div>
       <div className={styles.flex}>
         <div>
-          <div className={styles.heading}>Create <span>3D exhibitions</span> within minutes.</div>
+          <div className={styles.heading}><span>Latest </span>Virtual Gallery</div>
           <div className={styles.info}>
-            <div>Choose from a variety of free 3D Spaces or expand the experience through our marketplace.</div>
-            <div>Add artworks, sculptures, audio, and video, and place them in your 3D space.</div>
-            <div>Share or embed your 3D exhibition on your own website for a seamless integration.</div>
+            <div>Choose from a variety of 500+ artworks from our marketplace.</div>
+            <div>Add artworks, sculptures, prints, exclusive and limited edition items to your collection. </div>
+            <div>Get in touch with us for a quote and experience a seamless process of purchase and shipping. </div>
           </div>
           <Link href={'/ContactUs'} className={styles.btn}>Get in Touch</Link>
         </div>

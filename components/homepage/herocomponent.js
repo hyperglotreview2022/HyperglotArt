@@ -7,8 +7,8 @@ const herocomponent = () => {
     <div className={styles.herosection}>
     <div className={styles.cover}>
       <div className={styles.flex}>
-        <div className={styles.top}>Art investing for all</div>
-        <div className={styles.btm}>What if you allocated 5% of your portfolio to Art?</div>
+        <div className={styles.top}>Art belongs to everyone</div>
+        <div className={styles.btm}>Bring home an exquisite work of art</div>
       </div>
     </div>
       <video className={styles.video} src="/herovideo/herovideo.mp4" autoPlay loop muted preload="auto">

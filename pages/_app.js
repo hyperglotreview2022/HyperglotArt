@@ -20,6 +20,9 @@ export default function App({ Component, pageProps }) {
       ) : (
         <Loading />
       )}
+      {/* <React.Fragment>
+          <Component {...pageProps} />
+        </React.Fragment> */}
   </>
   )
 }
