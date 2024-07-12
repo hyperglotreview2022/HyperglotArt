@@ -8,21 +8,21 @@ export default function App({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(true), 3000);
+    setTimeout(() => setLoading(true), 5000);
   }, []);
 
   return (
     <>
-      {/* {loading ? (
+      {loading ? (
         <React.Fragment>
           <Component {...pageProps} />
         </React.Fragment>
       ) : (
         <Loading />
-      )} */}
-      <React.Fragment>
+      )}
+      {/* <React.Fragment>
           <Component {...pageProps} />
-        </React.Fragment>
+        </React.Fragment> */}
   </>
   )
 }
