@@ -115,18 +115,6 @@ export default function EventsSlider({ artworks }) {
             </SwiperSlide>
 
             <SwiperSlide className={styles.sliderbigcont}>
-              <Link href={`/SingleProduct/${artworks[31].id}`} className={styles.link}>
-              <div className={styles.slidecontainer}>
-                <Image src={"/Artists-Artworks/MitaliRoyChoudhury/sadhna.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
-                <div className={styles.info}>
-                  <h1 className={styles.sliderheading}>Mitali Roy Choudhury</h1>
-                  <h3 className={styles.subheading}>Sadhna</h3>
-                </div>
-              </div>
-              </Link>
-            </SwiperSlide>
-
-            <SwiperSlide className={styles.sliderbigcont}>
             <Link href={`/SingleProduct/${artworks[28].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/TitasDas/submergedx.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
