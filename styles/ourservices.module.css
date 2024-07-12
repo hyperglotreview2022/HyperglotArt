@@ -75,4 +75,7 @@ padding: 120px 5% 50px;
   .topic{
     font-size: 36px;
   }
+  .card:hover .info{
+    top: 270px;
+  }
 }

@@ -30,10 +30,10 @@
 }
 @media screen and (max-width: 768px){
   .top{
-    font-size: 36px;
+    font-size: 30px;
   }
   .btm{
-    font-size: 18px;
+    font-size: 14px;
   }
   .video,.cover,.herosection{
     height: 400px;
