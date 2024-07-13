@@ -427,7 +427,7 @@ images:["/Artists-Artworks/ShayaniBoral/discuss.jpg","/Artists-Artworks/ShayaniB
 genre:'figurative',
 medium:'paintings',
 price:"50000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["48 x 60 inches","Acrylic (mixed media)","Original",""]
 },
@@ -439,7 +439,7 @@ images:["/Artists-Artworks/ShayaniBoral/thegardenofgalleria.jpg","/Artists-Artwo
 genre:'figurative',
 medium:'paintings',
 price:"150000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["82 x 55 inches","Mixed Media on Canvas","Original",""]
 },
@@ -451,7 +451,7 @@ images:["/Artists-Artworks/ShayaniBoral/turtlestapestry.jpg","/Artists-Artworks/
 genre:'figurative',
 medium:'paintings',
 price:"50000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["48 x 36 inches","Ink, Brush, Pen & Acrylic (mixed media)","Original",""]
 },
@@ -463,7 +463,7 @@ images:["/Artists-Artworks/ShayaniBoral/resonanceofnature.JPG","/Artists-Artwork
 genre:'figurative',
 medium:'paintings',
 price:"50000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["48 x 60 inches","Acrylic on Canvas","Original",""]
 },
@@ -475,7 +475,7 @@ images:["/Artists-Artworks/ShayaniBoral/turmoilinseabed.jpg","/Artists-Artworks/
 genre:'figurative',
 medium:'paintings',
 price:"500000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["48 x 60 inches","Mixed Media on Canvas","Original",""]
 },
@@ -487,7 +487,7 @@ images:["/Artists-Artworks/ShayaniBoral/urbandrought.JPG","/Artists-Artworks/Sha
 genre:'figurative',
 medium:'paintings',
 price:"150000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["8ft x 4ft","Mixed Media on Canvas","Original",""]
 },
@@ -499,7 +499,7 @@ images:["/Artists-Artworks/ShayaniBoral/urbantraffic.jpg","/Artists-Artworks/Sha
 genre:'figurative',
 medium:'paintings',
 price:"350000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["28 x 30 inches","Mixed Media on Canvas","Original",""]
 },
@@ -511,7 +511,7 @@ images:["/Artists-Artworks/ShayaniBoral/urbancheckmate.jpg","/Artists-Artworks/S
 genre:'figurative',
 medium:'paintings',
 price:"150000",
-artistid:'5',
+artistid:'4',
 artistname:'Shayani Boral',
 details:["48 x 54 inches","Mixed Media on Canvas","Original",""]
 },
@@ -523,7 +523,7 @@ images:["/Artists-Artworks/PrithujMondal/HYYYY.JPG","/Artists-Artworks/PrithujMo
 genre:'figurative',
 medium:'paintings',
 price:"150000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["72 x 48 inches","Dry Pastel on Paper","Original","2020"]
 },
@@ -535,7 +535,7 @@ images:["/Artists-Artworks/PrithujMondal/conversation.jpg","/Artists-Artworks/Pr
 genre:'figurative',
 medium:'paintings',
 price:"65000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["24 x 24 inches","Acrylic on Canvas","Original","2022"]
 },
@@ -547,7 +547,7 @@ images:["/Artists-Artworks/PrithujMondal/onceuponatime.jpg","/Artists-Artworks/P
 genre:'figurative',
 medium:'paintings',
 price:"65000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["24 x 24 inches","Acrylic on Canvas","Original","2022"]
 },
@@ -559,7 +559,7 @@ images:["/Artists-Artworks/PrithujMondal/theangels.jpg","/Artists-Artworks/Prith
 genre:'figurative',
 medium:'paintings',
 price:"65000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["24 x 24 inches","Acrylic on Canvas","Original","2022"]
 },
@@ -571,7 +571,7 @@ images:["/Artists-Artworks/PrithujMondal/untitled.jpg","/Artists-Artworks/Prithu
 genre:'figurative',
 medium:'paintings',
 price:"65000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["24 x 24 inches","Acrylic on Canvas","Original","2022"]
 },
@@ -583,7 +583,7 @@ images:["/Artists-Artworks/PreetiSethi/2.jpg","/Artists-Artworks/PreetiSethi/2.j
 genre:'figurative',
 medium:'paintings',
 price:"15000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["A4","Print on Archival Paper","Original",""]
 },
@@ -595,7 +595,7 @@ images:["/Artists-Artworks/PreetiSethi/3.jpg","/Artists-Artworks/PreetiSethi/3.j
 genre:'figurative',
 medium:'sculptures',
 price:"295000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["24 x 36 inches","Mixed Media (Brass Metal Art) on Canvas","Original",""]
 },
@@ -607,7 +607,7 @@ images:["/Artists-Artworks/PreetiSethi/4.jpg","/Artists-Artworks/PreetiSethi/5.j
 genre:'figurative',
 medium:'sculptures',
 price:"125000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["18 inches","Fibre","Original",""]
 },
@@ -619,7 +619,7 @@ images:["/Artists-Artworks/PreetiSethi/6.jpg","/Artists-Artworks/PreetiSethi/6.j
 genre:'figurative',
 medium:'paintings',
 price:"110000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["3 x 4 ft","Mixed Media on Canvas","Original",""]
 },
@@ -631,7 +631,7 @@ images:["/Artists-Artworks/PreetiSethi/7.jpg","/Artists-Artworks/PreetiSethi/7.j
 genre:'figurative',
 medium:'sculptures',
 price:"On Request",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["12 x 12 inches","Mixed Medium Clay Sculpture ","Original",""]
 },
@@ -643,7 +643,7 @@ images:["/Artists-Artworks/PreetiSethi/8.jpg","/Artists-Artworks/PreetiSethi/8.j
 genre:'figurative',
 medium:'paintings',
 price:"25000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["10 x 10 inches","Mixed Media on Paper","Original",""]
 },
@@ -655,7 +655,7 @@ images:["/Artists-Artworks/PreetiSethi/9.jpg","/Artists-Artworks/PreetiSethi/9.j
 genre:'figurative',
 medium:'paintings',
 price:"35000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["10 x 10 inches","Mixed Media on Paper","Original",""]
 },
@@ -667,7 +667,7 @@ images:["/Artists-Artworks/PreetiSethi/10.jpg","/Artists-Artworks/PreetiSethi/10
 genre:'figurative',
 medium:'paintings',
 price:"35000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["10 x 10 inches","Color Pencils on paper","Original",""]
 },
@@ -679,7 +679,7 @@ images:["/Artists-Artworks/PreetiSethi/11.jpg","/Artists-Artworks/PreetiSethi/11
 genre:'figurative',
 medium:'sculptures',
 price:"105000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["18 inches","Fibre Sculpture","Original",""]
 },
@@ -691,7 +691,7 @@ images:["/Artists-Artworks/PreetiSethi/12.jpg","/Artists-Artworks/PreetiSethi/12
 genre:'figurative',
 medium:'paintings',
 price:"25000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["12 x 12 inches","Acrylic on Canvas","Original",""]
 },
@@ -703,7 +703,7 @@ images:["/Artists-Artworks/PreetiSethi/13.jpg","/Artists-Artworks/PreetiSethi/13
 genre:'figurative',
 medium:'paintings',
 price:"25000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["10 x 10 inches","Mixed Media on Paper","Original",""]
 },
@@ -715,7 +715,7 @@ images:["/Artists-Artworks/PreetiSethi/15.jpg","/Artists-Artworks/PreetiSethi/15
 genre:'figurative',
 medium:'sculptures',
 price:"28000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["12 x 12 inches","Metal Art ( Copper)","Original",""]
 },
@@ -727,7 +727,7 @@ images:["/Artists-Artworks/PreetiSethi/16.jpg","/Artists-Artworks/PreetiSethi/16
 genre:'figurative',
 medium:'sculptures',
 price:"95000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["10 inches","Fibre Sculpture","Original",""]
 },
@@ -739,7 +739,7 @@ images:["/Artists-Artworks/PreetiSethi/17.jpg","/Artists-Artworks/PreetiSethi/17
 genre:'figurative',
 medium:'paintings',
 price:"15000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["11.7 x 16.5 inches","Color Pencil sketch on Paper","Original",""]
 },
@@ -751,7 +751,7 @@ images:["/Artists-Artworks/PreetiSethi/18.jpg","/Artists-Artworks/PreetiSethi/18
 genre:'figurative',
 medium:'paintings',
 price:"65000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["11.7 x 16.5 inches","Color Pencil sketch on Paper","Original",""]
 },
@@ -763,7 +763,7 @@ images:["/Artists-Artworks/PreetiSethi/21.jpg","/Artists-Artworks/PreetiSethi/21
 genre:'figurative',
 medium:'paintings',
 price:"20000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["7 x 9 inches","Original Print on paper","Original",""]
 },
@@ -775,7 +775,7 @@ images:["/Artists-Artworks/PreetiSethi/20.jpg","/Artists-Artworks/PreetiSethi/20
 genre:'figurative',
 medium:'paintings',
 price:"15000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["12 x 12 inches","Original print on fabrino paper","Original",""]
 },
@@ -787,7 +787,7 @@ images:["/Artists-Artworks/PreetiSethi/22.jpg","/Artists-Artworks/PreetiSethi/22
 genre:'figurative',
 medium:'paintings',
 price:"40000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["11 x 16 inches","Ink and Charcoal on Paper","Original",""]
 },
@@ -799,7 +799,7 @@ images:["/Artists-Artworks/PreetiSethi/1.jpg","/Artists-Artworks/PreetiSethi/1.j
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["24 x 30 inches","Oil on Paper","Original",""]
 },
@@ -811,7 +811,7 @@ images:["/Artists-Artworks/PreetiSethi/14.jpg","/Artists-Artworks/PreetiSethi/14
 genre:'figurative',
 medium:'sculptures',
 price:"55000",
-artistid:'7',
+artistid:'6',
 artistname:'Preeti Sethi',
 details:["12 x 12 inches","Metal Art ( Brass on Copper Sheet )","Original",""]
 },
@@ -823,7 +823,7 @@ images:["/Artists-Artworks/PrithujMondal/Migration.JPG","/Artists-Artworks/Prith
 genre:'figurative',
 medium:'paintings',
 price:"200000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["5 x 8 ft","Mixed media on paper","Original",""]
 },
@@ -835,7 +835,7 @@ images:["/Artists-Artworks/PrithujMondal/untitledI.JPG","/Artists-Artworks/Prith
 genre:'figurative',
 medium:'paintings',
 price:"100000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["48 x 48 inches","Mixed media on paper","Original","2019"]
 },
@@ -847,7 +847,7 @@ images:["/Artists-Artworks/PrithujMondal/untitledII.JPG","/Artists-Artworks/Prit
 genre:'figurative',
 medium:'paintings',
 price:"100000",
-artistid:'6',
+artistid:'5',
 artistname:'Prithuj Mondal',
 details:["48 x 48 inches","Mixed media on paper","Original","2019"]
 },
@@ -859,7 +859,7 @@ images:["/Artists-Artworks/DebangsuBiswas/1.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -871,7 +871,7 @@ images:["/Artists-Artworks/DebangsuBiswas/2.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -883,7 +883,7 @@ images:["/Artists-Artworks/DebangsuBiswas/3.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -895,7 +895,7 @@ images:["/Artists-Artworks/DebangsuBiswas/4.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -907,7 +907,7 @@ images:["/Artists-Artworks/DebangsuBiswas/5.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -919,7 +919,7 @@ images:["/Artists-Artworks/DebangsuBiswas/6.jpg","/Artists-Artworks/DebangsuBisw
 genre:'figurative',
 medium:'paintings',
 price:"70000",
-artistid:'8',
+artistid:'7',
 artistname:'Debangsu Biswas',
 details:["24 x 24 inches","Mixed media on paper","Original",""]
 },
@@ -931,7 +931,7 @@ images:["/Artists-Artworks/Meenugarg/1 (1).png","/Artists-Artworks/Meenugarg/1 (
 genre:'figurative',
 medium:'paintings',
 price:"40000",
-artistid:'9',
+artistid:'8',
 artistname:'Meenu Garg',
 details:["24 x 24 inches","Acrylic on Canvas","Original","2020"]
 },
@@ -943,7 +943,7 @@ images:["/Artists-Artworks/Meenugarg/1 (2).png","/Artists-Artworks/Meenugarg/1 (
 genre:'figurative',
 medium:'paintings',
 price:"75000",
-artistid:'9',
+artistid:'8',
 artistname:'Meenu Garg',
 details:["30 x 36 inches","Acrylic on Canvas","Original","2020"]
 },
@@ -955,7 +955,7 @@ images:["/Artists-Artworks/Meenugarg/1 (3).png","/Artists-Artworks/Meenugarg/1 (
 genre:'figurative',
 medium:'paintings',
 price:"75000",
-artistid:'9',
+artistid:'8',
 artistname:'Meenu Garg',
 details:["30 x 36 inches","Acrylic on Canvas","Original","2021"]
 },
@@ -967,7 +967,7 @@ images:["/Artists-Artworks/Meenugarg/1 (4).png","/Artists-Artworks/Meenugarg/1 (
 genre:'figurative',
 medium:'paintings',
 price:"75000",
-artistid:'9',
+artistid:'8',
 artistname:'Meenu Garg',
 details:["30 x 36 inches","Acrylic on Canvas","Original","2022"]
 },
@@ -979,7 +979,7 @@ images:["/Artists-Artworks/Meenugarg/1 (5).png","/Artists-Artworks/Meenugarg/1 (
 genre:'figurative',
 medium:'paintings',
 price:"75000",
-artistid:'9',
+artistid:'8',
 artistname:'Meenu Garg',
 details:["30 x 36 inches","Acrylic on Canvas","Original","2023"]
 },
@@ -991,7 +991,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (1).jpg","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["36 x 48 inches","Acrylic on Canvas","Original","2013"]
 },
@@ -1003,7 +1003,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (2).jpg","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["36 x 48 inches","Acrylic on Canvas","Original","2013"]
 },
@@ -1015,7 +1015,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (3).jpg","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["36 x 48 inches","Acrylic on Canvas","Original","January - 2016"]
 },
@@ -1027,7 +1027,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (4).JPG","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["24 x 30 inches","Acrylic on Canvas","Original",""]
 },
@@ -1039,7 +1039,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (5).JPG","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
 },
@@ -1051,7 +1051,7 @@ images:["/Artists-Artworks/BalwinderTanwar/1 (6).JPG","/Artists-Artworks/Balwind
 genre:'figurative',
 medium:'paintings',
 price:"",
-artistid:'10',
+artistid:'9',
 artistname:'Balwinder Tanwar',
 details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
 },
@@ -1063,7 +1063,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Digital Print 1-6","Original","2023"]
     },
@@ -1075,7 +1075,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Digital Print 1-6","Original","2023"]
     },
@@ -1087,7 +1087,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Print on Archival Paper","Original","2019"]
     },
@@ -1099,7 +1099,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Digital Print 1-6","Original","2017"]
     },
@@ -1111,7 +1111,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Print on Archival Paper","Original","2013"]
     },
@@ -1123,7 +1123,7 @@ details:["36 x 48 inches","Acrylic on Canvas","Original","March - 2014"]
     genre:'',
     medium:'',
     price:"",
-    artistid:'11',
+    artistid:'10',
     artistname:'Ravindra Kumar Tanwar',
     details:["20 x 30 inches","Print on Archival Paper","Original","2013"]
     },
