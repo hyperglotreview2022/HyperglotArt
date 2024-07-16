@@ -69,3 +69,25 @@
     width: 100%;
     z-index: -10;
 }
+@media screen and (max-width: 768px){
+    .container{
+        height: 250px;
+        position: relative;
+    }
+    .controlbtn{
+        width: 30px;
+        height: 30px;
+    }
+    .controls{
+        bottom: 10px;
+    }
+    .fullscreenicon{
+        width: 30px;
+        height: 30px;
+    }
+    .backicon{
+        width: auto;
+        height: 30px;
+        font-size: 16px;
+    }
+}
