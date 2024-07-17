@@ -132,7 +132,7 @@ const DragControlsComponent = ({ moveState, boundaries }) => {
 
   useFrame((_, delta) => {
     const { forward, backward, left, right } = moveState.current || {};
-    const speed = 15;
+    const speed = 20;
 
     // Reset direction vector
     direction.current.set(0, 0, 0);
@@ -187,7 +187,7 @@ const Index = () => {
   // Define the boundaries of the gallery (adjust as needed)
   const boundaries = {
     minX: -17,
-    maxX: 13,
+    maxX: 15,
     minZ: -90,
     maxZ: 100,
   };

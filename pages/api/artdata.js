@@ -41,6 +41,18 @@ const data = [
     name: 'Ravindra Kumar Tanwar',
     url:"/Artists-Artworks/RavindraKumarTanwar/2.jpg",
     artistcategory:"Featured"},
+  { id:'11',
+    name: 'Pabitra Pal',
+    url:"/Artists-Artworks/PabitraPal/Wingspabitra1.jpg",
+    artistcategory:"Featured"},
+  { id:'12',
+    name: 'Harsh Inder Loomba',
+    url:"/Artists-Artworks/HarshInderLoomba/1.jpg",
+    artistcategory:"Spotlight"},
+  { id:'13',
+    name: 'Ajay Samir',
+    url:"/Artists-Artworks/AjaySamir/1.jpg",
+    artistcategory:"Spotlight"},
 ]
 
 export default data;
