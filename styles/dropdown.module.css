@@ -140,6 +140,11 @@
 .secondrel1:hover .secab1d{
   top: -15px;
 }
+@media screen and (max-width: 1550px){
+  .secab,.secab1,.secabd,.secab1d{
+    left: 100px;
+  }
+}
 @media screen and (max-width: 768px){
   .content1{
     position: static;
