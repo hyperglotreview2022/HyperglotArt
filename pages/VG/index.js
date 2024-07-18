@@ -1,15 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import VirtualGallery from '../../components/VirtualGallery/virtualgallery'
 import Navbar from '@/components/navbarforpages'
 import Footer from '@/components/footer'
 import styles from '../../styles/VG.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function index() {
+
   return (
     <div>
       <Navbar />
       <div className={styles.vgcontainer}>
+      <div className={styles.cover}>
+        <Link href={'/VirtualGalleryMobile'} className={styles.redirectmobile}>Enter Exhibition</Link>
+      </div>
+
         <VirtualGallery />
       </div>
 

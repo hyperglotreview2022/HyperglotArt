@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from "@/components/navbarforpages";
 import Footer from '@/components/footer'
 import styles from '../../styles/eventpage.module.css'
@@ -6,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function index() {
+
   return (
     <div>
       <Navbar />
