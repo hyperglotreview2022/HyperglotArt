@@ -53,6 +53,15 @@ const data = [
     name: 'Ajay Samir',
     url:"/Artists-Artworks/AjaySamir/1.jpg",
     artistcategory:"Spotlight"},
+    { id:'14',
+      name: 'Seema',
+      url:"/Artists-Artworks/AjaySamir/1.jpg",
+      artistcategory:"Spotlight"},
+      { id:'15',
+        name: 'Hema',
+        url:"/Artists-Artworks/Hema/1.jpg",
+        artistcategory:"Spotlight"},
+  
 ]
 
 export default data;
