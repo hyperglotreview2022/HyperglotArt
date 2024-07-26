@@ -6,6 +6,10 @@
     height: 93vh;
     position: relative;
 }
+.link{
+    color: black;
+    text-decoration: none;
+}
 .cover{
  position: absolute;
  top: 0;

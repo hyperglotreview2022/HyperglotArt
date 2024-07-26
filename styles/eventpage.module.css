@@ -2,6 +2,10 @@
   text-align: center;
   padding: 110px 0 60px;
 }
+.link{
+  text-decoration: none;
+  color: black;
+}
 .heading{
     font-family: 'Playfair Display', serif;
     font-size: 48px;

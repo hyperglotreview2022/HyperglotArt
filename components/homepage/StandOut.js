@@ -18,16 +18,16 @@ export default function StandOut() {
       </div>
       <div className={styles.flex}>
         <div>
-          <div className={styles.heading}><span>Latest </span>Virtual Gallery</div>
+         <div className={styles.heading}><span>Latest </span>Virtual Gallery</div>
           <div className={styles.info}>
-            <div>Choose from a variety of 500+ artworks from our marketplace.</div>
-            <div>Add artworks, sculptures, prints, exclusive and limited edition items to your collection. </div>
-            <div>Get in touch with us for a quote and experience a seamless process of purchase and shipping. </div>
+             <Link className={styles.link} href={'/RedrawingArtscapes'}><div className={styles.eventname}>REDRAWING ARTSCAPES</div></Link>
+            <div className={styles.eventdesc}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.</div>
+            <div className={styles.eventdate}><b>Date:</b> Saturday, 26 August, 2023</div>
           </div>
-          <Link href={'/ContactUs'} className={styles.btn}>Get in Touch</Link>
+          <Link href={'/RedrawingArtscapes'} className={styles.btn}>Read More</Link>
         </div>
         <div>
-          <Image src={'/servicesimages/services (6).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/virtualgallerymodels/images/redrawingart.png'} className={styles.img} width={400} height={400} alt='image' />
         </div>
       </div>
     </div>
