@@ -13,16 +13,16 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* {loading ? ( */}
-        {/* <React.Fragment>
+      {loading ? (
+        <React.Fragment>
           <Component {...pageProps} />
         </React.Fragment>
       ) : (
         <Loading />
-      )} */}
-      <React.Fragment>
+      )}
+      {/* <React.Fragment>
           <Component {...pageProps} />
-        </React.Fragment>
+        </React.Fragment> */}
   </>
   )
 }
