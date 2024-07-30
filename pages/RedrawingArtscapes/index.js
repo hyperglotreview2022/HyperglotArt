@@ -51,8 +51,8 @@ We hope that you experience at least one or more of these 'events' during our sh
       </div>
 
 
-      <div className={styles.recommendcontainer}>
-        <div className={styles.heading}>Other Virtual Exhibitions like this</div>
+      {/* <div className={styles.recommendcontainer}>
+        <div className={styles.heading}>Recent 3D Virtual Galleries</div>
         <div className={styles.gridcont}>
         <Link className={styles.link} href="/RedrawingArtscapes">
         <div className={styles.card1}>
@@ -61,7 +61,6 @@ We hope that you experience at least one or more of these 'events' during our sh
             <div className={styles.topic1}>REDRAWING ARTSCAPES</div>
             <div className={styles.desc1}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated...</div>
             <div className={styles.details1}><b>Date:</b> Saturday, 26 August, 2023</div>
-            {/* <div className={styles.details1}><b>Venue:</b> Somewhere, New Delhi</div> */}
             <div className={styles.readbtn1}>Read more</div>
           </div>
         </div>
@@ -74,7 +73,6 @@ We hope that you experience at least one or more of these 'events' during our sh
             <div className={styles.topic1}>REDRAWING ARTSCAPES</div>
             <div className={styles.desc1}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated...</div>
             <div className={styles.details1}><b>Date:</b> Saturday, 26 August, 2023</div>
-            {/* <div className={styles.details1}><b>Venue:</b> Somewhere, New Delhi</div> */}
             <div className={styles.readbtn1}>Read more</div>
           </div>
         </div>
@@ -87,14 +85,14 @@ We hope that you experience at least one or more of these 'events' during our sh
             <div className={styles.topic1}>REDRAWING ARTSCAPES</div>
             <div className={styles.desc1}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated...</div>
             <div className={styles.details1}><b>Date:</b> Saturday, 26 August, 2023</div>
-            {/* <div className={styles.details1}><b>Venue:</b> Somewhere, New Delhi</div> */}
             <div className={styles.readbtn1}>Read more</div>
           </div>
         </div>
         </Link>
 
         </div>
-      </div>
+      </div> */}
+
       <Footer />
     </div>
   )
