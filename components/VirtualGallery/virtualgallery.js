@@ -278,6 +278,7 @@ import * as THREE from 'three';
 import styles from '../../styles/VG.module.css';
 import { BiFullscreen } from 'react-icons/bi';
 import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 'react-icons/io';
+import Loading from './Loading'
 
 const Model = ({ scale }) => {
   const gltf = useGLTF('/virtualgallerymodels/redrawingartscapes.glb', true);
@@ -511,14 +512,16 @@ const Index = () => {
   return (
     <div className={!togglefull ? styles.container : styles.fullcontainer}>
       <div className={styles.fullscreenicon} onClick={toggleFullscreen}><BiFullscreen /></div>
+      <Suspense fallback={<Loading />}>
       <Canvas shadows camera={{ position: [0, 0.5, 5] }}>
         <ambientLight intensity={0.1} />
-        <Suspense fallback={null}>
+
           <Model scale={modelScale} />
           <Lighting />
-        </Suspense>
+
         <DragControlsComponent moveState={moveState} />
       </Canvas>
+      </Suspense>
       <div className={styles.controls}>
         <div className={styles.controlbtn} onMouseDown={moveForward} onTouchStart={moveForward} onMouseUp={() => (moveState.current.forward = false)} onTouchEnd={() => (moveState.current.forward = false)}><IoIosArrowUp /></div>
         <div className={styles.bottom}>

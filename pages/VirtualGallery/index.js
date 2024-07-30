@@ -19,7 +19,7 @@ export default function index() {
           <div className={styles.desc}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.</div>
           <div className={styles.details}><b>Date:</b> Saturday, 26 August, 2023</div>
           {/* <div className={styles.details}><b>Venue:</b> Somewhere, New Delhi</div> */}
-          <Link className={styles.link} href="/RedrawingArtscapes"><div className={styles.readbtn}>Read more</div></Link>
+          <Link className={styles.link} href="/RedrawingArtscapes"><div className={styles.readbtn}>Enter 3D View</div></Link>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ export default function index() {
 
         </div>
       </div> */}
-      
+
       </div>
       <Footer />
     </div>
