@@ -14,22 +14,24 @@
   padding-top: 20px;
 }
 .bannerheading{
-    background-color: rgb(24, 24, 24);
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 300;
     margin: 0;
     border-bottom: 2px solid white;
-    width: 89.7vw;
-    padding-bottom: 20px;
+    width: 90vw;
+    border-bottom: 2px solid black;
+    width: 90vw;
+    padding-bottom: 10px;
     padding-top: 20px;
     text-transform: capitalize;
 }
 .cardflex{
   display: flex;
   gap: 5%;
-  margin: 0px 5%;
+  margin: 20px 5% 80px;
   padding: 50px 5% 70px;
   text-align: left;
   align-items: center;
@@ -40,7 +42,7 @@
 .cardflex1{
   display: flex;
   gap: 5%;
-  margin: 0px 5%;
+  margin: 40px 5% 0;
   padding: 50px 5% 70px;
   text-align: left;
   align-items: center;
@@ -51,7 +53,7 @@
 .cardflex2{
   display: flex;
   gap: 5%;
-  margin: 0px 5%;
+  margin: 20px 5% 0;
   padding: 50px 5% 70px;
   text-align: left;
   align-items: center;

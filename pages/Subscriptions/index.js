@@ -63,7 +63,7 @@ const index = () => {
           </div>
           <div className={styles.cardflex}>
             <div className={styles.left}>
-              <div className={styles.head1}>Pro Plan</div>
+              <div className={styles.head1}>Elite Plan</div>
               <div className={styles.head2}>&#36; 30 USD/<span>month</span></div>
               <div className={styles.head2}>&#36; 300 USD/<span>month</span></div>
               <div className={styles.btn}>Get Started</div>

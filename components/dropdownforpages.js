@@ -12,7 +12,7 @@ const dropdown = () => {
       <div className={dropd ? `${styles.contentd}` : `${styles.content1d}`}>
       <Link className={styles.link} href="/OurServices/Artists">Artists</Link>
         <Link className={styles.link} href='/OurServices/Buyers'>Buyers</Link>
-        <Link className={styles.link} href='/OurServices/Galleries'>Galleries</Link>
+        <div className={styles.link}>Galleries</div>
       </div>
     </div>
   )

@@ -25,7 +25,7 @@ export default function Subscriptions() {
 
         <div className={styles.card2}>
           <div className={styles.one}></div>
-          <div className={styles.two}>PRO PLAN</div>
+          <div className={styles.two}>ELITE PLAN</div>
           <div className={styles.three}>Limited Features</div>
           <div className={styles.four}>no Public 3D Exhibition</div>
           <Link href={'/Subscriptions#three'} className={styles.btn}>Register</Link>
