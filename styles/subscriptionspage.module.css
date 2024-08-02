@@ -33,7 +33,29 @@
   padding: 50px 5% 70px;
   text-align: left;
   align-items: center;
-  background-color: rgb(24, 24, 24);
+  background-color: #397b7c;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.cardflex1{
+  display: flex;
+  gap: 5%;
+  margin: 0px 5%;
+  padding: 50px 5% 70px;
+  text-align: left;
+  align-items: center;
+  background-color: #748a8f;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.cardflex2{
+  display: flex;
+  gap: 5%;
+  margin: 0px 5%;
+  padding: 50px 5% 70px;
+  text-align: left;
+  align-items: center;
+  background-color: #005e74;
   color: white;
   border-bottom: 2px solid white;
 }
@@ -69,7 +91,31 @@
   font-family: 'Poppins', sans-serif;
   padding: 10px 2%;
   border-radius: 10px;
-  background-color: rgb(50, 50, 50);
+  background-color: #275657;
+  margin-top: 10px;
+  width: 40vw;
+}
+.perk1{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 2%;
+  border-radius: 10px;
+  background-color: #4d5d61;
+  margin-top: 10px;
+  width: 40vw;
+}
+.perk2{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 2%;
+  border-radius: 10px;
+  background-color: #003c49;
   margin-top: 10px;
   width: 40vw;
 }

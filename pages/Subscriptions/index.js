@@ -31,7 +31,7 @@ const index = () => {
              id={width > 1400 && 'one'}
              className={styles.bannerheading}>Subscriptions</h1>
           </div>
-          <div className={styles.cardflex}>
+          <div className={styles.cardflex1}>
             <div className={styles.left}>
               <div className={styles.head1}>Standard Plan</div>
               <div className={styles.head2}>&#36; 10 USD/<span>month</span></div>
@@ -40,13 +40,13 @@ const index = () => {
             </div>
             <div className={styles.right}>
               <div className={styles.perks}>Perks</div>
-              <div className={styles.perk}><GiCheckMark className={styles.icon}/><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div></div>
-              <div className={styles.perk}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></div>
-              <div className={styles.perk}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur.</div></div>
-              <div id={width < 800 && 'two'} className={styles.perk}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
+              <div className={styles.perk1}><GiCheckMark className={styles.icon}/><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div></div>
+              <div className={styles.perk1}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></div>
+              <div className={styles.perk1}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur.</div></div>
+              <div id={width < 800 && 'two'} className={styles.perk1}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
             </div>
           </div>
-          <div  className={styles.cardflex}>
+          <div  className={styles.cardflex2}>
             <div className={styles.left}>
               <div className={styles.head1}>Premium Plan</div>
               <div className={styles.head2}>&#36; 20 USD/<span>month</span></div>
@@ -55,10 +55,10 @@ const index = () => {
             </div>
             <div className={styles.right}>
               <div className={styles.perks}>Perks</div>
-              <div className={styles.perk}><GiCheckMark className={styles.icon}/><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div></div>
-              <div className={styles.perk}><GiCheckMark className={styles.icon}/><div >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></div>
-              <div className={styles.perk}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur.</div></div>
-              <div id={width < 800 && 'three'} className={styles.perk}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
+              <div className={styles.perk2}><GiCheckMark className={styles.icon}/><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div></div>
+              <div className={styles.perk2}><GiCheckMark className={styles.icon}/><div >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></div>
+              <div className={styles.perk2}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur.</div></div>
+              <div id={width < 800 && 'three'} className={styles.perk2}><RxCross1 className={styles.icon}/><div className={styles.cross}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
             </div>
           </div>
           <div className={styles.cardflex}>

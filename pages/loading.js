@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from '../styles/loading.module.css'
+import styles from '../styles/VG.module.css'
 import Image from 'next/image'
 
-export default function loading() {
+export default function () {
   return (
-    <div className={styles.container}>
-        <Image src={'/logo/newdark.png'} className={styles.logoimg} width={400} height={400} alt='logo'/>
+    <div className={styles.loadingcontainer}>
+        <Image className={styles.loader} src={'/logo/loader.svg'} width={500} height={500} alt='loading'/>
     </div>
   )
 }
