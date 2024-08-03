@@ -88,6 +88,10 @@
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
+.underline{
+  color: white;
+  text-decoration: none;
+}
 @media screen and (max-width: 768px){
   .flex{
     flex-direction: column;

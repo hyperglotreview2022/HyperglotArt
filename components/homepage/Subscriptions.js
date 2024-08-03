@@ -13,7 +13,7 @@ export default function Subscriptions() {
           <ul className={styles.lists}>
             <li>Standard website templates</li>
             <li>Seminars and Workshops</li>
-            <li>and more...</li>
+            <Link href={'/Subscriptions#one'} className={styles.underline}>read more...</Link>
           </ul>
           <Link href={'/Subscriptions#one'} className={styles.btn}>Register</Link>
         </div>
@@ -24,7 +24,7 @@ export default function Subscriptions() {
           <ul className={styles.lists}>
             <li>Premium website templates</li>
             <li>3D virtual galleries</li>
-            <li>and more...</li>
+            <Link href={'/Subscriptions#two'} className={styles.underline}>read more...</Link>
           </ul>
           <Link href={'/Subscriptions#two'} className={styles.btn}>Register</Link>
         </div>
@@ -35,7 +35,7 @@ export default function Subscriptions() {
           <ul className={styles.lists}>
             <li>Customized templates</li>
             <li>Digital marketing and Social media Management</li>
-            <li>and more...</li>
+            <Link href={'/Subscriptions#three'} className={styles.underline}>read more...</Link>
           </ul>
           <Link href={'/Subscriptions#three'} className={styles.btn}>Register</Link>
         </div>
