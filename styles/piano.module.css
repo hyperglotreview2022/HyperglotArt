@@ -7,7 +7,7 @@
     color: white;
 }
 .ques{
-    background-color: rgb(24, 24, 24);
+    background-color: #4d4d4d;
     padding: 20px 3%;
     font-size: 22px;
     display: flex;
@@ -15,14 +15,15 @@
 }
 .ques1{
     color: black;
-    border: 1px solid black;
+    border: 1px solid #4d4d4d;
     padding: 20px 3%;
     font-size: 22px;
     display: flex;
     justify-content: space-between;
 }
 .ans{
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(105, 105, 105);
+    border: 1px solid #4d4d4d;
     padding: 20px 3%;
     font-size: 22px;
     transition: 0.3s;
@@ -37,6 +38,15 @@
     opacity: 0;
     transition: 0.3s;
 }
+.nicon{
+   font-size: 18px;
+   transition: 0.3s;
+}
+.icon{
+    font-size: 18px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+ }
 @media screen and (max-width: 768px){
     .ans{
         height: 400px;

@@ -266,7 +266,7 @@ margin-top: 100px;
 .flex7{
   margin: 50px 5% 0;
   padding: 60px 5% 20px;
-  background-color: rgb(24, 24, 24);
+  background-color: #397b7c;
   color: white;
 }
 .flex8{
@@ -279,6 +279,7 @@ margin-top: 100px;
   height: 400px;
   margin-right: 5%;
   margin-bottom: 50px;
+  object-fit: cover;
 }
 .img9{
   float: right;
@@ -286,6 +287,7 @@ margin-top: 100px;
   height: 400px;
   margin-left: 5%;
   margin-bottom: 50px;
+  object-fit: cover;
 }
 .right17{
   text-align: left;
