@@ -33,7 +33,7 @@ const index = () => {
 
             <div className={styles.rflexcont}>
               <div className={styles.imgc1}>
-                <Image src={'/servicesimages/services (7).jpg'} className={styles.img} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Buyers (2).jpeg'} className={styles.img} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right}>
                 <div className={styles.heading7}>Become a Visionary</div>
@@ -62,7 +62,7 @@ global stage.</div>
 
             <div className={styles.flex7}>
             <div className={styles.imgc8}>
-                <Image src={'/servicesimages/services (7).jpg'} className={styles.img8} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Buyers (3).jpeg'} className={styles.img8} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right17}>
                 <div className={styles.heading8}>Paradigm Shift</div>
@@ -116,7 +116,7 @@ houses and art websites.</li>
 
             <div className={styles.flex8}>
             <div className={styles.imgc8}>
-                <Image src={'/servicesimages/services (7).jpg'} className={styles.img9} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Buyers (1).jpeg'} className={styles.img9} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right17}>
                 <div className={styles.heading9}>A New Era</div>
@@ -189,7 +189,7 @@ of the art world.</li>
                 </div>
                 <div className={styles.right11}>
                 <div>
-                  <Image src={'/servicesimages/services (7).jpg'} className={styles.img10} width={400} height={400} alt='image' />
+                  <Image src={'/servicesimages/Buyers (4).jpeg'} className={styles.img10} width={400} height={400} alt='image' />
                 </div>
                 <div>
                   <div className={styles.rh}>Browse the Hyperglot Art Trade Catalog</div>

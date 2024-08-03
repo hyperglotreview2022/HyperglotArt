@@ -34,8 +34,8 @@ const index = () => {
           <div className={styles.cardflex1}>
             <div className={styles.left}>
               <div className={styles.head1}>Standard Plan</div>
-              <div className={styles.head2}>&#36; 10 USD/<span>month</span></div>
-              <div className={styles.head2}>&#36; 100 USD/<span>month</span></div>
+              <div className={styles.head2}>9000 INR/<span>year</span></div>
+              {/* <div className={styles.head2}>&#36; 100 USD/<span>month</span></div> */}
               <div id={width > 1400 && 'two'} className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>
@@ -49,8 +49,8 @@ const index = () => {
           <div  className={styles.cardflex2}>
             <div className={styles.left}>
               <div className={styles.head1}>Premium Plan</div>
-              <div className={styles.head2}>&#36; 20 USD/<span>month</span></div>
-              <div className={styles.head2}>&#36; 200 USD/<span>month</span></div>
+              <div className={styles.head2}>15000 INR/<span>year</span></div>
+              {/* <div className={styles.head2}>&#36; 200 USD/<span>month</span></div> */}
               <div id={width > 1400 && 'three'} className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>
@@ -64,8 +64,8 @@ const index = () => {
           <div className={styles.cardflex}>
             <div className={styles.left}>
               <div className={styles.head1}>Elite Plan</div>
-              <div className={styles.head2}>&#36; 30 USD/<span>month</span></div>
-              <div className={styles.head2}>&#36; 300 USD/<span>month</span></div>
+              <div className={styles.head2}>25000 INR/<span>year</span></div>
+              {/* <div className={styles.head2}>&#36; 300 USD/<span>month</span></div> */}
               <div className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>

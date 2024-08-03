@@ -51,7 +51,7 @@ of success together.
 
             <div className={styles.flexcont}>
               <div className={styles.imgc}>
-                <Image src={'/servicesimages/services (5).jpg'} className={styles.img} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Artist (1).jpeg'} className={styles.img} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right}>
                 <div className={styles.heading}>Expertise and Passion</div>
@@ -71,7 +71,7 @@ innovative and effective.</div>
 
             <div className={styles.rflexcont}>
               <div className={styles.imgc}>
-                <Image src={'/servicesimages/services (5).jpg'} className={styles.img} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Artist (1).jpg'} className={styles.img} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right}>
                 <div className={styles.heading}>Comprehensive Support</div>
@@ -93,7 +93,7 @@ creating art.
 
             <div className={styles.flexcont}>
               <div className={styles.imgc}>
-                <Image src={'/servicesimages/services (5).jpg'} className={styles.img} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/Artist (4).jpeg'} className={styles.img} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right}>
                 <div className={styles.heading}>Proven Results
@@ -119,7 +119,7 @@ sales.</div>
                 </div>
                 <div className={styles.right11}>
                 <div>
-                  <Image src={'/servicesimages/services (5).jpg'} className={styles.img10} width={400} height={400} alt='image' />
+                  <Image src={'/servicesimages/Artist (2).jpeg'} className={styles.img10} width={400} height={400} alt='image' />
                 </div>
                 <div>
                   <div className={styles.rh}>Browse the Hyperglot Art Trade Catalog</div>
