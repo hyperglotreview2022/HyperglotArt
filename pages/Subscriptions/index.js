@@ -39,10 +39,10 @@ const index = () => {
               <div id={width > 1400 && 'two'} className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>
-              <div className={styles.perks}>Perks</div>
+              {/* <div className={styles.perks}>Perks</div> */}
               <div className={styles.perk1}>
               {/* <GiCheckMark className={styles.icon}/> */}
-                <div><b>Website Creation & Maintenance:</b><br/>
+                <div><b>Website Creation & Maintenance</b><br/>
                   <ul>
                     <li>Standard artist portfolio site with up to 100 artworks</li>
                     <li>Regular updates and maintenance</li>
@@ -51,7 +51,7 @@ const index = () => {
               </div>
               <div className={styles.perk1}>
               {/* <GiCheckMark className={styles.icon}/> */}
-                <div><b>Gallery Representation:</b><br/>
+                <div><b>Gallery Representation</b><br/>
                   <ul>
                     <li>Submission to 2 galleries per quarter</li>
                     <li>One 3D Virtual Exhibition per quarter and One Offline Exhibition in a year</li>
@@ -60,7 +60,7 @@ const index = () => {
               </div>
               <div className={styles.perk1}>
               {/* <GiCheckMark className={styles.icon}/> */}
-                <div id={width < 800 && 'two'}><b>Seminars and Workshops:</b><br/>
+                <div id={width < 800 && 'two'}><b>Seminars and Workshops</b><br/>
                   <ul>
                     <li>Free of charge seminars, workshops and training sessions for artists</li>
                   </ul>
@@ -79,7 +79,7 @@ const index = () => {
               <div id={width > 1400 && 'three'} className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>
-              <div className={styles.perks}>Perks</div>
+              {/* <div className={styles.perks}>Perks</div> */}
               <div className={styles.perk2}>
                {/* <GiCheckMark className={styles.icon}/> */}
                <div><b>All Basic Plan Benefits, Plus</b><br/>
@@ -93,8 +93,8 @@ const index = () => {
                {/* <GiCheckMark className={styles.icon}/> */}
                <div><b>Website Upgrade</b><br/>
                   <ul>
-                    <li>Two 3D Virtual Galleries with 20 artworks each.</li>
-                    <li>Integration of blogs and news sections.</li>
+                    <li>Two 3D Virtual Galleries with 20 artworks each</li>
+                    <li>Integration of blogs and news sections</li>
                   </ul>
                 </div>
               </div>
@@ -102,8 +102,8 @@ const index = () => {
                {/* <GiCheckMark className={styles.icon}/> */}
                <div><b>Gallery Representation</b><br/>
                   <ul>
-                    <li>Submission to an additional 3 galleries per year.</li>
-                    <li>Participation in 2 Offline exhibitions, including planning and promotion.</li>
+                    <li>Submission to an additional 3 galleries per year</li>
+                    <li>Participation in 2 Offline exhibitions, including planning and promotion</li>
                   </ul>
                 </div>
               </div>
@@ -120,14 +120,14 @@ const index = () => {
               <div className={styles.btn}>Get Started</div>
             </div>
             <div className={styles.right}>
-              <div className={styles.perks}>Perks</div>
+              {/* <div className={styles.perks}>Perks</div> */}
               <div className={styles.perk}>
                 {/* <GiCheckMark className={styles.icon}/> */}
                   <div><b>All Premium Plan Benefits, Plus</b><br/></div>
                 </div>
                 <div className={styles.perk}>
                {/* <GiCheckMark className={styles.icon}/> */}
-               <div><b>Premium Social Media Management:</b><br/>
+               <div><b>Premium Social Media Management</b><br/>
                   <ul>
                     <li>1 weekly post, bi-weekly engagement through reels/ stories</li>
                     {/* <li>Participation in 2 Offline exhibitions, including planning and promotion.</li> */}
@@ -138,8 +138,8 @@ const index = () => {
                {/* <GiCheckMark className={styles.icon}/> */}
                <div><b>Website Upgrade</b><br/>
                   <ul>
-                    <li>Custom design.</li>
-                    <li>2 Blogs and articles per month for greater reach in digital media.</li>
+                    <li>Custom design</li>
+                    <li>2 Blogs and articles per month for greater reach in digital media</li>
                     <li>3 additional 3D virtual galleries with 20 artworks each</li>
                   </ul>
                 </div>
