@@ -8,7 +8,7 @@ export default function StandOut() {
     <div className={styles.container}>
       <div className={styles.topic}>Virtual Gallery</div>
       <div className={styles.imgcont1}>
-        <Image src={'/servicesimages/services (5).jpg'} className={styles.img1} width={1200} height={1200} alt='image' />
+        <Image src={'/servicesimages/1.jpg'} className={styles.img1} width={1200} height={1200} alt='image' />
         <div className={styles.cover1}>
         <div className={styles.border1}>
           <div className={styles.heading1}>Our Upcoming Shows</div>
