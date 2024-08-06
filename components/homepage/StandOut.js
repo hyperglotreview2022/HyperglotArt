@@ -20,14 +20,16 @@ export default function StandOut() {
         <div>
          <div className={styles.heading}><span>Recent </span>3D <span>Virtual Galleries</span></div>
           <div className={styles.info}>
-             <Link className={styles.link} href={'/RedrawingArtscapes'}><div className={styles.eventname}>REDRAWING ARTSCAPES</div></Link>
-            <div className={styles.eventdesc}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.</div>
-            <div className={styles.eventdate}><b>Date:</b> Saturday, 26 August, 2023</div>
+             <Link className={styles.link} href={'/Amorphicchasms'}><div className={styles.eventname}>AMORPHIC CHASMS</div></Link>
+            <div className={styles.eventdesc}>Hyperglot Review is extremely proud to present AMORPHIC CHASMS, a show that has been more than six months in the making. In keeping with the thematic and aesthetic motifs of our previous shows, this show revisits how artistic expressions and processes evolve over time both for individual artists and for their audiences. 
+<br/>
+What truly distinguishes art from other fields is the conscious effort to dismantle and create anew in each and every artistic creation the very principles that determine the viewer’s perception of and response to an artist’s work. Definitions, genres and styles become mere amorphic chasms and fluid in anature. They transgress against and coalesce into each other. Recursive artistic and creative evolution is the only constant in the cosmic playground of flux and incessant movement... <br/></div>
+            <div className={styles.eventdate}><b>Date:</b> Saturday, 10 August, 2024</div>
           </div>
-          <Link href={'/RedrawingArtscapes'} className={styles.btn}>Enter 3D View</Link>
+          <Link href={'/Amorphicchasms'} className={styles.btn}>Enter 3D View</Link>
         </div>
         <div>
-          <Image src={'/virtualgallerymodels/images/redrawingart.png'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/virtualgallerymodels/images/amorphicchasms.png'} className={styles.img} width={400} height={400} alt='image' />
         </div>
       </div>
     </div>

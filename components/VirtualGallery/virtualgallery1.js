@@ -5,9 +5,10 @@ import * as THREE from 'three';
 import styles from '../../styles/VG.module.css';
 import { BiFullscreen } from 'react-icons/bi';
 import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 'react-icons/io';
+import Loading from './Loading';
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/alliancetest1.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {
@@ -215,7 +216,7 @@ const DragControlsComponent = ({ moveState }) => {
     }
 
     camera.position.add(moveVector);
-    camera.position.y = 10;
+    camera.position.y = 17.5;
   });
 
   return null;
@@ -224,7 +225,7 @@ const DragControlsComponent = ({ moveState }) => {
 const Index = () => {
   const [togglefull, setTogglefull] = useState(false);
   const moveState = useRef({ forward: false, backward: false, left: false, right: false });
-  const modelScale = 5;
+  const modelScale = 10;
 
   const toggleFullscreen = () => {
     setTogglefull(!togglefull);
@@ -238,15 +239,17 @@ const Index = () => {
   return (
     <div className={!togglefull ? styles.container : styles.fullcontainer}>
       <div className={styles.fullscreenicon} onClick={toggleFullscreen}><BiFullscreen /></div>
-      <Canvas shadows camera={{ position: [0, 0, 70] }}>
-        <ambientLight intensity={3} />
+      <Suspense fallback={<Loading />}>
+      <Canvas shadows camera={{ position: [0, 0, 150] }}>
+        <ambientLight intensity={2} />
         <spotLight position={[100, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
-        <Suspense fallback={null}>
+        <spotLight position={[-200, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
           <Model scale={modelScale} />
           {/* <Lighting /> */}
-        </Suspense>
+
         <DragControlsComponent moveState={moveState} />
-      </Canvas>
+      </Canvas>        
+      </Suspense>
       <div className={styles.controls}>
         <div className={styles.controlbtn} onMouseDown={moveForward} onTouchStart={moveForward} onMouseUp={() => (moveState.current.forward = false)} onTouchEnd={() => (moveState.current.forward = false)}><IoIosArrowUp /></div>
         <div className={styles.bottom}>

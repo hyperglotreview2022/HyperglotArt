@@ -9,7 +9,6 @@ const events = () => {
   return (
     <div className={styles.container}>
       <div className={styles.topic}>Events</div>
-      <div className={styles.up}>Past Events</div>
       <div className={styles.flexflex}>
       {eventsdata.slice(0,4).map((data)=><div className={styles.card}>
           <Link className={styles.link} href={`/EventsPage/${data.id}`}>
