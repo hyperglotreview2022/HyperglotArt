@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 import Loading from '../../../components/VirtualGallery/Loading'
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms1.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {

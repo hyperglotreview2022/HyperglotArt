@@ -29,7 +29,7 @@ What truly distinguishes art from other fields is the conscious effort to disman
           <Link href={'/Amorphicchasms'} className={styles.btn}>Enter 3D View</Link>
         </div>
         <div>
-          <Image src={'/virtualgallerymodels/images/amorphicchasms.png'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/virtualgallerymodels/images/AC.png'} className={styles.img} width={400} height={400} alt='image' />
         </div>
       </div>
     </div>

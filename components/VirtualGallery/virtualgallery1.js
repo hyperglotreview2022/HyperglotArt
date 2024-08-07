@@ -8,7 +8,7 @@ import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 
 import Loading from './Loading';
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms1.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {
@@ -16,6 +16,15 @@ const Model = ({ scale }) => {
         node.castShadow = true;
         node.receiveShadow = true;
         node.material.side = THREE.DoubleSide;
+
+        // Check if the material name includes "Glass" to identify glass doors
+        if (node.material.name.includes("Glass")) {
+          node.material.transparent = true;
+          node.material.opacity = 0.5; // Adjust based on your needs
+          node.material.roughness = 0;
+          node.material.metalness = 0;
+          node.material.transmission = 1;
+        }
       }
     });
   }, [gltf]);
@@ -263,5 +272,6 @@ const Index = () => {
 };
 
 export default Index;
+
 
 
