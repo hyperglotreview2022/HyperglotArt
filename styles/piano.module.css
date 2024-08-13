@@ -27,13 +27,12 @@
     padding: 20px 3%;
     font-size: 22px;
     transition: 0.3s;
-    height: 160px;
+    height: auto;
 }
 .answ{
     background-color: rgb(54, 54, 54);
     padding: 0px 3%;
     font-size: 0px;
-    height: 0px;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -49,7 +48,7 @@
  }
 @media screen and (max-width: 768px){
     .ans{
-        height: 400px;
         padding-right: 10%;
+        height: auto;
     }
 }
