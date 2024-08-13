@@ -63,6 +63,7 @@
 @media screen and (max-width: 768px){
   .flex{
     justify-content: space-between;
+    margin-bottom: 30px;
   }
   .container{
     flex-direction: column;

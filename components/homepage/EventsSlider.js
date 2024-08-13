@@ -44,7 +44,7 @@ export default function EventsSlider({ artworks }) {
   }}
     >       
             <SwiperSlide className={styles.sliderbigcont}>
-            <Link href={`/SingleProduct/${artworks[84].id}`} className={styles.link}>
+            <Link href={`/SingleProduct/${artworks[80].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/BalwinderTanwar/1 (3).jpg"} className={styles.img} width={2000} height={2000} alt='image' />
                 <div className={styles.info}>
@@ -54,7 +54,7 @@ export default function EventsSlider({ artworks }) {
               </div>
             </Link>
             </SwiperSlide>
-            <SwiperSlide className={styles.sliderbigcont}>
+            {/* <SwiperSlide className={styles.sliderbigcont}>
             <Link href={`/SingleProduct/${artworks[77].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/Meenugarg/1 (1).png"} className={styles.img} width={2000} height={2000} alt='image' />
@@ -64,10 +64,10 @@ export default function EventsSlider({ artworks }) {
                 </div>
               </div>
               </Link>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide className={styles.sliderbigcont}>
-            <Link href={`/SingleProduct/${artworks[73].id}`} className={styles.link}>
+            <Link href={`/SingleProduct/${artworks[69].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/DebangsuBiswas/3.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
                 <div className={styles.info}>
@@ -79,19 +79,19 @@ export default function EventsSlider({ artworks }) {
             </SwiperSlide>
 
             <SwiperSlide className={styles.sliderbigcont}>
-            <Link href={`/SingleProduct/${artworks[49].id}`} className={styles.link}>
+            <Link href={`/SingleProduct/${artworks[55].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
-                <Image src={"/Artists-Artworks/PreetiSethi/3.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
+                <Image src={"/Artists-Artworks/PreetiSethi/15.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
                 <div className={styles.info}>
                   <h1 className={styles.sliderheading}>Preeti Sethi</h1>
-                  <h3 className={styles.subheading}>The Leap</h3>
+                  <h3 className={styles.subheading}>Restructuring Nature</h3>
                 </div>
               </div>
               </Link>
             </SwiperSlide>
 
             <SwiperSlide className={styles.sliderbigcont}>
-            <Link href={`/SingleProduct/${artworks[44].id}`} className={styles.link}>
+            <Link href={`/SingleProduct/${artworks[40].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/PrithujMondal/conversation.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
                 <div className={styles.info}>
@@ -103,7 +103,7 @@ export default function EventsSlider({ artworks }) {
             </SwiperSlide>
 
             <SwiperSlide className={styles.sliderbigcont}>
-              <Link href={`/SingleProduct/${artworks[35].id}`} className={styles.link}>
+              <Link href={`/SingleProduct/${artworks[31].id}`} className={styles.link}>
               <div className={styles.slidecontainer}> 
                 <Image src={"/Artists-Artworks/ShayaniBoral/discuss.jpg"} className={styles.img} width={2000} height={2000} alt='image' />
                 <div className={styles.info}>
@@ -126,7 +126,7 @@ export default function EventsSlider({ artworks }) {
               </Link>
             </SwiperSlide>
 
-            <SwiperSlide className={styles.sliderbigcont}>
+            {/* <SwiperSlide className={styles.sliderbigcont}>
               <Link href={`/SingleProduct/${artworks[6].id}`} className={styles.link}>
               <div className={styles.slidecontainer}>
                 <Image src={"/Artists-Artworks/SusnataChatterjee/evening.jpeg"} className={styles.img} width={2000} height={2000} alt='image' />
@@ -136,7 +136,7 @@ export default function EventsSlider({ artworks }) {
                 </div>
               </div>
               </Link>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             <SwiperSlide className={styles.sliderbigcont}>
             <Link href={`/SingleProduct/${artworks[12].id}`} className={styles.link}>
