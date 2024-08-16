@@ -36,7 +36,7 @@ const Home = () => {
           <OurServices />
           <ArtworksSlider artworks={artworks}/>
           <StandOut />
-          <Subscriptions />
+          {/* <Subscriptions /> */}
           <Artists data={data}/>
           {/* <Partners /> */}
           <Events />

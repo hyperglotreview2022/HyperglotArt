@@ -9,6 +9,9 @@
   padding-left: 5vw;
   padding-top: 40px;
 }
+.subscriptions{
+  text-align: left;
+}
 .newtext{
   font-size: 18px;
   font-family: 'Poppins', sans-serif;

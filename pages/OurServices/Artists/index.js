@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import Piano from '@/components/Productspage/Piano'
+import Subscriptions from '@/components/homepage/Subscriptions'
 
 const index = () => {
   return (
@@ -105,6 +106,8 @@ sales.</div>
                 <Link className={styles.button6} href={'/ContactUs'}>Raise Any Queries</Link>
               </div>
             </div>
+
+            <Subscriptions />
 
             <div className={styles.bottomcont}>
               <div className={styles.btmheading}>Work with experts for all your art needs</div>
