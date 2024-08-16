@@ -15,6 +15,7 @@ import Subscriptions from '@/components/homepage/Subscriptions'
 import Artists from '@/components/homepage/Artists'
 // import SmoothScroll from '@/components/SmoothScroll/SmoothScroll.js'
 import styles from '../styles/Home.module.css'
+import Partners from '@/components/homepage/Partners'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,6 +38,7 @@ const Home = () => {
           <StandOut />
           <Subscriptions />
           <Artists data={data}/>
+          {/* <Partners /> */}
           <Events />
 
           <Footer />

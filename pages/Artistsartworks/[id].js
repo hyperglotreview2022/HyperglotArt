@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from "next/router";
 import artworks from '../api/artworks';
+import artdata from '../api/artdata';
 import artist from '../api/artdata'
 // import SmoothScroll from '@/components/SmoothScroll/SmoothScroll'
 import { FaArrowLeft } from "react-icons/fa";
@@ -19,6 +20,7 @@ const Products = () => {
   const router = useRouter();
   const { id } = router.query;
   let product = [];
+  let artistimage = '';
 
   function next(){
     setCount1((count1)=>count1+8)
@@ -36,6 +38,12 @@ const Products = () => {
     }
   })
 
+  artdata.map((data) => {
+    if(data.id == id){
+      artistimage = data.url;
+    }
+  })
+
   return (
     <div>
       <Navbar />
@@ -48,7 +56,7 @@ const Products = () => {
         
         <div className={styles.artistsdescont}>
           <div>
-            <Image src={artist[id-1].url} className={styles.img1} width={500} height={500} alt="image"/>
+            <Image src={artistimage} className={styles.img1} width={500} height={500} alt="image"/>
           </div>
           <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br/>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br/>
