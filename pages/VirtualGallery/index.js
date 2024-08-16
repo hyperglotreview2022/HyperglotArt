@@ -13,7 +13,7 @@ export default function index() {
         <h1 className={styles.heading}>Virtual Gallery</h1>
 
         <div className={styles.rflex}>
-        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/AC.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
+        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/Achasms.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
         <Link className={styles.link} href="/Amorphicchasms"><div className={styles.topic}>AMORPHIC CHASMS</div></Link>
           <div className={styles.desc}>Hyperglot Review is extremely proud to present AMORPHIC CHASMS, a show that has been more than six months in the making. In keeping with the thematic and aesthetic motifs of our previous shows, this show revisits how artistic expressions and processes evolve over time both for individual artists and for their audiences. 
@@ -24,7 +24,7 @@ export default function index() {
       </div>
 
         <div className={styles.flex}>
-        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/redrawingart.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
+        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/rd.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
           <Link className={styles.link} href="/RedrawingArtscapes"><div className={styles.topic}>REDRAWING ARTSCAPES</div></Link>
           <div className={styles.desc}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.</div>
