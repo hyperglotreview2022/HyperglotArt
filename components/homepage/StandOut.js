@@ -9,7 +9,7 @@ export default function StandOut() {
       <div className={styles.topic}>3D Virtual Gallery</div>
       <Link href={'/Amorphicchasms'}>
       <div className={styles.imgcont1}>
-        <Image src={'/virtualgallerymodels/images/Achasms.png'} className={styles.img1} width={1200} height={1200} alt='image' />
+        <Image src={'/virtualgallerymodels/images/amor.png'} className={styles.img1} width={1200} height={1200} alt='image' />
         <div className={styles.cover1}>
         <div className={styles.border1}>
           <div className={styles.heading1}>Our Latest Show</div>
