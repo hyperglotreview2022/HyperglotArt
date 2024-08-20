@@ -8,7 +8,7 @@ import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 
 import Loading from './Loading';
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms1.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {
@@ -225,7 +225,7 @@ const DragControlsComponent = ({ moveState }) => {
     }
 
     camera.position.add(moveVector);
-    camera.position.y = 17.5;
+    camera.position.y = 10;
   });
 
   return null;
@@ -250,9 +250,10 @@ const Index = () => {
       <div className={styles.fullscreenicon} onClick={toggleFullscreen}><BiFullscreen /></div>
       <Suspense fallback={<Loading />}>
       <Canvas shadows camera={{ position: [0, 0, 150] }}>
-        <ambientLight intensity={2} />
-        <spotLight position={[100, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
-        <spotLight position={[-200, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
+        <ambientLight intensity={1} />
+        <spotLight position={[-100, 150, 50]} angle={90} penumbra={10} decay={0} intensity={2} />
+        <spotLight position={[100, 150, 60]} angle={90} penumbra={10} decay={0} intensity={2} />
+        <spotLight position={[100, 450, 560]} angle={90} penumbra={10} decay={0} intensity={2} />
           <Model scale={modelScale} />
           {/* <Lighting /> */}
 
