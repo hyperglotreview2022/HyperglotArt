@@ -29,7 +29,7 @@ pandemic which has severely impacted artists and writers.
 
           </div>
           <div>
-            <Image className={styles.img} src={'/formimg/1.jpg'} width={400} height={600} alt="image"/>
+            <Image className={styles.img} src={'/About/5.jpg'} width={400} height={600} alt="image"/>
           </div>
         </div>
         {/* <div className={styles.btmcontainer}>
