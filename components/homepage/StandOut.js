@@ -29,7 +29,7 @@ export default function StandOut() {
           <Link href={'/RedrawingArtscapes'} className={styles.btn}>Enter 3D View</Link>
         </div>
         <div>
-          <Image src={'/virtualgallerymodels/images/rd.png'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/virtualgallerymodels/images/rdas.png'} className={styles.img} width={400} height={400} alt='image' />
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function index() {
       </div>
 
         <div className={styles.flex}>
-        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/rd.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
+        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/rdas.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
           <Link className={styles.link} href="/RedrawingArtscapes"><div className={styles.topic}>REDRAWING ARTSCAPES</div></Link>
           <div className={styles.desc}>Hyperglot Review's fourth exhibition REDRAWING ARTSCAPES, third in collaboration with HOLZIndia, has been curated with a special focus on emerging artists who have harnessed their creative ingenuity to create artworks that have the potential to ask questions about our existential conditions. Through their artistic processes, they create assemblages that both reinforce and destabilise our preconceptions and create new chasms of aesthetic, individual as well as social ideas, experiences, movements, shifts and seismic tremors.</div>
