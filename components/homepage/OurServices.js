@@ -24,7 +24,7 @@ export default function OurServices() {
         <div className={styles.card}>
         <Link href={'#'} className={styles.link}>
         <div className={styles.imgc}>
-          <Image src={'/servicesimages/services (6).jpg'} className={styles.img} width={400} height={400} alt='image' />
+          <Image src={'/servicesimages/3.jpg'} className={styles.img} width={400} height={400} alt='image' />
         </div>
           <div className={`${styles.info} ${styles.color2}`}>
             <h4>Galleries</h4>

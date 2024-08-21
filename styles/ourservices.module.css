@@ -15,7 +15,6 @@ padding: 120px 5% 50px;
   width: 50vw;
   height: 320px;
   position: relative;
-  overflow: hidden;
 }
 .imgc{
   height: 270px;
@@ -28,12 +27,9 @@ padding: 120px 5% 50px;
   height: 100%;
 }
 .info{
-  position: absolute;
-  top: 270px;
   color: white;
   padding: 10px 5%;
   transition: 0.3s;
-  height: 280px;
 }
 .color1{
   background-color: #28464b;
@@ -47,9 +43,9 @@ padding: 120px 5% 50px;
 .color4{
   background-color: #748a8f;
 }
-.card:hover .info{
+/* .card:hover .info{
   top: 50px;
-}
+} */
 .info h4{
   font-size: 24px;
   font-weight: 300;
@@ -61,6 +57,12 @@ padding: 120px 5% 50px;
   font-weight: 300;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+}
+.info p{
+  margin-bottom: 10px;
+}
+.link{
+  text-decoration: none;
 }
 @media screen and (max-width: 768px){
   .container{
