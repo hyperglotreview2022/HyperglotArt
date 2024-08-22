@@ -33,7 +33,7 @@ const index = () => {
 
             <div className={styles.rflexcont}>
               <div className={styles.imgc1}>
-                <Image src={'/servicesimages/Buyers (2).jpeg'} className={styles.img} width={400} height={400} alt='image' />
+                <Image src={'/servicesimages/services (7).jpg'} className={styles.img} width={400} height={400} alt='image' />
               </div>
               <div className={styles.right}>
                 <div className={styles.heading7}>Become a Visionary</div>

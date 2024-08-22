@@ -40,7 +40,7 @@ margin-top: 100px;
 .flexcont{
   padding: 80px 5% 50px;
   display: flex;
-  align-items: center;
+  align-items: top;
   gap: 8%;
 }
 .rflexcont{
@@ -49,7 +49,7 @@ margin-top: 100px;
   gap: 5%;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
 }
 .imgc{
   width: 40vw;
