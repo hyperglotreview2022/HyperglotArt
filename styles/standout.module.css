@@ -140,4 +140,8 @@
     font-size: 24px;
     padding: 30px 5% 0px;
   }
+  .eventname{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
