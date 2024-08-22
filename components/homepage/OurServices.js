@@ -16,7 +16,7 @@ export default function OurServices() {
           <div className={`${styles.info} ${styles.color1}`}>
             <h4>Artists</h4>
             <h6></h6>
-            <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
+            <p></p>
           </div>
           </Link>
         </div>
@@ -29,7 +29,7 @@ export default function OurServices() {
           <div className={`${styles.info} ${styles.color2}`}>
             <h4>Galleries</h4>
             <h6></h6>
-            <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
+            <p></p>
           </div>
           </Link>
         </div>
@@ -42,7 +42,7 @@ export default function OurServices() {
           <div className={`${styles.info} ${styles.color3}`}>
             <h4>Buyers</h4>
             <h6></h6>
-            <p>The virtual tool to curate, present and archive artworks in outstanding 3D exhibitions.</p>
+            <p></p>
           </div>
           </Link>
         </div>
