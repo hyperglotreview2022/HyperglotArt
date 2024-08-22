@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #397b7c;
-    color: white;
+    background-color: #eeeeee;
+    color: black;
 }
 .heading{
     font-size: 42px;
