@@ -13,7 +13,7 @@ export default function index() {
         <h1 className={styles.heading}>Virtual Gallery</h1>
 
         <div className={styles.rflex}>
-        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/amor.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
+        <div className={styles.imgcont}><Image src={'/virtualgallerymodels/images/am.png'} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
         <Link className={styles.link} href="/Amorphicchasms"><div className={styles.topic}>AMORPHIC CHASMS</div></Link>
           <div className={styles.desc}>Hyperglot Review is extremely proud to present AMORPHIC CHASMS, a show that has been more than six months in the making. In keeping with the thematic and aesthetic motifs of our previous shows, this show revisits how artistic expressions and processes evolve over time both for individual artists and for their audiences. 
