@@ -17,7 +17,7 @@ export default function index() {
         <div className={styles.flex}>
         <div className={styles.imgcont}><Image src={data[0].url} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
-          <div className={styles.topic}>{data[0].name}</div>
+          <Link href={`/EventsPage/${data[0].id}`} className={styles.topic}>{data[0].name}</Link>
           <div className={styles.desc}>{data[0].text[0]}</div>
           <div className={styles.details}><b>Date: </b>{data[0].info.Date}</div>
           <div className={styles.details}><b>Venue: </b>{data[0].info.Venue}</div>
@@ -28,7 +28,7 @@ export default function index() {
       <div className={styles.rflex}>
         <div className={styles.imgcont}><Image src={data[1].url} className={styles.img} width={1200} height={1200} alt='image' /></div>
         <div className={styles.right}>
-          <div className={styles.topic}>{data[1].name}</div>
+        <Link href={`/EventsPage/${data[1].id}`} className={styles.topic}>{data[1].name}</Link>
           <div className={styles.desc}>{data[1].text[0]}</div>
           <div className={styles.details}><b>Date:</b> {data[1].info.Date}</div>
           <div className={styles.details}><b>Venue:</b> {data[1].info.Venue}</div>

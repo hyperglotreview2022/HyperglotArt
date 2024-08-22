@@ -43,6 +43,8 @@
 }
 .topic{
   font-size: 38px;
+  color: black;
+  text-decoration: none;
 }
 .desc{
   font-family: 'Poppins', sans-serif;
