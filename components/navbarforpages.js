@@ -89,7 +89,7 @@ const navbar = () => {
       <ul className={active ? `${Styles.up}` : `${Styles.down}`}>
 
         <li><Link href="/">Home</Link></li>
-        <li><div className={Styles.hover}><Dropdown2 colorChange={colorChange}/></div></li>
+        <li><div className={Styles.hover}><Dropdown2 change={change} colorChange={colorChange}/></div></li>
         <li><div className={Styles.hover}><Dropdown3 colorChange={colorChange}/></div></li>
         <li><div className={Styles.hover}><Dropdown colorChange={colorChange}/></div></li>
         <li><Link href="/Subscriptions">Subscription</Link></li>

@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import styles from "../styles/dropdown.module.css";
 
-const dropdown = ({ colorChange }) => {
+const dropdown = ({ colorChange, change }) => {
   const [dropd, setDropd] = useState(true);
+  const [dropd1, setDropd1] = useState(true)
+  const [dropd2, setDropd2] = useState(true)
   const [width, setwidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -38,29 +40,29 @@ onClick={()=>{width < 800 && setDropd(!dropd)}}
         }
       >
         <div className={styles.secondrel}>
-          <div className={styles.link}>Medium</div>
-          <div className={colorChange ? styles.secab : styles.secabd}>
-            <Link className={styles.link} href="/Medium/paintings">
+          <div onClick={()=>{width < 800 && setDropd1(!dropd1)}} className={styles.link}>Medium</div>
+          <div className={colorChange ? dropd1 ? `${styles.secab}` : `${styles.secab10}` : dropd1 ? `${styles.secabd}` : `${styles.secabd1}`}>
+            <Link onClick={change} className={styles.link} href="/Medium/paintings">
               Paintings
             </Link>
-            <Link className={styles.link} href="/Medium/prints">
+            <Link onClick={change} className={styles.link} href="/Medium/prints">
               Prints
             </Link>
-            <Link className={styles.link} href="/Medium/sculptures">
+            <Link onClick={change} className={styles.link} href="/Medium/sculptures">
               Sculptures
             </Link>
           </div>
         </div>
         <div className={styles.secondrel1}>
-          <div className={styles.link}>Genre</div>
-          <div className={colorChange ? styles.secab1 : styles.secab1d}>
-            <Link className={styles.link} href="/Genre/figurative">
+          <div onClick={()=>{width < 800 && setDropd2(!dropd2)}} className={styles.link}>Genre</div>
+          <div className={colorChange ? dropd2 ? `${styles.secab1}` : `${styles.secab11}` : dropd2 ? `${styles.secab1d}` : `${styles.secab1d1}`}>
+            <Link onClick={change} className={styles.link} href="/Genre/figurative">
               Figurative
             </Link>
-            <Link className={styles.link} href="/Genre/abstract">
+            <Link onClick={change} className={styles.link} href="/Genre/abstract">
               Abstract
             </Link>
-            <Link className={styles.link} href="/Genre/landscape">
+            <Link onClick={change} className={styles.link} href="/Genre/landscape">
               Landscape
             </Link>
           </div>

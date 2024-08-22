@@ -121,6 +121,27 @@
 .secondrel1:hover .secab1{
   top: -15px;
 }
+.secab,.secab10,.secab1,.secab11{
+  position: absolute;
+  left:6vw;
+  top: -500px;
+  transition: 0.3s;
+  border: 1px solid white;
+  padding:15px 2vw 0px;
+  transition-delay: 0.3s;
+}
+.secondrel:hover .secab{
+  top: -15.5px;
+}
+.secondrel:hover .secab10{
+  top: -15px;
+}
+.secondrel1:hover .secab1{
+  top: -15.5px;
+}
+.secondrel1:hover .secab11{
+  top: -15px;
+}
 .secondrel,.secondrel1{
   position: relative;
 }
@@ -134,10 +155,26 @@
   transition-delay: 0.3s;
   background-color: rgba(0, 0, 0, 0.9);
 }
+.secabd1,.secab1d1{
+  position: absolute;
+  left:6vw;
+  top: -500px;
+  transition: 0.3s;
+  border: 1px solid white;
+  padding:15px 2vw 0px;
+  transition-delay: 0.3s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 .secondrel:hover .secabd{
   top: -15.5px;
 }
 .secondrel1:hover .secab1d{
+  top: -15px;
+}
+.secondrel:hover .secabd1{
+  top: -15.5px;
+}
+.secondrel1:hover .secab1d1{
   top: -15px;
 }
 @media screen and (max-width: 1550px){
@@ -168,17 +205,19 @@
   }
   .secab{
     display: none;
+    margin-bottom: 20px;
   }
-  .secondrel:hover .secab{
+.secab10{
     display: block;
     position: static;
     width: 70vw;
     padding: 10px 5%;
+    margin-bottom: 20px;
   }
   .secab1{
     display: none;
   }
-  .secondrel1:hover .secab1{
+  .secab11{
     display: block;
     position: static;
     width: 70vw;
@@ -186,8 +225,16 @@
   }
   .secabd{
     display: none;
+    margin-bottom: 20px;
   }
-  .secondrel:hover .secabd{
+  .secabd1{
+    display: block;
+    position: static;
+    width: 70vw;
+    padding: 10px 5%;
+    margin-bottom: 20px;
+  }
+  .secabd11{
     display: block;
     position: static;
     width: 70vw;
@@ -196,7 +243,7 @@
   .secab1d{
     display: none;
   }
-  .secondrel1:hover .secab1d{
+  .secab1d1{
     display: block;
     position: static;
     width: 70vw;
