@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 import Loading from '../../../components/VirtualGallery/Loading'
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms1.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {
@@ -217,7 +217,7 @@ const DragControlsComponent = ({ moveState }) => {
       }
   
       camera.position.add(moveVector);
-      camera.position.y = 17.5;
+      camera.position.y = 12;
     });
   
     return null;
