@@ -264,7 +264,7 @@ const Index = () => {
         <DragControlsComponent moveState={moveState} />
       </Canvas>        
       </Suspense>
-      <div className={styles.controls}>
+      <div className={styles.mcontrols}>
         <div className={styles.controlbtn} onMouseDown={moveForward} onTouchStart={moveForward} onMouseUp={() => (moveState.current.forward = false)} onTouchEnd={() => (moveState.current.forward = false)}><IoIosArrowUp /></div>
         <div className={styles.bottom}>
           <div className={styles.controlbtn} onMouseDown={moveLeft} onTouchStart={moveLeft} onMouseUp={() => (moveState.current.left = false)} onTouchEnd={() => (moveState.current.left = false)}><IoIosArrowBack /></div>
