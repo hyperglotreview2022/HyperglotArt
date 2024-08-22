@@ -1,9 +1,15 @@
 .container{
 padding: 120px 5% 50px;
 } 
+.centretext{
+  display: flex;
+  justify-content: center;
+}
 .topic{
   font-size: 42px;
-  text-align: center;
+  width:fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 .flex{
   margin-top: 50px;

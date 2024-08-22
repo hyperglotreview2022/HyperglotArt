@@ -1,9 +1,15 @@
 .container{
   padding: 0px 5% 80px;
 } 
+.centre{
+  display: flex;
+  justify-content: center;
+}
 .topic{
   font-size: 42px;
-  text-align: center;
+  width:fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
   margin-bottom: 50px;
 }
 .link{

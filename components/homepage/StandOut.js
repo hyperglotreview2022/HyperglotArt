@@ -6,7 +6,10 @@ import styles from '../../styles/standout.module.css'
 export default function StandOut() {
   return (
     <div className={styles.container}>
+    <div className={styles.centre}>
       <div className={styles.topic}>3D Virtual Gallery</div>
+    </div>
+      
       <Link href={'/Amorphicchasms'}>
       <div className={styles.imgcont1}>
         <Image src={'/virtualgallerymodels/images/am.png'} className={styles.img1} width={1200} height={1200} alt='image' />

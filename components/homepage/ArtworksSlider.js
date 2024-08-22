@@ -7,7 +7,10 @@ export default function ArtworksSlider({ artworks }) {
 
   return (
     <div className={styles.container}>
+    <div className={styles.centretext}>
       <div className={styles.topic}>Featured Artists</div>
+    </div>
+      
       <div className={styles.flex}>
         <Link className={styles.link} href="/Medium/paintings"><div className={styles.item}>Paintings</div></Link>
         <Link  className={styles.link} href="/Medium/prints"><div className={styles.item}>Prints</div></Link>

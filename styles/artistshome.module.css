@@ -1,10 +1,16 @@
 .container{
   padding: 50px 5% 100px;
 } 
+.centre{
+  display: flex;
+  justify-content: center;
+}
 .topic{
   font-size: 42px;
-  text-align: center;
   margin-bottom: 50px;
+  width:fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 .flex{
   display: flex;

@@ -6,7 +6,10 @@ import styles from '../../styles/ourservices.module.css'
 export default function OurServices() {
   return (
     <div className={styles.container}>
+    <div className={styles.centretext}>
       <div className={styles.topic}>Our Services</div>
+    </div>
+      
       <div className={styles.flex}>
         <div className={styles.card}>
         <Link href={'/OurServices/Artists'} className={styles.link}>

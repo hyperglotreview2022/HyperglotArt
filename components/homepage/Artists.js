@@ -6,7 +6,10 @@ import styles from '../../styles/artistshome.module.css'
 export default function Artists({data}) {
   return (
     <div className={styles.container}>
+    <div className={styles.centre}>
       <div className={styles.topic}>Artists in Spotlight</div>
+    </div>
+      
       <div className={styles.flex}>
       {data.slice(0,8).map(data=>
         <Link className={styles.link} href={`/Artistsartworks/${data.id}`}>

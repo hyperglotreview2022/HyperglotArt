@@ -2,9 +2,15 @@
   padding: 80px 5% 50px;
   background-color: rgb(248, 248, 248);
 } 
+.centre{
+  display: flex;
+  justify-content: center;
+}
 .topic{
   font-size: 42px;
-  text-align: center;
+  width:fit-content;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
   margin-bottom: 50px;
 }
 .link{
