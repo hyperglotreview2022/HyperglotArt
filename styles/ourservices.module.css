@@ -70,14 +70,16 @@ padding: 120px 5% 50px;
     } 
   .flex{
     flex-direction: column;
+    gap: 10px;
   }
   .card{
     width: 100%;
+    height: auto;
   }
   .topic{
     font-size: 36px;
   }
-  .card:hover .info{
-    top: 270px;
+  .info{
+    height: auto;
   }
 }
