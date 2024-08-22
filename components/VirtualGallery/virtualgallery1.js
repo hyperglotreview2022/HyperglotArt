@@ -49,7 +49,7 @@ const Lighting = () => {
 
     // Point lights for ambient lighting or additional illumination
     const pointLight1 = new THREE.PointLight(0xffffff, 1000);
-    pointLight1.position.set(0, 5, 70); // Adjust position as needed
+    pointLight1.position.set(-190, 5, 70); // Adjust position as needed
     scene.add(pointLight1);
     
     const pointLight2 = new THREE.PointLight(0xffffff, 1000);
@@ -250,10 +250,10 @@ const Index = () => {
       <div className={styles.fullscreenicon} onClick={toggleFullscreen}><BiFullscreen /></div>
       <Suspense fallback={<Loading />}>
       <Canvas shadows camera={{ position: [0, 0, 150] }}>
-        <ambientLight intensity={1} />
-        <spotLight position={[-100, 150, 50]} angle={90} penumbra={10} decay={0} intensity={1.5} />
-        <spotLight position={[100, 150, 60]} angle={90} penumbra={10} decay={0} intensity={1.5} />
-        <spotLight position={[100, 450, 560]} angle={90} penumbra={10} decay={0} intensity={1.5} />
+        <ambientLight intensity={2} />
+        <spotLight position={[200, 50, 250]} angle={90} penumbra={10} decay={0} intensity={0.75} />
+        <spotLight position={[100, 350, -260]} angle={90} penumbra={10} decay={0} intensity={0.75} />
+        <spotLight position={[100, 450, 560]} angle={90} penumbra={10} decay={0} intensity={0.75} />
           <Model scale={modelScale} />
           {/* <Lighting /> */}
 

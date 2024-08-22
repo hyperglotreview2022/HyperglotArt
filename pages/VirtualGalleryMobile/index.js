@@ -9,7 +9,7 @@ import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 
 import { useRouter } from 'next/router';
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/kunstmatrix005.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/redrawingartscapes.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {

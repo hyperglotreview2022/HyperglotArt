@@ -255,8 +255,9 @@ const Index = () => {
       <Suspense fallback={<Loading />}>
       <Canvas shadows camera={{ position: [0, 0, 150] }}>
         <ambientLight intensity={2} />
-        <spotLight position={[100, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
-        <spotLight position={[-200, 120, 60]} angle={90} penumbra={10} decay={0} intensity={3} />
+        <spotLight position={[200, 50, 250]} angle={90} penumbra={10} decay={0} intensity={0.75} />
+        <spotLight position={[100, 350, -260]} angle={90} penumbra={10} decay={0} intensity={0.75} />
+        <spotLight position={[100, 450, 560]} angle={90} penumbra={10} decay={0} intensity={0.75} />
           <Model scale={modelScale} />
           {/* <Lighting /> */}
 
