@@ -27,10 +27,10 @@ const herocomponent = () => {
       </div>
     </div>
       <video className={styles.video} 
-      // controls 
+      controls 
       src={width < 800 ? "/herovideo/mobvideo (1).mp4" : "/herovideo/herovideo.mp4"} 
       autoPlay 
-      // playsInline 
+      playsInline 
       loop muted preload="auto">
       </video>
     </div>
