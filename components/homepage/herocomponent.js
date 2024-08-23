@@ -27,7 +27,6 @@ const herocomponent = () => {
       </div>
     </div>
       <video className={styles.video} 
-      controls 
       src={width < 800 ? "/herovideo/mobvideo (1).mp4" : "/herovideo/herovideo.mp4"} 
       autoPlay 
       playsInline 
