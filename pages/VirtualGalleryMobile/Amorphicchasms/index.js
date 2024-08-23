@@ -1,10 +1,8 @@
 import React, { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Environment, useGLTF, useHelper } from '@react-three/drei';
+import { useGLTF, useProgress } from '@react-three/drei';
 import * as THREE from 'three';
 import styles from '../../../styles/VG.module.css';
-import { BiFullscreen } from 'react-icons/bi';
-import { IoMdArrowBack } from 'react-icons/io';
 import { IoIosArrowBack, IoIosArrowDown, IoIosArrowUp, IoIosArrowForward } from 'react-icons/io';
 import { useRouter } from 'next/router';
 import Loading from '../../../components/VirtualGallery/Loading'
@@ -227,6 +225,7 @@ const Index = () => {
   const [togglefull, setTogglefull] = useState(false);
   const moveState = useRef({ forward: false, backward: false, left: false, right: false });
   const modelScale = 10;
+  const { progress } = useProgress();
   const router = useRouter();
 
   const handleBack = () => {
@@ -252,7 +251,7 @@ const Index = () => {
   return (
     <div className={styles.fullcontainermobile}>
       {/* <div className={styles.fullscreenicon} onClick={toggleFullscreen}><BiFullscreen /></div> */}
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading percentage={Math.round(progress)}/>}>
       <Canvas shadows camera={{ position: [0, 0, 150] }}>
         <ambientLight intensity={2} />
         <spotLight position={[200, 50, 250]} angle={90} penumbra={10} decay={0} intensity={0.75} />

@@ -3,8 +3,9 @@ import Footer from '@/components/footer'
 import styles from '../../styles/eventpage.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
+import dynamic from "next/dynamic";
 
-export default function index() {
+const Index = () => {
 
   return (
     <div>
@@ -39,3 +40,5 @@ export default function index() {
     </div>
   )
 }
+
+export default dynamic (() => Promise.resolve(Index), {ssr: false})
