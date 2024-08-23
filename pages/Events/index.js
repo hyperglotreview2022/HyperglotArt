@@ -5,8 +5,9 @@ import styles from '../../styles/eventpage.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import events from '../api/events'
+import dynamic from 'next/dynamic';
 
-export default function index() {
+const Index = () => {
   const [data, setData] = useState(events)
   return (
     <div>
@@ -78,7 +79,7 @@ export default function index() {
       <div className={styles.gcont}>
         <div className={styles.heading1}>Past Events</div>
         <div className={styles.gridcont}>
-        {data.slice(0,3).map((data)=><div className={styles.card1}>
+        {data.slice(0,3).map((data)=><div key={data.id} className={styles.card1}>
           <div className={styles.imgcont}><Image src={data.url} className={styles.img1} width={1200} height={1200} alt='image' /></div>
           <div className={styles.info}>
             <div className={styles.topic1}>{data.name}</div>
@@ -98,3 +99,5 @@ export default function index() {
     </div>
   )
 }
+
+export default dynamic (() => Promise.resolve(Index), {ssr: false})
