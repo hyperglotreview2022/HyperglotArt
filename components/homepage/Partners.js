@@ -12,7 +12,7 @@ export default function Partners() {
     </div>
         
         <div className={styles.grid}>
-            {images.map(data=><div className={styles.imgcontainer}><Image src={data} className={styles.img} width={400} height={400} alt='image' /></div>)}
+            {images.map(data=><div key={data} className={styles.imgcontainer}><Image src={data} className={styles.img} width={400} height={400} alt='image' /></div>)}
         </div>
     </div>
   )

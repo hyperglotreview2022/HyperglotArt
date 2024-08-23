@@ -12,7 +12,7 @@ export default function Artists({data}) {
       
       <div className={styles.flex}>
       {data.slice(0,8).map(data=>
-        <Link className={styles.link} href={`/Artistsartworks/${data.id}`}>
+        <Link className={styles.link} key={data.id} href={`/Artistsartworks/${data.id}`}>
           <Image className={styles.img} src={data.url} width={400} height={400} alt="image"/>
           <div className={styles.name}>{data.name}</div>
           <div className={styles.artist}>Artist</div>

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from '../../styles/hero.module.css'
 import { useEffect, useState } from "react";
 
@@ -27,7 +26,12 @@ const herocomponent = () => {
         <div className={styles.btm}>Bring home an exquisite work of art</div>
       </div>
     </div>
-      <video className={styles.video} src={width < 800 ? "/herovideo/mobvideo.mp4" : "/herovideo/herovideo.mp4"} autoPlay loop muted preload="auto">
+      <video className={styles.video} 
+      // controls 
+      src={width < 800 ? "/herovideo/mobvideo.mp4" : "/herovideo/herovideo.mp4"} 
+      autoPlay 
+      // playsInline 
+      loop muted preload="auto">
       </video>
     </div>
   )

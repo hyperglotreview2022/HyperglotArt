@@ -13,7 +13,7 @@ const events = () => {
     </div>
       
       <div className={styles.flexflex}>
-      {eventsdata.slice(0,4).map((data)=><div className={styles.card}>
+      {eventsdata.slice(0,4).map((data)=><div key={data.id} className={styles.card}>
           <Link className={styles.link} href={`/EventsPage/${data.id}`}>
             <Image src={data.url} className={styles.img5} width={1200} height={1200} alt='image' />
               <div className={styles.info5}>

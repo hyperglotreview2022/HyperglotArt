@@ -9,7 +9,7 @@ import Loading from './Loading';
 import dynamic from 'next/dynamic';
 
 const Model = ({ scale }) => {
-  const gltf = useGLTF('/virtualgallerymodels/amorphicchasms.glb', true);
+  const gltf = useGLTF('/virtualgallerymodels/achasms.glb', true);
 
   useEffect(() => {
     gltf.scene.traverse((node) => {
