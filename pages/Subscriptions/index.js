@@ -29,7 +29,7 @@ const index = () => {
           <div className={styles.banner}>
             <h1 
              id={width > 1400 && 'one'}
-             className={styles.bannerheading}>Subscriptions</h1>
+             className={styles.bannerheading}>Subscriptions - Artists</h1>
           </div>
           <div className={styles.cardflex1}>
             <div className={styles.left}>
