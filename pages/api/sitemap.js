@@ -1,12 +1,13 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
+import artdata from './artdata'; // Adjust the path if necessary
+import artworks from './artworks'; // Adjust the path if necessary
 
 export default async (req, res) => {
   try {
-    // Define your URLs here
-    const links = [
+    // Define your static URLs
+    const staticLinks = [
       { url: '/', changefreq: 'daily', priority: 1.0 },
-      // Add other static routes
       { url: '/About', changefreq: 'monthly', priority: 0.8 },
       { url: '/Amorphicchasms', changefreq: 'monthly', priority: 0.8 },
       { url: '/Artists/Featured', changefreq: 'monthly', priority: 0.8 },
@@ -16,17 +17,26 @@ export default async (req, res) => {
       { url: '/VirtualGallery', changefreq: 'monthly', priority: 0.8 },
       { url: '/Subscriptions', changefreq: 'monthly', priority: 0.8 },
       { url: '/RedrawingArtscapes', changefreq: 'monthly', priority: 0.8 },
-      // Example of dynamic content (ensure `post` is defined and valid)
-      // { url: `/Artistsartworks/${post.id}`, changefreq: 'weekly', priority: 0.6 },
-      // { url: `/Gernre/${post.id}`, changefreq: 'weekly', priority: 0.6 },
-      // { url: `/Medium/${post.id}`, changefreq: 'weekly', priority: 0.6 },
-      // { url: `/SingleProduct/${post.id}`, changefreq: 'weekly', priority: 0.6 },
     ];
 
-    // Fetch dynamic routes if needed
-    // const dynamicRoutes = await fetchDynamicRoutes();
-    // links.push(...dynamicRoutes);
+    // Map dynamic routes from JSON data
+    const dynamicLinks = [
+      ...artdata.map(art => ({
+        url: `/Artistsartworks/${art.id}`, // Adjust URL structure as needed
+        changefreq: 'weekly',
+        priority: 0.6,
+      })),
+      ...artworks.map(work => ({
+        url: `/Genre/${work.id}`, // Adjust URL structure as needed
+        changefreq: 'weekly',
+        priority: 0.6,
+      })),
+    ];
 
+    // Combine static and dynamic links
+    const links = [...staticLinks, ...dynamicLinks];
+
+    // Create and generate sitemap
     const stream = new SitemapStream({ hostname: `https://${req.headers.host}` });
     const xmlString = await streamToPromise(Readable.from(links).pipe(stream)).then(data => data.toString());
 
@@ -37,14 +47,3 @@ export default async (req, res) => {
     res.status(500).json({ error: 'Failed to generate sitemap' });
   }
 };
-
-// Example function to fetch dynamic routes (if applicable)
-// async function fetchDynamicRoutes() {
-//   try {
-//     const posts = await fetch('https://yourapi.com/posts').then(res => res.json());
-//     return posts.map(post => ({ url: `/blog/${post.id}`, changefreq: 'weekly', priority: 0.6 }));
-//   } catch (error) {
-//     console.error('Error fetching dynamic routes:', error);
-//     return [];
-//   }
-// }
