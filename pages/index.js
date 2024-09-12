@@ -28,7 +28,6 @@ const Home = () => {
         <link rel="icon" href="/ico.ico" />
         <meta property="og:image" content="/ico.ico" />
         <link rel="apple-touch-icon" href="/ico.ico"/>
-        <title>Your Website Title</title>
   <meta name="description" content="Hyperglot Solutions is a culmination of years of research and study to address a gap in the market to provide marketing and promotional services to artists who often are not able to get the required level of exposure and visibility due to certain economic and demographic constraints." />
   <meta name="keywords" content="hyperglot art, hyperglot, art, gallery, VR, AR, digital art" />
   <meta name="author" content="Hyperglot Art" />
